@@ -1,0 +1,58 @@
+slug: ppt-unikorea-peace-coexistence
+display_name: 통일부 한반도 평화공존
+track: ppt
+family: korea-gov-peace-coexistence
+category: premium
+summary: "한국 통일부 한반도 평화공존 업무보고 톤. 다크 네이비 풀-블리드 위에 흰 카드가 떠있고, 표지와 종결 페이지에 한반도 발광 지도(북측 레드 글로우 / 남측 시안 글로우)가 거울처럼 박힌 북엔드 모티프 — 외교·통일·평화·국제관계 정책 발표, 정상회담 자료에 어울립니다."
+axes:
+  color: dark
+  type: mixed
+  layout: strict-grid
+  space: balanced
+  motion: subtle
+signature_top5:
+  - 한반도 발광 지도 (북엔드 모티프) — 표지·종결에 동일 형태로 정확히 2회. 북 #A41729/#C91E28/#9D204B + 남 #5794C3/#4AA2C1/#1566A5
+  - 손글씨 캘리그래피 슬로건 — #F59751 오렌지(본문) / #FFFF66 네온 골드(종결). 슬라이드당 정확히 1회
+  - Roman numeral 원형 태그 — Ⅰ~Ⅳ가 #105FD2 또는 #08306C 원 안 흰 숫자. 4분할 agenda + 본문 breadcrumb 일관
+  - 다크 #050829 풀-블리드 위 흰 떠있는 카드 + 좌측 #105FD2 5~10% 컬러 스트립
+  - 듀얼 비교 색 페어 — 좌 #105FD2 블루(미국·우방) / 우 #A41729 레드(북한). 한반도 모티프와 색 인코딩 일치
+diagram_kit: "프로세스 = 3~4 단계 흰 카드 노드 + 좌측 #105FD2 컬러 스트립 + 좌상단 Roman numeral 원 + 1.5pt 직각 화살표 / 3-column 카드 그리드 = 반복 양식(p06/p09/p10 mirror), 각 카드 상단 #105FD2 원형 번호 + 좌측 컬러 스트립 / 4-column agenda = 카드 상단 #105FD2 원 + 흰 Roman numeral + 라인 일러스트 / 듀얼 비교 = 2-column 좌 #105FD2 우 #A41729 페어 + 인용문 + 사진 / 매트릭스 = 흰 카드 + 0.75pt 십자 축 + 0.3in #105FD2 원형 버블 / 내러티브 = 01~04 #08306C 깊은 네이비 원(직경 0.6in) + 그레이 카드 + 우측 인물 사진/Quote / 노드 그리드 인포그래픽 = 흰 카드 안 파스텔 크림 #FFF0B9 + 파스텔 시안 #9EDBF4 노드(체크리스트) / 차트 = 흰 카드 컨테이너 + #105FD2 막대 + 직접 라벨링 + 출처 의무 / 캘리그래피 박스 = #FAE1C6→#F4B673 그라데이션 + 손글씨 #F59751 36pt / 블루 리본 바 = 푸터 #105FD2 풀폭 띠 + 흰 16pt SemiBold 슬로건"
+pages:
+  - { id: cover, label: "표지 — 한반도 발광 지도 + 캘리그래피", kind: cover }
+  - { id: agenda, label: "목차 — 4-column 흰 카드 + Roman numeral 원", kind: agenda }
+  - { id: section-divider, label: "섹션 인트로 — breadcrumb + 6 카드 그리드 또는 풀-쿼트", kind: section-divider }
+  - { id: key-message, label: "핵심 메시지 — 듀얼 비교 + 캘리그래피 박스", kind: body }
+  - { id: chart, label: "노드 그리드 인포그래픽 — 파스텔 크림/시안 노드", kind: chart }
+  - { id: diagram, label: "3카드 + 블루 리본 — 대응 전략", kind: diagram }
+  - { id: body, label: "3카드 그리드 — 반복 양식 (cards)", kind: body }
+  - { id: comparison, label: "듀얼 비교 풀버전 — 블루 vs 레드 태그", kind: comparison }
+  - { id: narrative, label: "인덱스 카드 + 인물 사진 — 01~04 깊은 네이비 원", kind: body }
+  - { id: closing, label: "종결 — 표지와 동일 (북엔드, 골드)", kind: closing }
+mirror_plan:
+  doc: "원본 통일부 2026 업무계획 보고 (외교부 합동) 13페이지 PDF를 10슬롯 프리미엄 덱으로 mirror"
+  source_native_pixels: [1467, 825]
+  mapping:
+    "01_cover": "p01 — 다크 + 좌측 캘리그래피 슬로건 + 우측 한반도 발광 지도 + 좌하단 BI"
+    "02_agenda": "p02 — '순서' 헤더 + 4-column 흰 카드 + #105FD2 원 + Roman numeral Ⅰ~Ⅳ + 트로피/회의/로켓/악수 라인 일러스트"
+    "03_section": "p03 또는 p05 — breadcrumb + 큰 헤드 + 6 카드 그리드(3x2) 또는 큰 따옴표 풀-쿼트('바늘 구멍을 뚫기')"
+    "04_key_message": "p04 — 듀얼 비교(블루 #105FD2 트럼프 vs 레드 #A41729 김정은) + 하단 캘리그래피 박스(#FAE1C6→#F4B673 그라데이션)"
+    "05_chart": "p08 변형 — 3-column 흰 카드 + 파스텔 크림 #FFF0B9 + 파스텔 시안 #9EDBF4 노드 그리드 인포그래픽 / 또는 #105FD2 막대 차트"
+    "06_diagram": "p06 또는 p09 — 3-column 흰 카드 + 카드 상단 #105FD2 원형 번호 + 하단 #105FD2 블루 리본 바('남북관계를 중심에 두고 한반도 문제 해결 추진')"
+    "07_cards": "p06/p08/p09/p10 — 3-column 흰 카드 + 좌측 #105FD2 컬러 스트립 + 카드 상단 #105FD2 태그 + 작은 일러스트 (반복 양식)"
+    "08_comparison": "p04 풀버전 — 2-column 듀얼 비교 (좌 #105FD2 블루 / 우 #A41729 레드), 카드 좌측 동일 색 컬러 스트립"
+    "09_narrative": "p07 또는 p11 — 01·02·03·04 깊은 네이비 원(#08306C, 직경 0.6in, 흰 28pt) + 그레이 카드 + 우측 인물 사진/4분할 그리드 + Quote 박스"
+    "10_closing": "p13 — 표지(p01)와 동일 — 한반도 발광 지도(북엔드) + 좌측 캘리그래피 골드 #FFFF66 슬로건 + 통일부 BI"
+sources:
+  - title: 통일부 2026년 업무계획 보고 (외교부 합동) — 한반도 평화공존 원년 만들기
+    url: https://www.korea.kr/common/download.do?fileId=198305192
+    type: official
+  - title: 대한민국 정책브리핑 — 통일부 2026 업무보고
+    url: https://www.korea.kr/news/policyNewsView.do?newsId=156735977
+    type: official
+  - title: 통일부 — 정부 공식 BI 및 시각 정체성
+    url: https://www.unikorea.go.kr/
+    type: official
+license: 원자산은 각 출처 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. 통일부 BI 및 한반도 발광 지도
+  모티프는 visual_inspiration로만 참고하며 재배포 시 출처를 따른다.
+source_depth: full
+status: pass

@@ -1,0 +1,110 @@
+slug: ppt-samsung-ir-restrained
+display_name: 삼성전자 IR 절제
+track: ppt
+family: samsung-global-ir
+category: premium
+version: v3
+summary: "삼성·LG 같은 글로벌 대기업이 분기 실적을 발표할 때 쓰는 영문 IR 자료 스타일. 강조는 진한 파랑 한 가지뿐, 표는 가로 줄 한 줄로 정리, 차트는 깨끗한 흰 배경에 막대 두 가지 색만. 화려하지 않으면서 격조 있게 보이는 보수적 톤 — 분기·연간 실적 보고, 글로벌 투자자 대상 IR에 어울립니다."
+axes:
+  color: vivid-primary
+  type: minimal-sans
+  layout: asymmetric-content-driven
+  space: balanced
+  motion: subtle
+diagram_kit: "KPI 거대 숫자 콤보=섹션 라벨 + 44~48pt Samsung Blue tabular 'T'(p-05 Highlights 시그니처) / commentary 양식=좌측 frameless bar+line 차트 + 우측 3개 timeframe section(#0D2062 2px hairline + 라벨 텍스트, 띠 아님)(p-08~p-12) / 데이터 표=행간 #D8DBE2 1px hairline만 + 현재 분기 컬럼 5px #0028A8 border + #BBD2E8 옅은 fill로 감쌈(p-06/07/13/14) / 증감 화살표=↑·↓ 양쪽 모두 #0028A8(녹/적 코딩 절대 금지) / Index 페이지=UPPERCASE 라벨 4개 + 사이 vertical | 글리프 separator / 차트=회색 #A5B3C6 + 파랑 #0028A8 2색만, paired bars 금지(필요 시 stacked), 막대 안 값 직접 표기, x축 wavy '~' break glyph, OP 흰 dot+선 overlay"
+page_mirror_plan_summary:
+  cover: "p-01 (다크 네이비 + Seocho 사진 + 좌 2줄 큰 타이틀 + 바닥 19% 푸터 밴드, 상단 hairline·우상단 워드마크 부재)"
+  agenda: "p-03 (다크 + 'Index' 좌상단 + 4-5 UPPERCASE 라벨 가로 1행 + 각 앞 vertical | 1px)"
+  section: "p-04 (+p-02 변형 허용) (다크 + 좌상단 큰 타이틀 + 그룹 라벨 + 흰 hairline 언더라인)"
+  key_message: "p-05 KPI pair 부분 (흰 BG + 섹션 라벨 + 2-4 거대 KPI #0028A8 44-48pt)"
+  chart: "p-05 차트 + p-06 우상단 차트 (bar_op_combo_frameless 양식)"
+  diagram: "p-08 (좌 28% 비주얼 + 우 65% timeframe 섹션 #0D2062 2px hairline + 라벨 chip)"
+  cards: "p-07 (좌우 50:50, 행 hairline만, #0028A8 컬럼 강조, hierarchical indent)"
+  comparison: "p-13 (좌 60% 비교 표 + 우 38% mini-table, 최우측 컬럼 #0028A8 박스 강조)"
+  narrative: "p-10/p-11 (좌 28% 차트 + 우 65% timeframe commentary, narrative 톤 무겁게)"
+  closing: "p-15 (다크 네이비 + Seocho 다른 앵글 + 'Thank you' 80pt + 하단 hairline + 우하단 워드마크, 푸터 밴드 부재)"
+v2_to_v3_diff:
+  - "page_mirror_plan 추가 — 10개 슬롯이 원본 15p 중 어느 페이지의 어떤 양식을 1:1 mirror할지 명시"
+  - "visual_vocabulary 사전 카탈로그화 (카드/차트/표/다이어그램/섹션 디바이더/푸터 6축)"
+  - "page_inventory에 render_spec(좌표·치수·색) 추가"
+  - "page_common_elements 적용 범위 명확화 — 본문 13장(p-02~p-14)에 상단 hairline + 우상단 워드마크 / 표지(p-01)·closing(p-15)은 푸터 영역에만"
+  - "render_notes_for_sample_renderer 섹션 신설 — 캔버스/차트/표/KPI 폰트 사이즈 표 + z-order"
+  - "EVP 8명 명단 + 직책 확정 (Park/Kim/Shin/Kang/Hur/Cho/Lee/Oh)"
+  - "diagram·narrative 슬롯의 timeframe section hairline y 위치 가이드 추가 (≈27%, 49%, 71%)"
+v1_to_v2_diff:
+  - "v1 강조색 #1428A0 가정 → 실측 #0028A8 (더 cyan-leaning, R=0 G=40 B=168)"
+  - "v1 paired side-by-side 막대 가정 → 실측 모든 차트는 stacked + 단일 series(회색 + 파랑 2색)"
+  - "v1 KPI 56pt 가정 → 실측 44~48pt, 'T' 접미사 동일 크기·동일 색"
+  - "v1 녹/적 증감 코딩 가정 → 실측 ↑·↓ 양쪽 모두 #0028A8"
+  - "v1 IBM Plex Sans + IBM Plex Mono 가정 → 실측 SamsungSharpSans + SamsungOne (오픈 폴백 Manrope·Pretendard)"
+  - "v1 본문 페이지 컬러 헤더 banner 가정 → 실측 거의 보이지 않는 subtle 헤더 그라데이션 0~21% + 1px hairline만"
+  - "v1 표 zebra-fill / vertical column rule 가정 → 실측 행간 1px #D8DBE2 hairline만 (외곽 frame·컬럼 라인·zebra 일체 없음)"
+  - "v1 모든 페이지 페이지 번호 가정 → 실측 페이지 번호 15장 전부 부재"
+  - "v1 강한 12열 strict 그리드 가정 → 실측 콘텐츠 주도 비대칭 분할 (1:1, 3:2, 1:2 페이지마다 다름)"
+  - "v1 부문 트리·프로세스 플로우·매트릭스·워터폴 다이어그램 가정 → 실측 부재. commentary tab hairline 양식이 사실상의 다이어그램."
+pages:
+  - id: cover
+    label: 표지 (Cover)
+    kind: cover
+    mirror_of: p-01
+  - id: agenda
+    label: 목차 (Index)
+    kind: agenda
+    mirror_of: p-03
+  - id: section
+    label: 섹션 표지 (Presenters 양식)
+    kind: section
+    mirror_of: p-04
+  - id: key-message
+    label: 핵심 메시지 (Highlights KPI pair)
+    kind: key-message
+    mirror_of: p-05
+  - id: chart
+    label: 데이터 차트 (bar_op_combo_frameless)
+    kind: chart
+    mirror_of: p-05+p-06
+  - id: diagram
+    label: 다이어그램 (Memory commentary 양식)
+    kind: diagram
+    mirror_of: p-08
+  - id: cards
+    label: 인포그래픽 카드 그리드 (Business Segment 표 2개)
+    kind: cards
+    mirror_of: p-07
+  - id: comparison
+    label: 비교 표 (Appendix 1 main + mini-table)
+    kind: comparison
+    mirror_of: p-13
+  - id: narrative
+    label: 인용·서술 (segment commentary)
+    kind: narrative
+    mirror_of: p-10/p-11
+  - id: closing
+    label: 결론 (Thank you)
+    kind: closing
+    mirror_of: p-15
+sources:
+  - title: "Samsung Electronics 2025 4Q Conference Call Presentation (English, 15p)"
+    url: "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_conference_eng.pdf"
+    type: pdf
+    role: "primary source — visual measurement base (pixel-level color picking + embedded font enumeration via pdffonts) + v3 page 1:1 mirror plan source"
+  - title: "Samsung Electronics Investor Relations — Earnings Releases"
+    url: "https://www.samsung.com/global/ir/financial-information/earnings-release/"
+    type: site
+    role: "archive of quarterly decks (same design system across multiple quarters)"
+  - title: "Samsung Electronics Investor Relations — Financial Highlights"
+    url: "https://www.samsung.com/global/ir/financial-information/financial-highlights/"
+    type: site
+    role: contextual reference
+  - title: "Samsung Electronics 2025 3Q Conference Call Presentation (cross-quarter consistency check)"
+    url: "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_3Q_conference_eng.pdf"
+    type: pdf
+    role: "confirms 2-mode page system, hairline + wordmark, single accent #0028A8 are deck-wide convention not one-off"
+  - title: "Samsung Brand Identity Guidelines (corporate brand reference)"
+    url: "https://www.samsung.com/global/ir/financial-information/"
+    type: site
+    role: "brand wordmark + Samsung Blue cobalt tone context (note — measured deck accent #0028A8 differs slightly from cited corporate hex #1428A0)"
+measurement_method: "Python PIL pixel quantization (12-color dominant) on 2200x1238 PNG renders of all 15 pages + pdffonts for embedded font enumeration + visual layout coordinates measured as percentage of canvas (1440x810pt). v3 추가: 페이지 PNG 15장 전수 정독으로 page_mirror_plan 도출. All hex values are measured, not inferred."
+license: "원자산은 삼성전자 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본·이미지 사본이 아님. SamsungSharpSans·SamsungOne·SamsungOneKorean 등 독점 폰트는 라이선스상 제3자 사용 금지 — 오픈 폰트 Manrope(영문) + Pretendard(한글)로 대체. 'SAMSUNG' 워드마크 자체는 등록 상표이므로 실제 배포물에는 반드시 자체 회사명·자체 워드마크로 교체 (재현 fixture에서는 placeholder)."
+source_depth: full
+status: pass

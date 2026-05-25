@@ -1,0 +1,119 @@
+slug: ppt-moef-fiscal-blue
+display_name: 기획재정부 시네마틱 브리핑
+track: ppt
+family: korea-gov-cinematic-briefing
+category: premium
+version: v3
+pack_id: moef-2026-briefing-v3
+summary: "한국 기획재정부 업무보고처럼 다크 네이비 표지·구분면과 오프화이트 본문이 교차하는 시네마틱 정부 브리핑 톤. 매 페이지마다 핵심 단어 1~3글자에 노란 형광펜을 그어 강조하고, 가로 화살표 리본·라인 차트·거대 원 다이어그램이 시그니처 — 정부 거시 정책 발표, 경제 전망, 예산 브리핑에 어울립니다."
+mirror_plan:
+  source_pages: 19
+  slot_count: 10
+  source: "기획재정부·국세청·관세청·조달청 2026년 합동 업무보고 (2025.12.11)"
+  spec: "_workspace/premium10v3/visual_spec/moef.json"
+  notes: "_workspace/premium10v3/visual_spec/moef_notes.md"
+  pages_src: "_workspace/premium10v3/pages_src/moef/p-01.png ~ p-19.png"
+  slot_to_mirror:
+    "01_cover": "p-01"
+    "02_agenda": "p-02"
+    "03_section-divider": "p-03"
+    "04_key-message": "p-04"
+    "05_chart": "p-05"
+    "06_diagram": "p-06"
+    "07_cards": "p-09"
+    "08_comparison": "p-12"
+    "09_narrative": "p-07"
+    "10_closing": "p-19"
+axes:
+  color: multi
+  type: mixed
+  layout: hybrid
+  space: medium
+  motion: minimal
+signature_locks_v2_carried:
+- "다크 네이비 #05091A 라디얼 스포트라이트 + 오프화이트 #F2F3F4 본문 샌드위치"
+- "본문 페이지 헤더바 12.8% + 80% 본문 플레이트 + 푸터바 7%"
+- "노란 형광 #FFFF00 키워드 시그니처 (본문 모든 페이지 의무, 헤더 끝 콜론 + 1~3 글자, 때로 2개)"
+- "4색 팔레트 (sky #1F91DF / teal #20988F / royal #4472C4 / purple #5464A6) + amber #FFD966"
+- "가로 그라데이션 화살표 리본 (navy #425C8C → teal #20988F → cyan #04AFE3) + 6 드롭핀 마일스톤"
+- "3패널 단일 라인 차트 + 헤드라인 수치 컬러 강조 (sky/green/purple)"
+- "중앙 거대 원(기회·도전) + 위성 박스 6개"
+- "컬러 필 pill 헤더 + 노란 강조 키워드"
+- "大자 노란 형광 표지 cover (96pt) + 마무리 closing echo (60pt) — 덱의 알파-오메가"
+- "페이지 인디케이터 -N- 우측 푸터바"
+- "표 0장, IBM Plex Mono 0건, 96pt Light 로마숫자 디바이더 금지"
+v3_additions:
+- "page_mirror_plan: 10 슬롯 element-level 좌표 (x/y/w/h pct, fill, text, font size)"
+- "visual_vocabulary_dictionary: VV_01~VV_20 명명된 패턴"
+- "5단 수평 밴드 스택 (royal→purple→teal→cyan→lighter-cyan 수직 그라데이션 시퀀스, p-12 mirror)"
+- "손글씨 메모 오버레이 + 6 numbered 배지 부채꼴 (p-07 mirror, 일회성)"
+- "쌍 거대 원 직경 28% + x center 36%/62% 정밀 좌표 (p-06 mirror)"
+- "3패널 차트 패널 폭 31% + 간격 2.5% + y top 22% / y bottom 85% 정밀 좌표 (p-05 mirror)"
+- "6 드롭핀 x centers [10,24,40,56,70,86]% + 화살표 리본 y 55~75% 정밀 좌표 (p-04 mirror)"
+- "표지 大 96pt + 마무리 大 60pt 정밀 (z-order 사각형 맨 뒤 + 텍스트 흰)"
+diagram_kit: "(a) 가로 그라데이션 화살표 리본 (navy #425C8C → teal #20988F → cyan #04AFE3, 폭 90%, h 16%) + 6 드롭핀 마일스톤 (x centers [10,24,40,56,70,86]%, fill #E0E5EB, flat line-art glyph) — 각 드롭핀 위 월 라벨 16pt Bold 흰, 리본 내부 2줄 콜아웃 (1줄 노란 #FFFF00 형광 14pt 검정 Bold 3/6에만 + 2줄 굵은 흰 16pt) / (b) 쌍 거대 원 + 위성 박스 — 좌 sky #1F91DF '기회' 우 deep-blue #283473 '도전' Black 56pt 흰, 직경 28%, x center 36%/62%, 좌우 3 위성 박스 세로 적층 + 미니 차트 / (c) 중앙 다이아몬드 + 4분면 위성 — #1A223F 다크네이비 fill 45deg 회전 정사각형 w 22% h 30%, 흰 Bold 16pt 3줄 슬로건, 상/우/하/좌 4 quadrant pill (royal/purple/royal/royal) / (d) 컬러 필 박스 헤더 + 노란 강조 (워크호스 모듈) — radius 24px pill 4색 + 좌측 노란 카테고리 배지 ('국정과제 N' / '2026 업무추진방향' / '1월중') + 흰 콘텐츠 박스. 2-col/2x2/2x3/2-col+bottom-band 그리드. 헤더 콜론 뒤 1~3 글자 노란 형광 키워드 의무 (때로 2개) / (e) 3패널 단일 라인 차트 — 본문 3등분 (폭 31%, 간격 2.5%, y 22~85%), pill 헤더 sky/teal/purple + bracketed topic 라벨 + 단색 1.5pt 라인 (sky/green/purple) + 강조 포인트 22pt Bold 패널 색 수치 + 우 패널 위쪽 노란 #FFFF00 콜아웃 박스 + 2줄 takeaway / (f) 5단 수평 밴드 스택 — 각 띠 h 13%, 좌측 30% 컬러 라벨 영역 위→아래 그라데이션 시퀀스 royal #4987BF → purple #5464A6 → teal #20988F → cyan #28A4CA → lighter cyan #04AFE3, 우측 70% 흰 콘텐츠 영역. 헤더 노란 키워드 2개 / (g) 손글씨 메모 오버레이 (일회성, narrative) — 헤더 subthesis 大 36pt 노란 형광 echo + 중앙 -8deg 크림 #FCFCF6 메모지 w 35% h 55% + soft drop shadow + 6 numbered 원형 배지 직경 8% 부채꼴 (3 left + 3 right, sky/teal/purple/royal/sky/purple) + 메모로 가는 hairline gray dotted 연결선 / 디바이더 = #05091A 라디얼 스포트라이트 + 화면 정중앙 흰 Bold 'Ⅰ.' 'Ⅱ.' 로마 숫자 + 한글 섹션명 42pt (로마 숫자만 한글보다 ~10pt 큼, 96pt Light·흰 배경·영문 라벨 금지) / 마무리 = #000000 순검정 + 우상귀 미세 cyan glow streak + 중앙 흰 Bold 40pt '한국경제 [大] 도약'(大 60pt 노란 형광 echo) + 32pt '이재명정부가 반드시 실천하겠습니다' + 18pt 2줄 submark + 22pt '감사합니다'"
+pages:
+- id: cover
+  label: 표지 (p-01 mirror, 大 96pt 노란 형광 + 우상귀 cyan arc)
+  kind: cover
+  mirror: p-01
+- id: agenda
+  label: 목차 (p-02 mirror, 좌 큰 '목 차' + 우 4 부처 sky→purple gradient bullets)
+  kind: agenda
+  mirror: p-02
+- id: section-divider
+  label: 섹션 표지 (p-03 mirror, Ⅰ. 2줄 센터 정렬 + 라디얼 스포트라이트)
+  kind: section-divider
+  mirror: p-03
+- id: key-message
+  label: 정책 마일스톤 (p-04 mirror, 6 드롭핀 + 가로 그라데이션 화살표 + 3 노란 콜아웃)
+  kind: body
+  mirror: p-04
+- id: chart
+  label: 3패널 단일 라인 차트 (p-05 mirror, sky/green/purple + 헤드라인 컬러 수치 + 우 패널 노란 callout)
+  kind: chart
+  mirror: p-05
+- id: diagram
+  label: 쌍 거대 원 SWOT (p-06 mirror, 좌 sky 기회 + 우 deep-blue 도전 + 좌우 3 위성 박스)
+  kind: diagram
+  mirror: p-06
+- id: cards
+  label: 2-column + 하단 horizontal band (p-09 mirror, sky+teal pills + 4 액션 박스, 헤더 노란 2개)
+  kind: kpi
+  mirror: p-09
+- id: comparison
+  label: 5단 수직 그라데이션 밴드 (p-12 mirror, royal→purple→teal→cyan→lighter-cyan, 헤더 노란 2개)
+  kind: comparison
+  mirror: p-12
+- id: narrative
+  label: 손글씨 메모 오버레이 (p-07 mirror, -8deg 크림 메모 + 6 numbered 배지 부채꼴, subthesis 大 노란 echo)
+  kind: body
+  mirror: p-07
+- id: closing
+  label: 검정 마무리 (p-19 mirror, 大 60pt 노란 형광 echo + 감사합니다)
+  kind: closing
+  mirror: p-19
+sources:
+- title: 기획재정부·국세청·관세청·조달청 2026년 합동 업무보고 (요약 PPT, 2025.12.11)
+  url: https://mofe.go.kr/com/cmm/fms/FileDown.do?atchFileId=ATCH_000000000030560&fileSn=3
+  type: official
+- title: 기획재정부 — 2026년도 예산안 주요사업 설명자료
+  url: https://www.moef.go.kr
+  type: official
+license: 원자산은 각 출처 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. 정부 로고·심볼은 직접 사용하지
+  않으며 워드마크는 텍스트 라인으로만 표기한다. 폰트는 오픈 폰트(Pretendard, Noto Sans KR)로 대체 가능하며 원본은 Malgun Gothic /
+  함초롬돋움.
+source_depth: full
+status: pass
+changelog:
+- date: 2026-05-24
+  version: v3
+  changes:
+  - "v3 mirror plan 도입: 원본 19페이지 → 10 슬롯 element-level 1:1 mirror"
+  - "VV_01~VV_20 시각 어휘 사전 기반 정밀 좌표 (3패널 차트 폭 31% + 간격 2.5%, 6 드롭핀 x centers [10,24,40,56,70,86]%, 쌍 거대 원 직경 28% + x center 36%/62%, 5단 밴드 h 13%, 메모지 -8deg 회전 w 35% h 55%)"
+  - "comparison 슬롯을 5단 수직 그라데이션 밴드 (p-12 mirror)로 교체 (이전 v2: 세로 stack 정책 배너 4색 row)"
+  - "narrative 슬롯을 손글씨 메모 오버레이 + 6 numbered 배지 부채꼴 (p-07 mirror, 일회성 크리에이티브)로 교체 (이전 v2: 부처 브리핑 amber underline)"
+  - "표지·마무리 大자 정확한 폰트 사이즈 명시 (cover 96pt / closing 60pt) + z-order (노란 사각형 맨 뒤 + 흰 텍스트)"
+  - "3패널 차트 우 패널 위쪽 노란 #FFFF00 콜아웃 박스 '5년 만에 최고' 시그니처 추가"
+  - "헤더 노란 키워드 2개 케이스 (p-09 / p-12 mirror) 명시"
+  - "p-04·p-05 mirror 헤더 노란 형광 예외 (본문 콜아웃에서 시그니처 충족) 명시"

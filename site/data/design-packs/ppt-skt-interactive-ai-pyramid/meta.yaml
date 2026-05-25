@@ -1,0 +1,192 @@
+slug: ppt-skt-interactive-ai-pyramid
+display_name: SKT 인터랙티브 AI 피라미드
+track: ppt
+family: skt-interactive-report
+category: premium
+version: v4
+summary: "SK텔레콤 2024 연간보고서처럼 별빛 표지에 큰 영문 슬로건과 입체 피라미드 다이어그램이 시그니처. 짙은 보라색 한 가지로 통일하고 위에 PDF 탭 메뉴가 떠있는 인터랙티브 보고서 미감 — AI·테크 기업의 비전 발표, 통합보고서, 전략 키노트에 어울립니다."
+axes:
+  color: monochrome-blue
+  type: thin-display
+  layout: asymmetric-content-driven
+  space: balanced-with-whitespace
+  motion: subtle
+diagram_kit: >-
+  AI 피라미드 2.0 = 3D isometric 3단(꼭대기 Agentic AI 흰+#DBE8FA / 중간 AIX #4B8CE6+#2B65D8 / 바닥 AI Infra
+  Super Highway #0023C3+#0010A7) + 우측 정원 배지 3개(AI B2C/B2B/DC) + 하단 자강과 협력 캡슐 + ⇧⇧
+  ··· ESG Vision 체계 = 좌측 3 라벨(AI Mission/구성요소/ESG Vision) + 상단 #0010A7 헤더 캡슐 + #E4EEFB statement
+  bar + 3 tracks(AI Business→DO AI / AI Governance→THE AI / AI ESG→GOOD AI) + 최하단 #0023C3 거대 DO THE
+  GOOD AI 캡슐 + 흰 V자 chevron 깔때기
+  ··· 6 Capital = 가로 미러 행 테이블(Financial/Human/Intellectual/Infrastructure/Social/Environment 6행, 좌
+  Input 카드 ↔ 우 Output 카드, Capital Input/Output #C9DDF8 헤더 캡슐 + ▶︎) — 좌↔우 비교 일반 재사용 가능
+  ··· Radial burst emblem = 약 200 1px spoke 360° + 두 동심원(#0023C3 ↔ #DBE8FA/#C9DDF8 변조)
+  ··· T·H·E·AI = 가로 4 정원(T·H·E #4B8CE6 + AI #0023C3 강조) + 가로 3 카드 + 우측 거대 T·H·E·AI #4B8CE6 캡슐
+  ··· 임원 프로필 카드 그리드 = 2×4 = 8 카드(상단 #E4EEFB 헤더 띠 + 4-row 본문 임기/약력/전문성/위원회 활동, 1px #D7D7D7 헤어라인 분리)
+  ··· 연도 KPI = 가로 3 정원(과거 흰 outline + 현재 #0023C3 솔리드)
+  ··· ▶︎ chip = H1 아래 #0023C3 솔리드 둥근 캡슐 + 흰 한글 + 우측 ▶︎ (페이지당 1~4개)
+  ··· 차트 = 회색·미디엄 블루·진 블루 정확히 3톤만 + 막대 끝 위 tabular 직접 표기
+  ··· 다이어그램 박스 = #E4EEFB 기본 채움 + #0023C3 강조 노드, 1px #D7D7D7 헤어라인 outline
+  ··· Swimlane 프로세스 플로우 = 4 row lane 라벨 + 가로 박스 시퀀스 + gray ▶ 화살표
+  ··· PDCA 4-stage 순환 = 중앙 노드 + 4 stage 원형 + 곡선 cyclic arrows (closing alt)
+page_mirror_plan:
+  description: >-
+    10 슬롯 ↔ SK Telecom Annual Report 2024 PDF 원본 페이지 1:1 mirror. 각 슬롯은 해당 원본 페이지의 구도·여백·모듈 배치를
+    보존하되 16:9 캔버스로 비례 변환한다.
+  source_pdf: https://www.sktelecom.com/img/kor/persist_report/20250627/SK_Telecom_Annual_Report_2024_F.pdf
+  pages_src_dir: _workspace/premium10v3/pages_src/skt/
+  slots:
+    - slot: 1
+      id: cover
+      mirror_source: p001
+      motifs:
+        - M2 (huge thin display lettering — DO THE GOOD AI 130pt)
+        - M3 (radial burst emblem)
+        - M7 (✦ sparkle, optional)
+      nav_bar: false
+    - slot: 2
+      id: agenda
+      mirror_source: p002
+      motifs:
+        - M7 (4 ✦ sparkle 트랙 헤더 위)
+        - Interactive PDF 사용자 가이드 박스 (옵션)
+      nav_bar: false
+    - slot: 3
+      id: section_slate
+      mirror_source: p003 (DO AI primary) / p020 (THE AI alt)
+      motifs:
+        - M1 (4-tab nav, 해당 챕터 활성)
+        - M2 (150pt 거대 챕터 lettering)
+        - M7 (✦ sparkle 중간)
+      nav_bar: true
+    - slot: 4
+      id: key_message
+      mirror_source: p014 (variant A primary) / p048 (variant B alt)
+      variant_a:
+        description: 비전·내러티브 — Special Report sub-slate
+        motifs:
+          - M1
+          - M3 (burst emblem 변주 — 안쪽 ring 강조)
+          - M7
+          - M8 (▶︎ chip)
+      variant_b:
+        description: 브랜드 mantra — T·H·E·AI 4-letter 배지
+        motifs:
+          - M1
+          - M10 (T·H·E·AI 4-letter 정원 배지 + 하단 3 카드 + 우측 거대 캡슐)
+          - M8
+      default_variant: variant_a
+      nav_bar: true
+    - slot: 5
+      id: chart
+      mirror_source: p010 (primary) / p024 (pie quartet alt) / p037 (year-progress 정원 alt)
+      motifs:
+        - M1
+        - 3-tone 그룹 막대 (회색·미디엄 블루·SKT 인디고)
+      alt_motifs:
+        - M9 (year-progress 정원 카드, alt)
+      nav_bar: true
+    - slot: 6
+      id: diagram
+      mirror_source: p007
+      motifs:
+        - M1
+        - M4 (AI 피라미드 2.0 — 3D isometric 3단 + 우측 3 정원 배지 + 하단 자강과 협력 캡슐 + ⇧⇧, 모두 MANDATORY)
+        - M8
+      nav_bar: true
+    - slot: 7
+      id: cards
+      mirror_source: p026 (primary) / p013 (3-lane ESG alt)
+      motifs:
+        - M1
+        - M8
+        - M11 (이사 프로필 2×4 카드 그리드 — 헤더 띠 + 4-row 본문)
+      nav_bar: true
+    - slot: 8
+      id: comparison
+      mirror_source: p009
+      motifs:
+        - M1
+        - M5 (6-Capital Input↔Output 미러 행 테이블 — 6 capitals 의무, Manufactured 없음)
+        - M8
+      nav_bar: true
+    - slot: 9
+      id: narrative
+      mirror_source: p004 (primary) / p018 (process alt) / p046 (table alt)
+      motifs:
+        - M1
+        - 5-컬럼 신문풍 한글 paragraph
+      alt_motifs:
+        - M12 (swimlane 프로세스 플로우)
+      nav_bar: true
+    - slot: 10
+      id: closing
+      mirror_source: p011 (primary) / p050 (PDCA alt) / 표지 호응 thank-you alt
+      motifs:
+        - M1
+        - M6 (ESG Vision 3-track 깔때기 → 거대 DO THE GOOD AI 캡슐 — 표지 시각 호응)
+        - M8
+      alt_motifs:
+        - M13 (PDCA 4-stage cyclic, closing alt)
+      nav_bar: true
+pages:
+- id: cover
+  label: 표지 — DO THE GOOD AI lettermark + radial burst emblem
+  kind: cover
+  mirror_source: p001
+- id: agenda
+  label: 목차 — 4-track CONTENTS + 4 ✦ sparkle + Interactive PDF 가이드 박스
+  kind: agenda
+  mirror_source: p002
+- id: section_slate
+  label: 챕터 슬레이트 — 거대 DO AI / THE AI lettering + ✦ + 우측 챕터 인덱스
+  kind: section
+  mirror_source: p003 / p020 (alt)
+- id: key_message
+  label: 핵심 메시지 — burst emblem variant A 또는 T·H·E·AI 4-letter 배지 variant B
+  kind: key-message
+  mirror_source: p014 / p048 (alt)
+- id: chart
+  label: 데이터 차트 — 4 그룹 막대 3톤 사다리 (회색·미디엄 블루·SKT 인디고)
+  kind: chart
+  mirror_source: p010 / p024 / p037 (alt)
+- id: diagram
+  label: 시그니처 다이어그램 — AI 피라미드 2.0 3D isometric 3단 + 우측 정원 배지 + 자강과 협력 캡슐
+  kind: diagram
+  mirror_source: p007
+- id: cards
+  label: 카드 그리드 — 이사 프로필 2×4 (헤더 띠 + 4-row 본문, 헤어라인 분리)
+  kind: cards
+  mirror_source: p026 / p013 (alt)
+- id: comparison
+  label: 좌↔우 비교 — 6-Capital Input ↔ Output 가로 미러 행 테이블
+  kind: comparison
+  mirror_source: p009
+- id: narrative
+  label: 본문 narrative — CEO 메시지 5-컬럼 신문풍 paragraph
+  kind: narrative
+  mirror_source: p004 / p018 / p046 (alt)
+- id: closing
+  label: closing — ESG Vision 3-track 깔때기 → 거대 DO THE GOOD AI 캡슐 (표지 호응)
+  kind: closing
+  mirror_source: p011 / p050 / thank-you (alt)
+sources:
+- title: SK Telecom Annual Report 2024 (Interactive PDF, 207p)
+  url: https://www.sktelecom.com/img/kor/persist_report/20250627/SK_Telecom_Annual_Report_2024_F.pdf
+  type: report
+- title: SK텔레콤 — 지속가능경영 보고서·연차보고서 아카이브
+  url: https://www.sktelecom.com/view/company/persist_report.do
+  type: index
+- title: SK Telecom — Brand & Identity (DO THE GOOD AI 비전)
+  url: https://www.sktelecom.com/index.html
+  type: brand
+v3_visual_spec:
+  json: _workspace/premium10v3/visual_spec/skt.json
+  notes: _workspace/premium10v3/visual_spec/skt_notes.md
+license: >-
+  원자산은 SK텔레콤의 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본·로고·서체 사본이 아님. 브랜드 영감은 brand_inspiration으로만
+  참고하며 SK Sans 계열 SKT 독점 서체는 라이선스상 사용 불가 — 오픈 폰트 Pretendard(한글) + Inter(영문 보조)로 대체한다. SKT
+  Electric Indigo `#0023C3`·딥 인디고 `#0010A7`·미디엄 블루 `#4B8CE6`·피라미드 단계 톤(`#DBE8FA`/`#2B65D8`)·`#E4EEFB`/`#C9DDF8`
+  보조 톤은 공개 Annual Report 2024 PDF 픽셀 측정값으로 근사 표기. SKT Red `#EA002C`는 표지 SK telecom 로고에만 등장하며 본
+  팩 사용 시에도 해당 위치 외 절대 금지.
+source_depth: full
+status: pass

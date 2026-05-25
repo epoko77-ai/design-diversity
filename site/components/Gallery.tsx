@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { CatalogPack, Axes } from "@/lib/types";
 import { AXIS_LABELS, TRACK_LABELS } from "@/lib/types";
@@ -13,8 +13,23 @@ const AXIS_ORDER: (keyof Axes)[] = [
   "motion",
 ];
 
+const STORAGE_KEY = "dd-gallery-state-v1";
+
 function uniqSorted(values: (string | undefined)[]): string[] {
   return Array.from(new Set(values.filter(Boolean) as string[])).sort();
+}
+
+function saveScroll() {
+  try {
+    const raw = sessionStorage.getItem(STORAGE_KEY);
+    const prev = raw ? JSON.parse(raw) : {};
+    sessionStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({ ...prev, scrollY: window.scrollY })
+    );
+  } catch {
+    /* ignore */
+  }
 }
 
 function PackCard({ p }: { p: CatalogPack }) {
@@ -25,6 +40,7 @@ function PackCard({ p }: { p: CatalogPack }) {
       href={`/pack/${p.slug}/`}
       className={`card${isPremium ? " card-premium" : ""}`}
       prefetch={false}
+      onClick={saveScroll}
     >
       <div className="card-thumb">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -70,6 +86,44 @@ export default function Gallery({ packs }: { packs: CatalogPack[] }) {
   const [axisFilters, setAxisFilters] = useState<
     Partial<Record<keyof Axes, string>>
   >({});
+  const [hydrated, setHydrated] = useState(false);
+  const pendingScrollY = useRef<number | null>(null);
+
+  // Restore filter state + scroll position on mount (returning from detail)
+  useEffect(() => {
+    try {
+      const raw = sessionStorage.getItem(STORAGE_KEY);
+      if (raw) {
+        const s = JSON.parse(raw);
+        if (typeof s.track === "string") setTrack(s.track);
+        if (typeof s.premiumOnly === "boolean") setPremiumOnly(s.premiumOnly);
+        if (s.axisFilters && typeof s.axisFilters === "object")
+          setAxisFilters(s.axisFilters);
+        if (typeof s.scrollY === "number") pendingScrollY.current = s.scrollY;
+      }
+    } catch {
+      /* ignore */
+    }
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    setHydrated(true);
+  }, []);
+
+  // Persist filter state on change
+  useEffect(() => {
+    if (!hydrated) return;
+    try {
+      const raw = sessionStorage.getItem(STORAGE_KEY);
+      const prev = raw ? JSON.parse(raw) : {};
+      sessionStorage.setItem(
+        STORAGE_KEY,
+        JSON.stringify({ ...prev, track, premiumOnly, axisFilters })
+      );
+    } catch {
+      /* ignore */
+    }
+  }, [hydrated, track, premiumOnly, axisFilters]);
 
   const axisOptions = useMemo(() => {
     const opts: Record<string, string[]> = {};
@@ -90,6 +144,30 @@ export default function Gallery({ packs }: { packs: CatalogPack[] }) {
       return true;
     });
   }, [packs, track, premiumOnly, axisFilters]);
+
+  // After hydration and first filtered render, restore saved scroll position
+  useEffect(() => {
+    if (!hydrated) return;
+    const y = pendingScrollY.current;
+    if (y == null) return;
+    pendingScrollY.current = null;
+    // Wait two frames so the grid has laid out before scrolling
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        window.scrollTo(0, y);
+        try {
+          const raw = sessionStorage.getItem(STORAGE_KEY);
+          if (raw) {
+            const prev = JSON.parse(raw);
+            delete prev.scrollY;
+            sessionStorage.setItem(STORAGE_KEY, JSON.stringify(prev));
+          }
+        } catch {
+          /* ignore */
+        }
+      });
+    });
+  }, [hydrated, filtered.length]);
 
   const pptPacks = filtered.filter((p) => p.track === "ppt");
   const webPacks = filtered.filter((p) => p.track === "web");

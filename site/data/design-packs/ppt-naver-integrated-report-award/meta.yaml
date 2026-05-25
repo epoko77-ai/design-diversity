@@ -1,0 +1,204 @@
+slug: ppt-naver-integrated-report-award
+display_name: 네이버 통합보고서 어워드
+track: ppt
+family: naver-communication-design
+category: premium
+version: v3
+summary: "네이버 2024 통합보고서(iF Design Award 수상작) 스타일. 페이지 가득 채우는 큰 영문 디스플레이 글씨, 부드러운 그린 안개 그라디언트, 5개 사업부문이 각자 색을 갖는 카드, 한국식 숫자+단위 표기('4천 8백만 명') — 어워드급 디자인이 필요한 통합보고서·ESG 리포트·연간 리뷰에 어울립니다."
+axes:
+  color: multi-segment-signature
+  type: giant-display-sans
+  layout: data-card-grid
+  space: dual-mode-breath
+  motion: subtle
+v3_page_mirror_plan:
+  basis: NAVER Integrated Report 2024 (iF Design Award 2024 Communication Design) — first 50 pages 1:1 mirror
+  regenerated_at: '2026-05-24'
+  slides:
+  - slot: s1
+    kind: cover
+    mirror_source_page: p1
+    archetype: L1_cover_with_side_green_fade
+    signature_motifs: [M1_giant_english_display_type, M2_naver_green_mesh_fade]
+    must_have:
+    - 거대 영문 'INTEGRATED REPORT' 140~180pt Bold 자간 -2.5% (페이지 폭 60~75% 점유, 좌측 정렬, y=4~28%)
+    - 좌하단 '2024' 100pt Bold 자간 -2%
+    - 우하단 'NAVER' 워드마크 14pt Bold 검정
+    - 우측 25% 폭 세로띠 그린 메쉬 페이드(흰 0% → #C8F2D6 60% → #5BDF92 80% → #03C75A 95% → #03C75A 100%)
+    - 네비/푸터 숨김
+  - slot: s2
+    kind: agenda
+    mirror_source_page: p3
+    archetype: contents_5column_grid
+    signature_motifs: [green_chapter_header]
+    must_have:
+    - 상단 'CONTENTS' 32pt Bold ALL CAPS 검정
+    - 5등분 그리드 (INTRODUCTION / Next, N / Business Report / ESG Report / APPENDIX)
+    - 각 컬럼 상단 그린 #03C75A 챕터명 14pt SemiBold
+    - 아래 페이지 번호 #B4B4B4 + 항목명 #0A0A0A 좌측 정렬 리스트 11~12pt 행간 1.6
+    - 고정 상단 네비(INTRODUCTION 활성) + 하단 푸터
+  - slot: s3
+    kind: section
+    mirror_source_page: p6
+    archetype: L7_overview_with_alphabet_infographic
+    signature_motifs: [M5_mixed_size_korean_unit_type, M6_data_alphabet_as_infographic]
+    must_have:
+    - 상단 'OVERVIEW' 32pt Bold ALL CAPS 검정
+    - 좌상 본문 단락 11~12pt 행간 1.55 (6~8줄)
+    - 좌하 옅은 회색 #E8E8E8 세계지도 + 그린 도트 마커 8~10곳 + 짧은 라인 + 국가명 11pt
+    - 중앙 하단에 '13' 60pt Bold #03C75A + '개국 진출' 14pt Medium 검정 (Mixed-size 패턴)
+    - 우상 ESG 평가 표 (3년 컬럼 + 평가기관 행 + 등급 알파벳 90~110pt Bold, 2024년만 #03C75A / 과거 #C8C8C8)
+    - 우하 기업정보 표 11pt (사명/설립연도/대표이사/임직원 수)
+    - 고정 상단 네비(INTRODUCTION 활성) + 하단 푸터
+  - slot: s4
+    kind: key-message
+    mirror_source_page: p8
+    archetype: L8_horizontal_milestone_timeline
+    signature_motifs: [M8_horizontal_milestone_timeline]
+    must_have:
+    - 상단 'KEY MILESTONES' 32pt Bold ALL CAPS 검정
+    - y=30% 라인에 4구간 거대 시기 라벨 32pt Bold ('2008-2014' '2015-2019' '2020-2022' '2023-2024') 가로 4등분 중앙 정렬
+    - y=42% 전체 폭 0.5pt #E8E8E8 수평선
+    - 각 라벨 아래 그린 도트 직경 8~10px #03C75A + 도트 위로 짧은 0.5pt 회색 수직 라인
+    - 도트 아래 연도 Bold 11pt + 항목 본문 Regular 11pt #0A0A0A 리스트 3~5개씩
+    - 고정 상단 네비(INTRODUCTION 활성) + 하단 푸터
+  - slot: s5
+    kind: chart
+    mirror_source_page: p11
+    archetype: L4_on_service_ai_intro_fullbleed_search
+    signature_motifs: [M3_segment_color_fullbleed_intro]
+    must_have:
+    - 페이지 전체 그린 풀블리드 메쉬 그라디언트 (중심 #03A047 → 외곽 #5BDF92, 둥근 가로 슈퍼타원 형상이 별도로 떠 있음)
+    - 정중앙 흰 검색바 UI 미니어처 카드 (폭 ~4.0in × 높이 0.55in, 라운드 28px, 좌 N 그린 원 아이콘 + 우 GO 그린 솔리드 원)
+    - 하단 중앙 ∧ 흰 화살표 + 그 아래 'On-Search AI' 28pt SemiBold 흰
+    - 상단 네비 라벨 모두 흰색 (활성 INTRODUCTION만 흰 + 1.5pt 옅은 시안 또는 흰 언더라인)
+    - 푸터 흰 텍스트
+  - slot: s6
+    kind: diagram
+    mirror_source_page: p20 or p23
+    archetype: L2_section_slate_with_centered_giant
+    signature_motifs: [M1_giant_english_display_type, M2_naver_green_mesh_fade]
+    must_have:
+    - 정중앙 거대 영문 라벨 96pt Bold 자간 -2% ('Business Report' 또는 'Business Portfolio')
+    - 그라디언트 패턴 택1 — p20 중앙 라운드 박스(흰 0% → #C8F2D6 35% → #5BDF92 65% → #03C75A 80% → #5BDF92 90% → 흰 100%) 또는 p23 좌측 가로 fade-out(#5BDF92 0% → #A8F0C4 15% → 흰 50% → 흰 100%)
+    - 하단 중앙 부제 2줄 14pt Medium (예 'Value Creation in Business' / 'Building Our Tomorrow')
+    - 그 외 페이지 영역은 95% 이상 흰 캔버스
+    - 고정 상단 네비(BUSINESS REPORT 활성) + 서브탭 띠 등장 + 하단 푸터
+  - slot: s7
+    kind: cards
+    mirror_source_page: p21
+    archetype: L9_business_highlights_3panel
+    signature_motifs: [rainbow_6color_donut, mixed_size_korean_unit_type]
+    must_have:
+    - 상단 'BUSINESS HIGHLIGHTS' 32pt Bold ALL CAPS
+    - 좌 1/3 본문 6~8줄 11~12pt + 하단 표 (주요 재무 성과 3년 컬럼 11pt)
+    - 중 1/3 세로 막대 3개 (2022·2023 #C8C8C8 / 2024 #03C75A 또는 검정) + 막대 위 거대 '11.0%↑' 56pt Bold 검정 + 막대 끝 합계 라벨
+    - 우 1/3 사업부문별 영업수익 비중 6색 도넛 — 서치플랫폼 #03C75A 36.8% / 커머스 #7C5BFF 27.2% / 핀테크 #1ED2C0 14.0% / 콘텐츠 #FF6A4A 16.7% / 엔터프라이즈 #4FB8FF 5.3% / 기타 #FFD24A. 외부 가는 라인 callout 직접 라벨링
+    - 우하 주식정보 미니 표 11pt
+    - 고정 상단 네비(BUSINESS REPORT 활성 + 'Approach to Business' 서브탭 활성) + 하단 푸터
+  - slot: s8
+    kind: comparison
+    mirror_source_page: p24
+    archetype: L3_data_card_2x2_search_platform
+    signature_motifs: [M4_giant_solid_circle_kpi, M5_mixed_size_korean_unit_type, M7_2x2_data_card_template]
+    must_have:
+    - 헤더 kicker 'Value Creation in Business' 14pt SemiBold + H1 'SEARCH PLATFORM' 40~44pt Bold ALL CAPS + 우상단 'Sustainable Business Practice' 링크 칩(14pt 회색 보더 라운드 12px)
+    - 좌상 카드 — '서치플랫폼 매출 비중' 14pt SemiBold + 도넛(강조 1조각 #03C75A + 나머지 #E8E8E8) + '36.8%' 24pt Bold 그린 + 우측 가는 라인 callout + '네이버 일평균 방문자' 12pt #7B7B7B + Mixed-size '4'천'8'백만 명 (M5)
+    - 우상 카드 — '클립 크리에이터 콘텐츠 생산량' 14pt SemiBold + 거대 솔리드 #03C75A 원 직경 ~2.9in + 원 정중앙 '400'(60pt Bold 흰) + '만 개'(24pt Medium 흰) + '+'(36pt 흰) (M4+M5) + 우측 헤어라인 + '월평균 일간 클립 재생 수' 14pt SemiBold + 클립 재생 라인 픽토그램 60×60px 그린 + Mixed-size '1'억'2'천만 회
+    - 좌하 카드 — '서치플랫폼 부문 매출액 및 연 성장률 (단위: 억 원)' 14pt SemiBold + 2년 비교 가로 막대 (2023 #C8C8C8 끝 '35,891' / 2024 #03C75A 끝 '39,462') + 우상단 거대 '9.9%' 40pt Bold 그린 + '전년 대비' 12pt 그린 + ▲ 그린
+    - 우하 카드 — '분기별 매출 (단위: 억 원)' 14pt SemiBold + Q1~Q3 #C8C8C8 + Q4 #03C75A 가로 막대 + 막대 끝 직접 라벨 13pt 검정 + 좌측 Q1·Q2·Q3·Q4 13pt #7B7B7B + 우측 거대 '39,462' 56pt Bold 검정
+    - 카드 사이 16~20px 갭 + 헤어라인 0.5pt #E8E8E8
+    - 좌하단 '* 2024년 기준' 9~10pt #7B7B7B
+    - 고정 상단 네비(BUSINESS REPORT 활성 + 'Business Portfolio' 서브탭 활성) + 하단 푸터
+    variant_note: 같은 슬라이드 템플릿을 부문 컬러만 갈아끼우면 p27 Commerce 퍼플 / p31 Fintech 민트 / p35 Contents 코랄 / p38 Enterprise 스카이블루 4가지로 재생산 가능. v3 시연은 Search Platform 그린 1개만.
+  - slot: s9
+    kind: narrative
+    mirror_source_page: p10
+    archetype: L5_on_service_ai_4color_node_network
+    signature_motifs: [segment_color_node_network_4colors]
+    must_have:
+    - 좌상단 한글 H1 28pt SemiBold "개인화의 혁신 'On-Service AI'"
+    - 우측 멀티컬럼 본문 11~12pt 행간 1.55 (3~5단, 좌측 정렬)
+    - 하단 50% 영역에 4컬러 노드 네트워크 (SEARCH #03C75A 좌상 / COMMERCE #7C5BFF 우상 / ADVERTISING #4FB8FF 좌하 / PLACE #3D8BFF 우하, 솔리드 원 직경 100~120px + 흰 SemiBold 영문 라벨)
+    - 노드 사이 1pt 검은 직선 커넥터 (커브·화살표 금지)
+    - 중앙 그라디언트 'On-Service AI' 텍스트 hub 24pt Bold (그라디언트 그린→퍼플→블루) + 작은 아이콘
+    - 우측 옅은 시안 보조 원 노드 2개 (직경 60~80px, 한글 라벨 '초개인화 탐색 서비스' / '파트너 비즈니스 성과 극대화' 11pt SemiBold)
+    - 좌하 라벨 'AI 원천 기술' / 우하 '사용자 의도·맥락 이해' 11pt SemiBold
+    - 고정 상단 네비(INTRODUCTION 활성) + 하단 푸터
+  - slot: s10
+    kind: closing
+    mirror_source_page: p47
+    archetype: L10_segment_sustainable_photo_with_quotes
+    signature_motifs: [M10_segment_quote_cards_on_photo]
+    must_have:
+    - 상단 60% 풀블리드 사진 (Commerce 패밀리 — 매장·창업자·박스 포장 이미지)
+    - 사진 좌상단(x=4%, y=12%) 흰 영문 부문명 'Commerce' 28pt SemiBold (옵션 작은 부문 컬러 점)
+    - 사진 우상단(x=70~96%, y=10~24%) #해시태그 리스트 12pt #FFFFFF 4~6개 (#소비자보호 #안심결제 #자영업지원 #포장폐기물절감 등)
+    - 하단 40% 흰 배경 + 4컬럼 인용 카드뉴스 (각 카드 폭 약 22%, 갭 약 2%) — 각 카드 상단 굵은 #7C5BFF Commerce Purple 따옴표 24pt Bold + Q. 14pt Bold 검정 + A. 11pt Regular 검정 4~6줄
+    - 고정 상단 네비(BUSINESS REPORT 활성 + 'Sustainable Business Practices' 서브탭 활성) + 하단 푸터
+  coverage_check:
+    M1_giant_english_display_type: [s1, s6]
+    M2_naver_green_mesh_fade: [s1, s6]
+    M3_segment_color_fullbleed_intro: [s5]
+    M4_giant_solid_circle_kpi: [s8]
+    M5_mixed_size_korean_unit_type: [s3, s8]
+    M6_data_alphabet_as_infographic: [s3]
+    M7_2x2_data_card_template: [s8]
+    M8_horizontal_milestone_timeline: [s4]
+    M10_segment_quote_cards_on_photo: [s10]
+    all_5_segment_colors:
+      green_search: [s5, s7, s8, s9]
+      purple_commerce: [s7, s9, s10]
+      mint_fintech: [s7]
+      coral_contents: [s7]
+      sky_enterprise: [s7, s9]
+    navigation_chrome_visible: [s2, s3, s4, s6, s7, s8, s9, s10]
+    navigation_chrome_white_or_hidden: [s1, s5]
+diagram_kit: 5개 사업부문(Search Platform 그린 #03C75A / Commerce 퍼플 #7C5BFF / Fintech 민트 #1ED2C0 / Contents 코랄 #FF6A4A / Enterprise 블루 #4FB8FF)이 동일한 2x2 데이터 카드 표준(좌상=도넛+Mixed-size 거대 숫자 / 우상=거대 솔리드 컬러 원+흰 60pt 수치+보조 픽토그램 KPI / 좌하=2년 비교 가로 막대+델타 ▲ / 우하=분기별 막대+우측 56pt 합계)을 부문 컬러로만 변주. On-Service AI 인트로는 부문 컬러 풀블리드 메쉬 그라디언트+중앙 흰 UI 미니어처. On-Service AI 다이어그램(s9)은 4컬러 노드(그린/퍼플/블루/시안)가 1pt 검은 직선으로 중앙 그라디언트 텍스트 hub에 수렴. Key Milestones(s4)는 풀폭 0.5pt 회색 수평 라인+4구간 32pt Bold 시기+그린 도트 마일스톤. 노드 형태는 원형/둥근 사각형/라운드 라벨 박스 세 종, 커넥터는 1pt 검은 직선만(곡선은 p19 Next, N 무한대 1종 예외로 v3 10장 덱 외). 차트는 어워드급 단순화 — 격자선 없음, 축선 거의 생략, 범례 박스 없음, 직접 라벨링만, 단일 강조는 부문 컬러 1색+무채색 비교, 다부문 비교 도넛(s7)만 6색 동시 허용.
+pages:
+- id: cover
+  label: 표지 (s1 ← p1, L1 거대 영문 + 우측 그린 메쉬 페이드)
+  kind: cover
+- id: contents
+  label: CONTENTS (s2 ← p3, 5열 챕터 그리드 + 그린 챕터 헤더)
+  kind: agenda
+- id: overview
+  label: OVERVIEW (s3 ← p6, L7 세계지도 도트 + ESG 알파벳 + Mixed-size '13')
+  kind: section
+- id: key_milestones
+  label: KEY MILESTONES (s4 ← p8, L8 수평 타임라인 + 4구간 32pt 시기 + 그린 도트)
+  kind: key-message
+- id: on_search_ai_intro
+  label: On-Search AI 풀블리드 (s5 ← p11, L4 그린 메쉬 + 흰 UI 미니어처)
+  kind: chart
+- id: section_slate
+  label: Business Report/Portfolio 섹션 슬레이트 (s6 ← p20 or p23, L2 96pt 거대 영문 + 그린 메쉬 페이드)
+  kind: diagram
+- id: business_highlights
+  label: BUSINESS HIGHLIGHTS (s7 ← p21, L9 3패널 + 6색 다부문 도넛)
+  kind: cards
+- id: segment_data_card_2x2
+  label: SEARCH PLATFORM 데이터 카드 2x2 (s8 ← p24, L3 시그니처 — 거대 솔리드 원 + Mixed-size + 2x2 템플릿)
+  kind: comparison
+- id: on_service_ai_diagram
+  label: On-Service AI 4컬러 노드 네트워크 (s9 ← p10, L5 그린/퍼플/블루/시안 노드)
+  kind: narrative
+- id: sustainable_commerce
+  label: Commerce 지속가능 (s10 ← p47, L10 사진 + 퍼플 해시태그 + 인용 카드뉴스 4컬럼)
+  kind: closing
+sources:
+- title: NAVER Integrated Report 2024 (KOR) — 원자료 PDF (1~50p 실측 미러 분석 대상)
+  url: https://static-homepage.pstatic.net/cdn-static/naver/download/NAVER_Integrated_Report_2024_KOR.pdf
+  type: official
+  inspiration: 본 팩의 1차 원자료. v3는 첫 50p를 페이지 단위로 실측해 슬라이드 1:1 미러 플랜을 설계. 거대 영문 디스플레이 타이포·NAVER Green 메쉬 그라디언트 페이드·5개 사업부문 시그니처 컬러 시스템·2x2 데이터 카드 표준·거대 솔리드 컬러 원 KPI·Mixed-size 한국식 단위 타이포 등 어워드 수상 5대 시그니처를 직접 관찰.
+- title: iF Design Award 2024 Winner — NAVER Integrated Report (Communication Design 부문)
+  url: https://ifdesign.com/en/winner-ranking/project/naver-integrated-report-created-by-team-naver/631706
+  type: official
+  inspiration: 어워드 수상 배경. 본 팩 디자인 강도의 기준점이자 'PPT 50팩 중 디자인 강도 최고' 라벨의 근거.
+- title: Talantone Creative Group — TEAM NAVER 협업 스튜디오
+  url: https://www.talantone.com/
+  type: article
+  inspiration: NAVER 어워드 보고서 제작 파트너 스튜디오. 5개 사업부문 시그니처 컬러 시스템과 동일 카드 변주 원리의 설계 주체.
+license: 원자산은 NAVER Corp. 및 Talantone Creative Group의 저작권을 따른다. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아니다. NAVER 워드마크·로고는 복제하지 않으며 brand_inspiration로만 참고한다. NAVER Green 색상값(#03C75A) 및 5개 사업부문 시그니처 컬러는 NAVER의 브랜드 자산이며 본 팩은 디자인 원리 학습 목적으로만 토큰화한다. 한글 폰트는 오픈 라이선스 Pretendard·Noto Sans KR로 대체한다. 본 팩은 1~50p 페이지 실측 분석에 근거하며(v2 2026-05-24, v3 2026-05-24 페이지 1:1 미러 매핑 추가), v1의 'CIRCLE/DOT/LINE/BLOCK/WAVE 5종 모티프' 가설은 실재하지 않음을 확인 후 완전 폐기·재집필되었다.
+source_depth: full
+status: pass

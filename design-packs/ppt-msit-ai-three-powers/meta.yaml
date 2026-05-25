@@ -1,0 +1,89 @@
+slug: ppt-msit-ai-three-powers
+display_name: 과기정통부 정통 정부 라이트
+track: ppt
+family: korea-gov-navy-ribbon
+category: premium
+version: v3
+based_on: v2 (+ 9p PNG 1:1 mirror 재정독, +p-10 closing 자연 확장)
+summary: "한국 정부 부처 업무보고의 정통 라이트 톤. 옅은 하늘색 배경에 진한 네이비 글씨, 페이지 하단에 네이비 띠로 핵심 키워드 노출, 중앙 부처를 둘러싼 위성 노드의 거버넌스 다이어그램이 클라이맥스 — 정부·공공 정책 보고, 부처 업무계획, 행정 발표에 어울립니다."
+axes:
+  color: light-navy-pale-blue
+  type: pretendard-balanced
+  layout: asymmetric-2col-with-ribbon
+  space: balanced
+  motion: none
+diagram_kit: "색띠 3컬럼 체크리스트(상단 캡슐 '국가 최대 위기를 극복' + #1A4BC6 헤더 + ✓ 4행 + 하단 흰띠 요약, 02-agenda) /
+  병렬 3-전략 알약 카드(블루→퍼플 #2366D9→#4369EE→#4857D6 단색 채움, 03-section) /
+  비대칭 상2+하 박스 안 3컬럼(좌 'AI' 그라디언트 박스 + 우 카드 3적층 + 하 풀폭 카드 안 3 서브컬럼, 04-key-message) /
+  4+4 적층 그리드 + 우측 보조 + 좌→우 단색 화살표(05-chart, 실제 차트 없음 — 차트는 08) /
+  좌 2×2 아이콘 + 우 3컬럼 원형 아이콘 + 하 가로 2카드(06-diagram K-문샷·바이오·양자·핵융합 + 출연연 개편) /
+  좌 2×2 + 우 2카드 + 우 끝 누리호 로켓 사실적 일러스트(07-cards) /
+  2×3 행 헤더 매트릭스(세로 알약 행 헤더 #0F41BD + 3카드 ×2행, '자력 R&D' 카드에 미니 2-막대 막대차트 임베드, 08-comparison) /
+  방사형 허브-스포크 거버넌스 다이어그램(중앙 부처 + 8~12 위성 노드 + 0.75pt #C5D3E2 직선 + 상단 '부처 AX·혁신 지원' 칩 + 하단 'R&D 예산 전략적 배분·조정' 칩 + 배경 ~20% 글로우, 09-narrative — 클라이맥스) /
+  가로 1Q→4Q 분기 타임라인(4 노드 + 1.5pt #002060 화살표, 10-closing 좌) /
+  미니 알약 strip(p-3 1/3 미니, 단색 #2366D9/#4369EE/#4857D6, 10-closing 우) /
+  차트=단순 평면 2-막대 1개(축선·격자선 없음, 화살표 증가, 단색 네이비/하이라이트 블루).
+  모두 SVG 정밀 렌더, div 블록·3D·그림자·글로우·이모지 아이콘 금지. 사이언/청록 사용 금지(그라디언트는 03·10 우측 미니 + 표지 + 04 'AI' 박스 한정).
+  v3 신규: #C5D3E2 연결선 색 / 05 좌→우 화살표 / 04 우측 카드 적층 정정 / 10-closing 분기 타임라인."
+pages:
+- id: 01-cover
+  label: 표지 — 옅은 블루 그라디언트 + 인디고 타이틀 + 우측 구체 글로우
+  kind: cover
+  mirrors: p-1
+- id: 02-agenda
+  label: 회고 3컬럼 — 캡슐 + 색띠 헤더 + ✓ 4행 + 흰띠 요약
+  kind: agenda
+  mirrors: p-2
+- id: 03-section
+  label: 3대 전략 알약 카드 — 블루→퍼플 병렬 3장 (순위 아님)
+  kind: section
+  mirrors: p-3
+- id: 04-key-message
+  label: AI 3강 비대칭 다분할 — 좌 'AI'박스 + 우 카드 3적층 + 하 박스 안 3컬럼
+  kind: key-message
+  mirrors: p-4
+- id: 05-chart
+  label: AI 대전환 4+4 적층 + 우 보조 + 좌→우 화살표 (실제 차트 없음)
+  kind: chart
+  mirrors: p-5
+- id: 06-diagram
+  label: K-문샷 좌 2×2 + 우 3컬럼 + 하 2카드 (출연연 개편)
+  kind: diagram
+  mirrors: p-6
+- id: 07-cards
+  label: 누리호 좌 2×2 + 우 2카드 + 우 끝 로켓 일러스트
+  kind: cards
+  mirrors: p-7
+- id: 08-comparison
+  label: R&D 2×3 행헤더 매트릭스 + 자력 R&D 카드 내 2-막대 미니차트
+  kind: comparison
+  mirrors: p-8
+- id: 09-narrative
+  label: 방사형 거버넌스 다이어그램 — 중앙 부처 + 8~12 위성 + 상하 보조 박스 (시그니처 클라이맥스)
+  kind: narrative
+  mirrors: p-9
+- id: 10-closing
+  label: 결의 슬로건 + 1Q→4Q 가로 타임라인 + 우 미니 3 알약 strip (v3 확장)
+  kind: closing
+  mirrors: (v3 확장)
+signature_motifs:
+- 하단 네이비 #002060 리본 + '상반기 핵심과제' 흰 라벨 + 콤마 키워드 3~4개 (04~10 = 7페이지)
+- 상단 좌측 'NN ─ 섹션명' 네이비 인디케이터 (04~10 = 7페이지)
+- 비대칭 2-컬럼 (좌 와이드 60~70% + 우 좁은 30~40%) — 05, 06, 07, 09, 10
+- 체크리스트 ✓ + 굵은 핵심어 + 본문 — 02
+- 그라디언트 블루→퍼플 알약 카드 (3대 전략 병렬 번호) — 03, 10 우측 미니
+- 방사형 거버넌스 허브-스포크 다이어그램 (중앙 부처 + 8~12 위성 + 0.75pt #C5D3E2 직선 + 상하 보조 박스) — 09 only, 클라이맥스
+sources:
+- title: 과학기술정보통신부 2026년도 업무계획 (별첨2 발표자료)
+  url: https://www.korea.kr/common/download.do?fileId=198298096
+  type: official
+- title: 대한민국 정책브리핑 — 과기정통부 2026 업무계획 발표
+  url: https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734887
+  type: official
+- title: KRDS — 디지털플랫폼정부 디자인시스템 (한글 폰트·접근성 기준)
+  url: https://www.krds.go.kr/
+  type: official
+license: 원자산은 각 출처 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. 부처 로고·심볼·엠블럼은 사용하지
+  않으며 색·타이포·레이아웃 원리만 증류한다. 방사형 다이어그램 중앙과 위성의 부처 엠블럼은 일반 원형 플레이스홀더로 대체한다.
+source_depth: full
+status: pass

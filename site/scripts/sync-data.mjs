@@ -29,6 +29,37 @@ const slugs = fs
   .filter((d) => d.isDirectory())
   .map((d) => d.name);
 
+const slugSet = new Set(slugs);
+
+// Prune stale entries (packs that were dropped from design-packs/)
+// 1) site/data/design-packs/{slug}/ directories
+if (fs.existsSync(DATA_PACKS)) {
+  for (const entry of fs.readdirSync(DATA_PACKS, { withFileTypes: true })) {
+    if (entry.isDirectory() && !slugSet.has(entry.name)) {
+      fs.rmSync(path.join(DATA_PACKS, entry.name), { recursive: true, force: true });
+      console.log(`[sync-data] pruned data/${entry.name}`);
+    }
+  }
+}
+// 2) site/public/previews/{slug}.png + site/public/previews/{slug}/ directories
+if (fs.existsSync(PREVIEWS)) {
+  for (const entry of fs.readdirSync(PREVIEWS, { withFileTypes: true })) {
+    const name = entry.name;
+    if (entry.isDirectory()) {
+      if (!slugSet.has(name)) {
+        fs.rmSync(path.join(PREVIEWS, name), { recursive: true, force: true });
+        console.log(`[sync-data] pruned previews/${name}/`);
+      }
+    } else if (entry.isFile() && name.endsWith(".png")) {
+      const slug = name.slice(0, -4);
+      if (!slugSet.has(slug)) {
+        fs.rmSync(path.join(PREVIEWS, name), { force: true });
+        console.log(`[sync-data] pruned previews/${name}`);
+      }
+    }
+  }
+}
+
 for (const slug of slugs) {
   const srcDir = path.join(SRC_PACKS, slug);
   const dstDir = path.join(DATA_PACKS, slug);

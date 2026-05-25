@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-05-21",
+  "updated": "2026-05-24",
   "schema": "design-pack-schema v2",
   "packs": [
     {
@@ -2359,6 +2359,696 @@
           "id": "cta-footer",
           "label": "구독 CTA·푸터",
           "img": "design-packs/web-acid-display-tech-zine/pages/05-cta-footer.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-samsung-ir-restrained",
+      "track": "ppt",
+      "family": "samsung-global-ir",
+      "category": "premium",
+      "display_name": "삼성전자 IR 절제",
+      "summary": "삼성·LG 같은 글로벌 대기업이 분기 실적을 발표할 때 쓰는 영문 IR 자료 스타일. 강조는 진한 파랑 한 가지뿐, 표는 가로 줄 한 줄로 정리, 차트는 깨끗한 흰 배경에 막대 두 가지 색만. 화려하지 않으면서 격조 있게 보이는 보수적 톤 — 분기·연간 실적 보고, 글로벌 투자자 대상 IR에 어울립니다.",
+      "axes": {
+        "color": "vivid-primary",
+        "type": "minimal-sans",
+        "layout": "asymmetric-content-driven",
+        "space": "balanced",
+        "motion": "subtle"
+      },
+      "preview": "design-packs/ppt-samsung-ir-restrained/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 (Cover)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차 (Index)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 표지 (Presenters 양식)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "핵심 메시지 (Highlights KPI pair)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "데이터 차트 (bar_op_combo_frameless)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "다이어그램 (Memory commentary 양식)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "인포그래픽 카드 그리드 (Business Segment 표 2개)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "비교 표 (Appendix 1 main + mini-table)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "인용·서술 (segment commentary)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "결론 (Thank you)",
+          "img": "design-packs/ppt-samsung-ir-restrained/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-skt-interactive-ai-pyramid",
+      "track": "ppt",
+      "family": "skt-interactive-report",
+      "category": "premium",
+      "display_name": "SKT 인터랙티브 AI 피라미드",
+      "summary": "SK텔레콤 2024 연간보고서처럼 별빛 표지에 큰 영문 슬로건과 입체 피라미드 다이어그램이 시그니처. 짙은 보라색 한 가지로 통일하고 위에 PDF 탭 메뉴가 떠있는 인터랙티브 보고서 미감 — AI·테크 기업의 비전 발표, 통합보고서, 전략 키노트에 어울립니다.",
+      "axes": {
+        "color": "monochrome-blue",
+        "type": "thin-display",
+        "layout": "asymmetric-content-driven",
+        "space": "balanced-with-whitespace",
+        "motion": "subtle"
+      },
+      "preview": "design-packs/ppt-skt-interactive-ai-pyramid/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 — DO THE GOOD AI lettermark + radial burst emblem",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차 — 4-track CONTENTS + 4 ✦ sparkle + Interactive PDF 가이드 박스",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 표지",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "핵심 메시지",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "데이터 차트 — 4 그룹 막대 3톤 사다리 (회색·미디엄 블루·SKT 인디고)",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "시그니처 다이어그램 — AI 피라미드 2.0 3D isometric 3단 + 우측 정원 배지 + 자강과 협력 캡슐",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "카드 그리드 — 이사 프로필 2×4 (헤더 띠 + 4-row 본문, 헤어라인 분리)",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "좌↔우 비교 — 6-Capital Input ↔ Output 가로 미러 행 테이블",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "본문 narrative — CEO 메시지 5-컬럼 신문풍 paragraph",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "closing — ESG Vision 3-track 깔때기 → 거대 DO THE GOOD AI 캡슐 (표지 호응)",
+          "img": "design-packs/ppt-skt-interactive-ai-pyramid/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-hyundai-cinematic-investor-day",
+      "track": "ppt",
+      "family": "hyundai-cinematic",
+      "category": "premium",
+      "display_name": "현대차 시네마틱 인베스터데이",
+      "summary": "현대차 인베스터데이처럼 다크 네이비 무대에 미래적 사이안 라인이 흐르는 컨퍼런스 키노트 톤. 거대한 흰색 숫자, ∞ 모양 컨셉 다이어그램, 7장 카드에 큰 사이안 숫자가 박힌 양식 — AI·EV·미래 모빌리티·신사업 발표, 테크 컨퍼런스 키노트에 어울립니다.",
+      "axes": {
+        "color": "dark",
+        "type": "heavy-display",
+        "layout": "full-bleed",
+        "space": "balanced",
+        "motion": "subtle"
+      },
+      "preview": "design-packs/ppt-hyundai-cinematic-investor-day/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 — 좌측 5-stack chevron + 영문 '2024 CEO Investor Day' 흰색 (페이지 번호·헤더 마크 없음)",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "아젠다 — 좌 35% pill stack + 우 60% 키 메시지 + 차량 underlay (본문 mode B)",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "메인 챕터 슬레이트 — 우측 4-stack chevron + 사이안 영문 타이틀 #66FFFF + (다단어 시) 한글 부제. p-17 sub-chapter Mode C secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "거대 KPI 히어로 — 흰색 140-160pt + 단위 + 3-pill row + 하단 panoramic 차량 사진 (p-18 양식)",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "라인 차트 + Chevron-tabbed 단계 헤더 (초기/성장기/성숙기) — 사이안 단색 패밀리 tonal, Source 캡션 의무. stacked bar(p-60)·도넛 trio(p-16)·라인+region(p-10) secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "HYUNDAI WAY ∞ 인피니티 다이어그램 — 컨셉 아키텍처 hero (deck 전체 단 1번). SDV hub-spoke(p-35)·글로벌 지도(p-22) secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "카드 enumerator 그리드 — 4+3 비대칭 7카드, 거대 사이안 SOLID 숫자 01~07 (80-100pt #66FFFF). 3-col icon+bullet(p-26)·4-col KPI(p-04)·pill row(p-18) secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "밸류체인 3-col 테이블 + chevron-tab 헤더 (Upstream/Midstream/Downstream) — horizontal hairline only. 시계열 3-col(p-65)·중앙 hub(p-67) secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "narrative — 좌 60% 정확히 4-card stack + 우 40% 산업 사진 클로즈업 hero. 중앙 IONIQ+UNIQUE BRAND(p-15) secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "클로징 — 좌측 5-stack chevron 미러 + 영문 'THANK YOU' 흰색 72-80pt (표지와 bookend, 헤더 마크·페이지 번호 없음). 3-badge recap(p-69)·4-badge values(p-70) secondary",
+          "img": "design-packs/ppt-hyundai-cinematic-investor-day/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-naver-integrated-report-award",
+      "track": "ppt",
+      "family": "naver-communication-design",
+      "category": "premium",
+      "display_name": "네이버 통합보고서 어워드",
+      "summary": "네이버 2024 통합보고서(iF Design Award 수상작) 스타일. 페이지 가득 채우는 큰 영문 디스플레이 글씨, 부드러운 그린 안개 그라디언트, 5개 사업부문이 각자 색을 갖는 카드, 한국식 숫자+단위 표기('4천 8백만 명') — 어워드급 디자인이 필요한 통합보고서·ESG 리포트·연간 리뷰에 어울립니다.",
+      "axes": {
+        "color": "multi-segment-signature",
+        "type": "giant-display-sans",
+        "layout": "data-card-grid",
+        "space": "dual-mode-breath",
+        "motion": "subtle"
+      },
+      "preview": "design-packs/ppt-naver-integrated-report-award/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 (s1 ← p1, L1 거대 영문 + 우측 그린 메쉬 페이드)",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 표지",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "핵심 메시지",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "데이터 차트",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "다이어그램",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "인포그래픽 카드",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "비교 표",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "인용·서술",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "결론·CTA",
+          "img": "design-packs/ppt-naver-integrated-report-award/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-kakao-friendly-card-news",
+      "track": "ppt",
+      "family": "kakao-conservative-earnings",
+      "category": "premium",
+      "display_name": "카카오 1Q26 보수 IR",
+      "summary": "카카오 분기 실적발표 스타일. 회색 배경에 옐로우 강조 한두 점, 좌측 끝에 반쪽 알약 타이틀, 분기 비교 표에 1분기 칸을 빨강 네모로 둘러싼 IR 분석가 데크 — 보수적 톤의 분기·연간 실적 발표, 테크 기업 IR에 어울립니다.",
+      "axes": {
+        "color": "accent-signal",
+        "type": "humanist-sans",
+        "layout": "strict-grid",
+        "space": "balanced",
+        "motion": "subtle"
+      },
+      "preview": "design-packs/ppt-kakao-friendly-card-news/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 (kakao 옐로우",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 표지",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "핵심 메시지",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "데이터 차트",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "다이어그램",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "인포그래픽 카드",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "비교 표",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "인용·서술",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "결론·CTA",
+          "img": "design-packs/ppt-kakao-friendly-card-news/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-motie-slogan-infographic",
+      "track": "ppt",
+      "family": "korea-gov-slogan-deck",
+      "category": "premium",
+      "display_name": "산업통상부 슬로건 캘리그래피",
+      "summary": "한국 정부 부처 업무보고 톤. 거대한 한글 캘리그래피 손글씨 슬로건이 풀스크린으로 박히고, 한반도·세계지도 인포그래픽과 영웅 실루엣(이순신 등), 시안+옐로그린 빛이 흐르는 다이어그램이 등장. 차트·표 없이 큰 숫자 카드만 — 정부·공공·정책 비전 발표, 국가 전략 보고에 어울립니다.",
+      "axes": {
+        "color": "navy-mono-with-gold-cyan-accent",
+        "type": "slogan-calligraphy-driven",
+        "layout": "asymmetric-card-grid + photo-fullscreen + map-pin-infographic",
+        "space": "generous-breathing-slogan-dominant",
+        "motion": "none"
+      },
+      "preview": "design-packs/ppt-motie-slogan-infographic/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 표지",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "핵심 메시지",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "데이터 차트",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "다이어그램",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "인포그래픽 카드",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "비교 표",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "인용·서술",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "결론·CTA",
+          "img": "design-packs/ppt-motie-slogan-infographic/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-msit-ai-three-powers",
+      "track": "ppt",
+      "family": "korea-gov-navy-ribbon",
+      "category": "premium",
+      "display_name": "과기정통부 정통 정부 라이트",
+      "summary": "한국 정부 부처 업무보고의 정통 라이트 톤. 옅은 하늘색 배경에 진한 네이비 글씨, 페이지 하단에 네이비 띠로 핵심 키워드 노출, 중앙 부처를 둘러싼 위성 노드의 거버넌스 다이어그램이 클라이맥스 — 정부·공공 정책 보고, 부처 업무계획, 행정 발표에 어울립니다.",
+      "axes": {
+        "color": "light-navy-pale-blue",
+        "type": "pretendard-balanced",
+        "layout": "asymmetric-2col-with-ribbon",
+        "space": "balanced",
+        "motion": "none"
+      },
+      "preview": "design-packs/ppt-msit-ai-three-powers/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 — 옅은 블루 그라디언트 + 인디고 타이틀 + 우측 구체 글로우",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "회고 3컬럼 — 캡슐 + 색띠 헤더 + ✓ 4행 + 흰띠 요약",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "3대 전략 알약 카드 — 블루→퍼플 병렬 3장 (순위 아님)",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "AI 3강 비대칭 다분할 — 좌 'AI'박스 + 우 카드 3적층 + 하 박스 안 3컬럼",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "AI 대전환 4+4 적층 + 우 보조 + 좌→우 화살표 (실제 차트 없음)",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "K-문샷 좌 2×2 + 우 3컬럼 + 하 2카드 (출연연 개편)",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "누리호 좌 2×2 + 우 2카드 + 우 끝 로켓 일러스트",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "R&D 2×3 행헤더 매트릭스 + 자력 R&D 카드 내 2-막대 미니차트",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "방사형 거버넌스 다이어그램 — 중앙 부처 + 8~12 위성 + 상하 보조 박스 (시그니처 클라이맥스)",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "결의 슬로건 + 1Q→4Q 가로 타임라인 + 우 미니 3 알약 strip (v3 확장)",
+          "img": "design-packs/ppt-msit-ai-three-powers/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-moef-fiscal-blue",
+      "track": "ppt",
+      "family": "korea-gov-cinematic-briefing",
+      "category": "premium",
+      "display_name": "기획재정부 시네마틱 브리핑",
+      "summary": "한국 기획재정부 업무보고처럼 다크 네이비 표지·구분면과 오프화이트 본문이 교차하는 시네마틱 정부 브리핑 톤. 매 페이지마다 핵심 단어 1~3글자에 노란 형광펜을 그어 강조하고, 가로 화살표 리본·라인 차트·거대 원 다이어그램이 시그니처 — 정부 거시 정책 발표, 경제 전망, 예산 브리핑에 어울립니다.",
+      "axes": {
+        "color": "multi",
+        "type": "mixed",
+        "layout": "hybrid",
+        "space": "medium",
+        "motion": "minimal"
+      },
+      "preview": "design-packs/ppt-moef-fiscal-blue/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 (p-01 mirror, 大 96pt 노란 형광 + 우상귀 cyan arc)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차 (p-02 mirror, 좌 큰 '목 차' + 우 4 부처 sky→purple gradient bullets)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 표지 (p-03 mirror, Ⅰ. 2줄 센터 정렬 + 라디얼 스포트라이트)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "정책 마일스톤 (p-04 mirror, 6 드롭핀 + 가로 그라데이션 화살표 + 3 노란 콜아웃)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "3패널 단일 라인 차트 (p-05 mirror, sky/green/purple + 헤드라인 컬러 수치 + 우 패널 노란 callout)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "쌍 거대 원 SWOT (p-06 mirror, 좌 sky 기회 + 우 deep-blue 도전 + 좌우 3 위성 박스)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "2-column + 하단 horizontal band (p-09 mirror, sky+teal pills + 4 액션 박스, 헤더 노란 2개)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "5단 수직 그라데이션 밴드 (p-12 mirror, royal→purple→teal→cyan→lighter-cyan, 헤더 노란 2개)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "손글씨 메모 오버레이 (p-07 mirror, -8deg 크림 메모 + 6 numbered 배지 부채꼴, subthesis 大 노란 echo)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "검정 마무리 (p-19 mirror, 大 60pt 노란 형광 echo + 감사합니다)",
+          "img": "design-packs/ppt-moef-fiscal-blue/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-mcst-k-culture",
+      "track": "ppt",
+      "family": "korea-gov-kculture-lavender",
+      "category": "premium",
+      "display_name": "문체부 K-컬처 라벤더",
+      "summary": "한국 문화체육관광부 K-컬처 업무보고 톤. 옅은 라벤더 강조점과 한지·한복 갈색 라벨, 풀-블리드 라벤더 베일이 깔린 섹션 표지, ▶▶ 갈매기 화살표 불릿이 시그니처 — 문화·예술·관광 정책 발표, K-콘텐츠 비전, 문화 산업 보고에 어울립니다.",
+      "axes": {
+        "color": "pastel-accent",
+        "type": "mixed",
+        "layout": "hybrid",
+        "space": "medium",
+        "motion": "static"
+      },
+      "preview": "design-packs/ppt-mcst-k-culture/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 (좌우 sweep 그라데이션 + 중앙 navy 제목 + 정부 엠블럼)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차 (2×2 매트릭스 + ①~⑩ 리스트)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 디바이더 (풀-블리드 K-컬처 사진 + 라벤더 베일)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "핵심 메시지 (좌 텍스트 + 우 실사 split-photo)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "K-관광 3천만 라인차트 + KPI + 빨강 CTA (시그니처)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "K-컬처 산업 재정의 트리 (브라운 pill + navy 3열 + 일러스트, 시그니처)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "navy pill 헤더 카드 3-up",
+          "img": "design-packs/ppt-mcst-k-culture/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "navy pill 헤더 카드 2-up 비교",
+          "img": "design-packs/ppt-mcst-k-culture/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "▶▶ 갈매기 화살표 내러티브 + 우측 비주얼",
+          "img": "design-packs/ppt-mcst-k-culture/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "종결 (좌 마감 카피 + 우 실사 풀브리드 + 좌하단 엠블럼)",
+          "img": "design-packs/ppt-mcst-k-culture/pages/10-closing.png"
+        }
+      ],
+      "status": "pass"
+    },
+    {
+      "slug": "ppt-unikorea-peace-coexistence",
+      "track": "ppt",
+      "family": "korea-gov-peace-coexistence",
+      "category": "premium",
+      "display_name": "통일부 한반도 평화공존",
+      "summary": "한국 통일부 한반도 평화공존 업무보고 톤. 다크 네이비 풀-블리드 위에 흰 카드가 떠있고, 표지와 종결 페이지에 한반도 발광 지도(북측 레드 글로우 / 남측 시안 글로우)가 거울처럼 박힌 북엔드 모티프 — 외교·통일·평화·국제관계 정책 발표, 정상회담 자료에 어울립니다.",
+      "axes": {
+        "color": "dark",
+        "type": "mixed",
+        "layout": "strict-grid",
+        "space": "balanced",
+        "motion": "subtle"
+      },
+      "preview": "design-packs/ppt-unikorea-peace-coexistence/preview.png",
+      "pages": [
+        {
+          "id": "cover",
+          "label": "표지 — 한반도 발광 지도 + 캘리그래피",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/01-cover.png"
+        },
+        {
+          "id": "agenda",
+          "label": "목차 — 4-column 흰 카드 + Roman numeral 원",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/02-agenda.png"
+        },
+        {
+          "id": "section",
+          "label": "섹션 인트로 — breadcrumb + 6 카드 그리드 또는 풀-쿼트",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/03-section.png"
+        },
+        {
+          "id": "key-message",
+          "label": "3카드 그리드 — 반복 양식 (cards)",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/04-key-message.png"
+        },
+        {
+          "id": "chart",
+          "label": "노드 그리드 인포그래픽 — 파스텔 크림/시안 노드",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/05-chart.png"
+        },
+        {
+          "id": "diagram",
+          "label": "3카드 + 블루 리본 — 대응 전략",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/06-diagram.png"
+        },
+        {
+          "id": "cards",
+          "label": "인포그래픽 카드",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/07-cards.png"
+        },
+        {
+          "id": "comparison",
+          "label": "듀얼 비교 풀버전 — 블루 vs 레드 태그",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/08-comparison.png"
+        },
+        {
+          "id": "narrative",
+          "label": "인덱스 카드 + 인물 사진 — 01~04 깊은 네이비 원",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/09-narrative.png"
+        },
+        {
+          "id": "closing",
+          "label": "종결 — 표지와 동일 (북엔드, 골드)",
+          "img": "design-packs/ppt-unikorea-peace-coexistence/pages/10-closing.png"
         }
       ],
       "status": "pass"

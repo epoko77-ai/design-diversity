@@ -1,0 +1,164 @@
+slug: ppt-motie-slogan-infographic
+display_name: 산업통상부 슬로건 캘리그래피
+track: ppt
+family: korea-gov-slogan-deck
+category: premium
+spec_version: v4-풍성도-보강-22to10-mirror-2026-05-25
+summary: "한국 정부 부처 업무보고 톤. 거대한 한글 캘리그래피 손글씨 슬로건이 풀스크린으로 박히고, 한반도·세계지도 인포그래픽과 영웅 실루엣(이순신 등), 시안+옐로그린 빛이 흐르는 다이어그램이 등장. 차트·표 없이 큰 숫자 카드만 — 정부·공공·정책 비전 발표, 국가 전략 보고에 어울립니다."
+axes:
+  color: navy-mono-with-gold-cyan-accent
+  type: slogan-calligraphy-driven
+  layout: asymmetric-card-grid + photo-fullscreen + map-pin-infographic
+  space: generous-breathing-slogan-dominant
+  motion: none
+keywords:
+  - korean-calligraphy-brush-slogan
+  - fullscreen-slogan-deck
+  - navy-mono-no-red
+  - quote-marks-policy-intro
+  - korea-map-6pin
+  - world-map-6pin
+  - arc-diagram-center-glow-cyan-yellowgreen
+  - k-industry-breakwater-5card-3plus2
+  - no-chart-no-table
+  - big-number-token-card
+  - blue-5step-card-chip
+  - motie-2026-business-report
+  - government-business-report
+  - korean-policy-deck
+  - 22-to-10-page-mirror-compression
+  - visual-lexicon-11
+  - isometric-3d-industrial-illustration
+  - single-ministry-wordmark-only
+sources:
+  - title: 산업통상부 2026년 업무보고 PPT (22p, 한컴오피스 PDF 출력)
+    url: https://files-scs.pstatic.net/2025/12/21/eKTz2KVN9r/2026년 산업통상부 업무보고 PPT.pdf
+    type: official
+    notes: 1차 출처. 실측 분석 대상 22장 전수.
+  - title: visual_spec/motie.json (실측 사양 v3)
+    url: file:_workspace/premium10v3/visual_spec/motie.json
+    type: internal-analysis
+    notes: v3 페이지 1:1 mirror plan 22장 풀 매핑 + visual_lexicon 11종 + 22→10 압축 플랜.
+  - title: visual_spec/motie_notes.md (실측 노트 v3)
+    url: file:_workspace/premium10v3/visual_spec/motie_notes.md
+    type: internal-analysis
+    notes: v3 페이지 PNG 재정독 + 페이지별 render note + 22→10 압축 머지 규칙.
+  - title: visual_spec/motie.json (실측 사양 v2 — 참조)
+    url: file:_workspace/premium10v2/visual_spec/motie.json
+    type: internal-analysis
+    notes: v1 가정 5건 폐기 결론 + v2 시그니처 정의 (v3에서 LOCKED 유지).
+signature_visual_motifs:
+  - korean-calligraphy-brush-slogan-fullscreen (원본 22장 중 7장 풀스크린, 18장에서 등장)
+  - policy-intro-quote-marks (정책방향 인트로 슬로건은 반드시 " "로 감쌈 — v3 Slide 04·06·08)
+  - navy-mono-fullscreen-with-photo-overlay (#001838~#002858 + 사진 + 네이비 오버레이)
+  - blue-5step-card-chip-system (#0066CC → #00BCD4 카드 라벨)
+  - korea-map-6pin-megazone-infographic (v3 Slide 05 중앙, 원본 p-10)
+  - world-map-6pin-trade-infographic-japan-hotpink (v3 Slide 08 중단, 원본 p-18)
+  - arc-diagram-3node-with-cyan-and-neon-glow (v3 Slide 06 하단, 원본 p-13 시그니처)
+  - k-industry-breakwater-5card-3plus2-on-wave-photo (v3 Slide 09 단독, 원본 p-20 시그니처)
+  - big-number-token-cards-instead-of-charts (7,000억$ / 500여 부문 / 15개 단지 / 90억$ / 3000개사)
+  - single-ministry-wordmark-corner-only (v3 Slide 01·10 우하단만)
+  - breadcrumb-top-left-policy-direction (v3 Slide 02·04·05·06·07·08·09)
+  - hanja-emphasis-bold-larger (新·通商 — v3 Slide 03·08)
+v3_compression_plan:
+  total_original_pages: 22
+  total_v3_pages: 10
+  must_preserve_signature_pages: 7
+  mirror_map:
+    - v3_p: 1
+      type: cover_fullscreen_slogan
+      source: [1]
+    - v3_p: 2
+      type: agenda_achievement_threat_3block
+      source: [2, 3, 4]
+    - v3_p: 3
+      type: section_slogan_plus_3directions
+      source: [5, 6]
+    - v3_p: 4
+      type: policy1_intro_plus_diagnosis
+      source: [7, 8]
+    - v3_p: 5
+      type: policy1_body_5label_plus_map_plus_checklist
+      source: [9, 10, 11]
+    - v3_p: 6
+      type: policy2_intro_plus_arc_diagram_glow
+      source: [12, 13]
+    - v3_p: 7
+      type: policy2_body_three_layer_card_grid
+      source: [14, 15, 16]
+    - v3_p: 8
+      type: policy3_intro_plus_world_map_plus_2panel
+      source: [17, 18, 19]
+    - v3_p: 9
+      type: k_industry_breakwater_5card_3plus2
+      source: [20]
+    - v3_p: 10
+      type: closing_assembly_plus_quote_strip
+      source: [21, 22]
+differentiation:
+  - >-
+    vs baseline 정부 청색 PPT: 단조 청 단색이 아닌 네이비 단일 계열의
+    풍부한 톤(#001838~#003070 + #0066CC~#00BCD4) + 캘리그래피 손글씨 슬로건이 차지하는
+    지배적 비중 + 차트·표 부재라는 3박자가 baseline과 즉시 구별된다.
+  - >-
+    vs 일반 한국 정부 부처 합동 보고서: 부처합동 워드마크를 의도적으로 안 쓰고,
+    태극 적색을 일절 안 쓰며(22장 중 0건), 정부 표준 폰트(KoPub) 대신
+    캘리그래피 손글씨가 시그니처라는 점이 차별.
+  - >-
+    vs ppt-msit/molit/moel 등 청색 부처 팩: 슬로건 풀스크린이 30% 비율을 차지하고,
+    카드 라벨이 청색 5단 그라데이션으로만 한정되며, K-산업방파제 5카드 3+2 비대칭과
+    한국·세계 지도 6핀 인포그래픽이 본 팩 고유의 다이어그램 양식.
+  - >-
+    v1과의 결정적 차이: v1은 (a) 부처합동 워드마크, (b) 4-키컨셉 2×2 그리드,
+    (c) 5층 사다리꼴 K-방파제, (d) 태극 청·적 듀얼톤, (e) 막대 차트를 가정했으나
+    실측 결과 5건 모두 본 PPT에 없다. v2는 실측 기반으로 5건 모두 폐기·재정의.
+  - >-
+    v2 → v3 차이: v2 시그니처 11종(적색0·캘리그래피·슬로건 풀스크린·5단 블루 칩·4-키컨셉0·
+    K-방파제 3+2·지도 6핀·호 글로우·차트0·breadcrumb·인용부호·단독 워드마크)을
+    LOCKED로 유지하면서 22장 PNG 재정독 + 페이지 1:1 mirror plan + visual_lexicon 11종 통합 +
+    22→10 페이지 압축 머지 규칙을 추가한 정밀화 버전. 페이지별 render note로
+    재현 정확도를 한 단계 끌어올림.
+chart_inventory:
+  has_chart: false
+  has_table: false
+  has_2x2_grid: false
+  fullscreen_slogan_count_in_original: 7
+  total_pages_in_original: 22
+  total_pages_v3: 10
+  red_color_count_in_original: 0
+  calligraphy_slogan_count_in_original: 18
+  joint_ministry_wordmark_count_in_original: 0
+diagram_kit:
+  - korea-map-6pin (한반도 일러스트 + 6 권역 핀 + 캡션 박스 + AI 한국제조 호 라벨바)
+  - world-map-6pin (라이트 청록 세계지도 + 6 국가/권역 핀 + 일본 #E91E63 핫핑크 단발 예외)
+  - arc-diagram-3node-with-center-glow (반원 호 + 3 노드 + 시안 #48F8F8 + 옐로그린 네온 #C8F018 듀얼 글로우)
+  - k-breakwater-5card-3plus2 (파도 배경 + 5카드 비대칭 + 좌측 5단 블루 컬러바 폭 4%)
+  - three-card-with-bottom-summary-strip (3 흰 카드 + 하단 풀폭 #0066CC 띠)
+  - five-label-list-with-photo (좌 60% 사진 + 우 40% 1×5 컬러 칩 리스트)
+  - seven-card-industry-mini-grid (7카드 × 13% 폭, 4+3 또는 가로 1×7)
+  - four-card-infrastructure-dark (1×4 다크 카드, 탄소 카드만 오렌지)
+  - two-panel-comparison (좌-우 비교/진단 + 하단 네이비 띠)
+  - big-number-token-card (차트 대체 56~96pt 숫자 토큰)
+  - isometric-3d-industrial-illustration (30도 부감 그린 산단)
+visual_lexicon_11:
+  - calligraphy_brush_korean_slogan
+  - policy_intro_quote_marks
+  - fullscreen_photo_navy_overlay
+  - color_label_chip_5step
+  - bottom_strip_summary
+  - korea_world_map_pin_infographic
+  - isometric_3d_industrial_illustration
+  - cyan_yellowgreen_glow_arc_diagram
+  - k_breakwater_3plus2_card_grid
+  - no_charts_no_tables
+  - ministry_watermark
+license: >-
+  본 팩이 배포하는 것은 디자인 명세와 토큰(prompt.md + tokens.json + meta.yaml)이며,
+  산업통상부 로고·문장·휘장의 사본을 포함하지 않는다. 워드마크는 위치·크기·색의 양식으로만
+  표현했으며 실제 사용 시 산업통상부 CI 가이드에 따른다.
+  원본 PPT의 캘리그래피 슬로건 문구(예: "지역에는 성장을, 기업에는 활력을",
+  "비상한 시기에는 비상한 대책으로", "K-산업방파제", "AI 대전환")는
+  정부 슬로건이므로 임의 변형·상업적 도용을 금지한다. 본 팩은 시각 양식만 재현한다.
+  추천 캘리그래피 폰트 중 유료(산돌·tvN·박용수체 등) 사용 시 각 폰트 라이선스를 별도 준수해야 한다.
+source_depth: full
+status: pass

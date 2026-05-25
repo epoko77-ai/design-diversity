@@ -1,0 +1,116 @@
+slug: ppt-mcst-k-culture
+display_name: 문체부 K-컬처 라벤더
+track: ppt
+family: korea-gov-kculture-lavender
+category: premium
+summary: "한국 문화체육관광부 K-컬처 업무보고 톤. 옅은 라벤더 강조점과 한지·한복 갈색 라벨, 풀-블리드 라벤더 베일이 깔린 섹션 표지, ▶▶ 갈매기 화살표 불릿이 시그니처 — 문화·예술·관광 정책 발표, K-콘텐츠 비전, 문화 산업 보고에 어울립니다."
+axes:
+  color: pastel-accent
+  type: mixed
+  layout: hybrid
+  space: medium
+  motion: static
+diagram_kit: "(a) 2x2 매트릭스 + 사이드 ①~⑩ 리스트 (p-07 = p02-agenda 시그니처) — 좌 60% 4분면 매트릭스 (K-컬처 산업 violet #3D4EAA / 문화창조 산업 lavender pastel #BCC4F2 / 동반성장 산업 lavender dark #444F85 / 토대구축 soft lavender #A0B2E3, 각 분면 radius 12px + 흰 또는 navy Bold 22pt 카테고리 라벨 + 본문 3줄) + 우 40% ①~⑩ 번호 리스트 (작은 흰 fill + 1pt navy outline 원형 + navy 600 14pt 한 줄 텍스트, 토대구축 ①~⑤ / 문화창조산업 ⑥ / 동반성장산업 ⑦~⑧ / K-컬처 ⑨~⑩) / (b) K-컬처 산업 재정의 트리 (p-13 = p06-diagram 시그니처) — 중앙 K-컬처 brown pill (radius 999px, fill #8F6F56, white Bold 24pt) + 좌측 둥근 navy outline 박스 '문화창조 산업' 안에 navy solid 3열 inner pill 가로 배치 (콘텐츠/문화/예술 각 radius 999px fill navy white Bold 16pt) + 중앙 brown pill 아래 K-푸드/K-패션/K-뷰티/K-관광 일러스트 클립 4개 (원형 마스크 브라운 자연 톤) + 우측 다양성 사람 flat 일러스트 3개 (Made With Korea / K-브랜드 호감도 상승 / 소비재 제조업 수출증가, 각 라벨 navy Bold 14pt). 전체 외곽 둥근 모서리 1.5pt navy stroke 컨테이너 radius 16px / (c) navy pill 헤더 카드 모듈 (본문 페이지 기본 모듈, p-03·p-04·p-05·p-06·p-10·p-11·p-15·p-16·p-23·p-24 mirror) — 각 카드 = 둥근 navy pill 헤더 (radius 999px fill #32355D white Bold 20pt height 7%) + 흰 본문 박스 (radius 8px height 55% padding 3% 미세 그림자) + 내부 dashed 1px #DDE2EE 가로 구분선 + navy Bold 17pt lead 한 줄 + muted #5C5C63 Regular 14pt 2~3 항목. 카드 안 사진 클립(원형 또는 radius 12px 사각 마스크)은 선택적. 2-up/3-up/4-up 그리드. 본문 페이지의 workhorse 모듈 / (d) ▶▶ 갈매기 화살표 내러티브 (p-19·p-21·p-22·p-04 mirror = p09-narrative 시그니처) — 좌 55% ▶▶ 두 갈매기 V 화살표 불릿 4~5줄 (navy #32355D 또는 lavender #7285E4, 본문보다 1.2배 큰 사이즈) + 우측 navy Bold 18pt 한 줄 메시지, 줄 사이 3% 세로 간격 + 우 45% 동반 비주얼 (세계지도 도트 네트워크 #67A0A6 / 야시장 사진 / 휴대폰 mockup + SNS 인플루언서 협업 / 작은 다이어그램) / (e) K-관광 3천만 라인차트 + KPI 카드 + 빨강 CTA (p-20 mirror = p05-chart 시그니처) — 좌 60% 라인 차트 (x축 '00 '09 '15 '24 '25 '30, KR 라인 navy solid 2px polyline 532/762/1323/1870/1637/3000, JP 라인 red #E33D3C dashed 2px polyline 476/870/1974/3687/4000/6000, '24~'30 미래 구간 yellow #EAE7A0 alpha 0.5 음영, '24와 '30 사이 격차에 빨강 X2 마커 2개, 데이터 라벨 직접 표기 navy/red 14pt) + 우 40% KPI 카드 (흰 fill radius 8px + navy pill 헤더 '2030년 3천만 목표 조기 달성' white 18pt + 본문 navy Bold 16pt 2줄 + 위쪽 빨강 ↑ 화살표) + 하단 빨강 CTA 버튼 (radius 999px pill fill #E33D3C white Bold 16pt '관광 정책 컨트롤 타워 강화'). 차트 격자선·테두리 박스·범례 없음. 섹션 디바이더 = 풀-블리드 K-컬처 실사 사진 + 라벤더 #BCC4F2 alpha 0.65 베일 + 좌상단 outline pill 'Ⅰ 10대 핵심과제' + 흰 Black 52pt H1. 표지·종결 = 좌우 sweep 그라데이션 또는 좌 1/2 텍스트 + 우 1/2 실사 풀브리드. 정부 엠블럼은 표지·종결만 명확, 본문은 우상단 1.5%×3%만."
+pages:
+- id: cover
+  label: 표지 (좌우 sweep 그라데이션 + 중앙 navy 제목 + 정부 엠블럼)
+  kind: cover
+  mirror_of:
+    - p-01
+- id: agenda
+  label: 목차 (2×2 매트릭스 + ①~⑩ 리스트)
+  kind: agenda
+  mirror_of:
+    - p-07
+- id: section-divider
+  label: 섹션 디바이더 (풀-블리드 K-컬처 사진 + 라벤더 베일)
+  kind: section-divider
+  mirror_of:
+    - p-08
+    - p-12
+    - p-14
+    - p-18
+- id: key-message
+  label: 핵심 메시지 (좌 텍스트 + 우 실사 split-photo)
+  kind: body
+  mirror_of:
+    - p-02
+    - p-25
+- id: chart
+  label: K-관광 3천만 라인차트 + KPI + 빨강 CTA (시그니처)
+  kind: chart
+  mirror_of:
+    - p-20
+- id: diagram
+  label: K-컬처 산업 재정의 트리 (브라운 pill + navy 3열 + 일러스트, 시그니처)
+  kind: diagram
+  mirror_of:
+    - p-13
+- id: cards
+  label: navy pill 헤더 카드 3-up
+  kind: kpi
+  mirror_of:
+    - p-03
+    - p-10
+- id: comparison
+  label: navy pill 헤더 카드 2-up 비교
+  kind: comparison
+  mirror_of:
+    - p-05
+    - p-06
+    - p-11
+    - p-15
+    - p-16
+- id: narrative
+  label: ▶▶ 갈매기 화살표 내러티브 + 우측 비주얼
+  kind: body
+  mirror_of:
+    - p-19
+    - p-21
+    - p-22
+    - p-04
+- id: closing
+  label: 종결 (좌 마감 카피 + 우 실사 풀브리드 + 좌하단 엠블럼)
+  kind: closing
+  mirror_of:
+    - p-25
+    - p-02
+signature_motifs:
+- rank: 1
+  name: 라벤더 인디케이터 #7285E4 (시그니처 1순위)
+  hex: "#7285E4"
+  where: 페이지 상단 이브라우 좌측 점·막대 한정. 본문 페이지 의무 1회. 표지·디바이더·종결 제외.
+  uniqueness: 다른 부처(기재부 노랑 형광·산자부 빨강·과기부 진청)가 빨강·주황·노랑을 시그니처로 쓸 때 문체부는 라벤더-퍼플 한 색으로 문화·예술 감성을 표현.
+- rank: 2
+  name: K-컬처 브라운 pill #8F6F56 (시그니처 2순위)
+  hex: "#8F6F56"
+  where: p-13 K-컬처 산업 재정의 다이어그램 중앙 라벨 한정. K-푸드/K-패션/K-뷰티/K-관광 일러스트 자연 톤.
+  uniqueness: 한지·한복·전통의 자연 톤을 정책 라벨로 코드화 — 한국 문화 정체성을 색으로 표현.
+- rank: 3
+  name: Ⅰ~Ⅳ 풀-블리드 + 라벤더 베일 디바이더
+  hex: "#BCC4F2"
+  where: p-08·p-12·p-14·p-18 네 곳. K-컬처 실사 사진 풀-블리드 + 라벤더 #BCC4F2 alpha 0.6~0.7 반투명 베일.
+  uniqueness: K-컬처 실사 위에 라벤더 반투명 베일을 씌워 진중함 + 문화 감성 동시 충족. 4회 반복으로 섹션 리듬 형성.
+- rank: 4
+  name: ▶▶ 갈매기 화살표 불릿
+  hex: "#32355D"
+  where: p-04·p-19·p-21·p-22·p-24 다섯 곳. 본문 좌측 4~5줄 핵심 메시지 좌측 정렬.
+  uniqueness: 일반 ●▶■ 대신 두 갈매기 V를 좌측에 두어 진행·전환 의미를 비주얼화. 다섯 페이지에서 일관 사용.
+- rank: 5
+  name: K-관광 3천만 통합 차트 (5요소 결합)
+  hex: "#E33D3C / #EAE7A0 / #32355D"
+  where: p-20 한 페이지에 집약. 라인 차트(KR navy/JP red dashed) + 미래 음영 + X2 마커 + KPI 카드 + 빨강 CTA 버튼.
+  uniqueness: 라인 차트 + 미래 노란 음영 + X2 빨강 격차 마커 + 우측 KPI 카드 + 위쪽 ↑ 화살표 + 빨강 CTA 5요소를 한 슬라이드에 정밀 결합 — 정부 PPT에서 보기 드문 다요소 비주얼 통합.
+sources:
+- title: 문화체육관광부 2026년 업무보고 발표자료
+  url: https://www.korea.kr/common/download.do?fileId=198301510
+  type: official
+- title: 정책브리핑 — 문화체육관광부 2026년 업무계획 (대통령 업무보고)
+  url: https://www.korea.kr/news/policyBriefingView.do?newsId=156672398
+  type: official
+- title: 문화체육관광부 공식 누리집
+  url: https://www.mcst.go.kr
+  type: official
+license: 원자산은 각 출처 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. 정부 로고·심볼은 직접 사용하지 않으며 워드마크는 텍스트 라인으로만 표기한다. 폰트는 오픈 폰트(Pretendard, Noto Sans KR)로 대체 가능하며 원본은 Pretendard / Apple SD Gothic Neo / Malgun Gothic 환경에서 검증.
+source_depth: full
+status: pass

@@ -1,0 +1,193 @@
+slug: ppt-hyundai-cinematic-investor-day
+display_name: 현대차 시네마틱 인베스터데이
+track: ppt
+family: hyundai-cinematic
+category: premium
+version: v3
+v3_focus: "v2 색·타입·시그니처 1픽셀 변경 없이 계승 + 10 슬라이드 카테고리 × 원본 71페이지 1:1 mirror 매핑 + 24 시각 어휘 사전. 어느 슬라이드를 만들 때 원본 어느 페이지를 그대로 따라야 하는지 page mirror plan 표가 SSOT."
+summary: "현대차 인베스터데이처럼 다크 네이비 무대에 미래적 사이안 라인이 흐르는 컨퍼런스 키노트 톤. 거대한 흰색 숫자, ∞ 모양 컨셉 다이어그램, 7장 카드에 큰 사이안 숫자가 박힌 양식 — AI·EV·미래 모빌리티·신사업 발표, 테크 컨퍼런스 키노트에 어울립니다."
+axes:
+  color: dark
+  type: heavy-display
+  layout: full-bleed
+  space: balanced
+  motion: subtle
+diagram_kit: "Chevron motif = 중첩 우향 > 3~5 스택 (cover/closing LEFT 5-stack / 단어1개 chapter RIGHT 4-stack / 다단어 chapter RIGHT 2-3 arc + LEFT starburst) + 흰-사이안 V-vertex 글로우 / HYUNDAI WAY ∞ (p-07 deck 단 1번) = 좌 lobe 사이안-블루 그라디언트 #0060A8→#002C5F Mobility + 우 lobe teal #189078→#0E5645 Energy + 교차점 위 사이안 'Hyundai Dynamic Capabilities' / Chevron-tabbed 단계 헤더 (p-48/p-52) = trapezoidal chevron 탭 행 active 1개만 #66FFFF / 서브챕터 좌 50% 분할 패널 (p-17) / 3-원형 배지 (p-59/p-69) = #04599D fill + 2px #66FFFF outer ring, NO per-badge color / 카드 enumerator 그리드 (p-64) = 4+3 비대칭 7카드, 거대 사이안 SOLID 숫자 01~07 80-100pt / KPI 히어로 (p-18) = 거대 흰 numeral 140-160pt + 단위 45-55pt + 3-pill row + 하단 panoramic / narrative 4-card stack + hero (p-09) = 좌 60% 정확히 4 카드 + 우 40% 산업 클로즈업 / 시계열 3-col + powertrain 배지 + 직선 화살표 (p-65) / 밸류체인 3-col table + chevron-tab 헤더 horizontal hairline only (p-52) / 글로벌 지도 (p-22) = 다크 세계지도 + 국기 callout / SDV hub-spoke (p-35) = 중앙 차량 + 곡선 cyan 화살표 + HW/SW/Service 3-tier / 차트 (p-48 라인, p-60 stacked bar tonal, p-16 도넛 isometric, p-10 라인+region paired bar) = 단일 cyan-blue family tonal layering, top #66FFFF·mid #00D3FD·base #0060A8 NOT 무지개"
+page_mirror_plan:
+  - category: cover
+    primary_mirror: p-01
+    mode: A
+    description: "좌측 5-stack chevron + 우측 흰색 '2024 CEO Investor Day' (헤더 마크·페이지 번호·사진 0)"
+  - category: agenda
+    primary_mirror: p-03
+    secondary_mirror: p-26
+    mode: B
+    description: "좌 35% pill stack + 우 60% 키 메시지 + 차량 underlay (본문 mode B, 챕터 슬레이트 양식 금지)"
+  - category: section
+    primary_mirror: p-02
+    secondary_mirror: p-08
+    tertiary_mirror: p-17
+    mode: A
+    description: "우측 chevron + 사이안 영문 타이틀 #66FFFF (단어 1개 ALL CAPS / 다단어 Title Case 2행) + (다단어 시) 한글 부제. p-17 sub-chapter는 좌50% 사진 + 우50% 다크 패널 Mode C"
+  - category: key-message
+    primary_mirror: p-18
+    secondary_mirror: p-05
+    mode: B
+    description: "거대 흰색 KPI 140-160pt + 단위 45-55pt + 3-pill row + 하단 panoramic 차량 사진"
+  - category: chart
+    primary_mirror: p-48
+    secondary_mirror_bar: p-60
+    tertiary_mirror_donut: p-16
+    quaternary_mirror_line_region: p-10
+    mode: B
+    description: "라인 차트 + chevron-tab 단계 band (수소 시장 양식). 사이안 단색 패밀리 tonal layering만"
+  - category: diagram
+    primary_mirror: p-07
+    secondary_mirror_hub: p-35
+    tertiary_mirror_map: p-22
+    mode: B
+    description: "HYUNDAI WAY ∞ 인피니티 (deck 전체 단 1번 — high-concept hero). SDV hub-spoke 또는 글로벌 지도 secondary"
+  - category: cards
+    primary_mirror: p-64
+    secondary_mirror_3col: p-26
+    tertiary_mirror_4col: p-04
+    quaternary_mirror_pill: "p-18 lower"
+    mode: B
+    description: "4+3 비대칭 7카드 + 거대 사이안 SOLID enumerator 01~07 (80-100pt). 카드별 다른색 금지"
+  - category: comparison
+    primary_mirror: p-52
+    secondary_mirror_period: p-65
+    tertiary_mirror_hub: p-67
+    mode: B
+    description: "밸류체인 3-col 테이블 + chevron-tab 헤더 (Upstream/Midstream/Downstream). horizontal hairline only, vertical column rule 금지"
+  - category: narrative
+    primary_mirror: p-09
+    secondary_mirror: p-15
+    mode: B
+    description: "좌 60% 정확히 4-card stack + 우 40% 산업 사진 클로즈업 hero (panoramic 아님)"
+  - category: closing
+    primary_mirror: p-71
+    secondary_mirror_brand_recap: p-69
+    tertiary_mirror_values: p-70
+    mode: A
+    description: "좌측 5-stack chevron 미러 + 우측 'THANK YOU' 흰색 영문 (헤더 마크·페이지 번호 없음, 표지와 bookend 대칭)"
+visual_vocabulary_count: 24
+visual_vocabulary_anchors:
+  - chevron_5stack_left: [p-01, p-71]
+  - chevron_4stack_right: [p-02, p-58]
+  - chevron_3arc_right_plus_left_starburst: [p-08, p-33, p-45]
+  - chevron_miniature_header_mark: "all Mode B"
+  - infinity_two_lobe: p-07
+  - stage_chevron_tab_band: [p-48, p-52]
+  - kpi_hero_giant_white_plus_unit: p-18
+  - pill_row_3to4_short_label: "p-18 lower"
+  - card_grid_4plus3_asymmetric: p-64
+  - card_3col_icon_bullet: p-26
+  - card_4col_kpi_band: p-04
+  - narrative_4card_stack_plus_hero: p-09
+  - subchapter_50_50_photo_panel: p-17
+  - line_chart_cyan_with_stage_band: p-48
+  - stacked_bar_3tone_cyan: p-60
+  - donut_trio_isometric_stairs: p-16
+  - global_map_dark_with_callouts: p-22
+  - hub_spoke_vehicle_center_3tier_bottom: p-35
+  - three_circle_badge_invest_return_share: p-59
+  - central_hub_plus_radiating_callouts: p-67
+  - period_timeline_3col_with_badges_and_arrow: p-65
+  - value_chain_3col_table_chevron_header: p-52
+  - thank_you_cover_mirror: p-71
+  - brand_recap_3badge_circle: p-69
+  - values_4badge_radial_gradient: p-70
+pages:
+  - id: cover
+    mirror: p-01
+    mode: A
+    label: "표지 — 좌측 5-stack chevron + 영문 '2024 CEO Investor Day' 흰색 (페이지 번호·헤더 마크 없음)"
+    kind: cover
+  - id: agenda
+    mirror: p-03
+    mode: B
+    label: "아젠다 — 좌 35% pill stack + 우 60% 키 메시지 + 차량 underlay (본문 mode B)"
+    kind: agenda
+  - id: section
+    mirror: p-02
+    mode: A
+    label: "메인 챕터 슬레이트 — 우측 4-stack chevron + 사이안 영문 타이틀 #66FFFF + (다단어 시) 한글 부제. p-17 sub-chapter Mode C secondary"
+    kind: section-divider
+  - id: key-message
+    mirror: p-18
+    mode: B
+    label: "거대 KPI 히어로 — 흰색 140-160pt + 단위 + 3-pill row + 하단 panoramic 차량 사진 (p-18 양식)"
+    kind: key-message
+  - id: chart
+    mirror: p-48
+    mode: B
+    label: "라인 차트 + Chevron-tabbed 단계 헤더 (초기/성장기/성숙기) — 사이안 단색 패밀리 tonal, Source 캡션 의무. stacked bar(p-60)·도넛 trio(p-16)·라인+region(p-10) secondary"
+    kind: chart
+  - id: diagram
+    mirror: p-07
+    mode: B
+    label: "HYUNDAI WAY ∞ 인피니티 다이어그램 — 컨셉 아키텍처 hero (deck 전체 단 1번). SDV hub-spoke(p-35)·글로벌 지도(p-22) secondary"
+    kind: diagram
+  - id: cards
+    mirror: p-64
+    mode: B
+    label: "카드 enumerator 그리드 — 4+3 비대칭 7카드, 거대 사이안 SOLID 숫자 01~07 (80-100pt #66FFFF). 3-col icon+bullet(p-26)·4-col KPI(p-04)·pill row(p-18) secondary"
+    kind: cards
+  - id: comparison
+    mirror: p-52
+    mode: B
+    label: "밸류체인 3-col 테이블 + chevron-tab 헤더 (Upstream/Midstream/Downstream) — horizontal hairline only. 시계열 3-col(p-65)·중앙 hub(p-67) secondary"
+    kind: comparison
+  - id: narrative
+    mirror: p-09
+    mode: B
+    label: "narrative — 좌 60% 정확히 4-card stack + 우 40% 산업 사진 클로즈업 hero. 중앙 IONIQ+UNIQUE BRAND(p-15) secondary"
+    kind: body
+  - id: closing
+    mirror: p-71
+    mode: A
+    label: "클로징 — 좌측 5-stack chevron 미러 + 영문 'THANK YOU' 흰색 72-80pt (표지와 bookend, 헤더 마크·페이지 번호 없음). 3-badge recap(p-69)·4-badge values(p-70) secondary"
+    kind: closing
+sources:
+  - title: 현대자동차 2024 CEO Investor Day 한국어 발표자료 (71페이지 IR 덱)
+    url: https://files-scs.pstatic.net/2024/08/28/iIJwg6q6BL/2024-ceo-investor-day-pt-ko.pdf
+    type: primary-deck
+  - title: v3 visual_spec (10 카테고리 × 71페이지 1:1 mirror plan + 24 시각 어휘 사전)
+    path: _workspace/premium10v3/visual_spec/hyundai.json
+    type: derived-spec
+  - title: v3 분석 노트 (10 카테고리 mirror 디테일 + 24 시각 어휘 표)
+    path: _workspace/premium10v3/visual_spec/hyundai_notes.md
+    type: derived-notes
+v3_pages_directly_inspected:
+  - p-01
+  - p-02
+  - p-03
+  - p-04
+  - p-05
+  - p-07
+  - p-08
+  - p-09
+  - p-10
+  - p-15
+  - p-16
+  - p-17
+  - p-18
+  - p-22
+  - p-26
+  - p-33
+  - p-35
+  - p-48
+  - p-52
+  - p-58
+  - p-59
+  - p-60
+  - p-64
+  - p-65
+  - p-67
+  - p-69
+  - p-70
+  - p-71
+license: "원자산은 현대자동차의 저작권을 따름. 본 팩이 배포하는 것은 시각 연출 원리 명세 + page mirror plan이며 현대자동차의 로고·차량 이미지·Hyundai Sans 폰트·독점 자산 사본이 아니다. 폰트는 오픈 라이선스 대체(Inter Bold·Manrope ExtraBold / 한글 Pretendard Black·Noto Sans KR Black)를 지정한다."
+source_depth: full
+status: pass
