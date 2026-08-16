@@ -1,11 +1,11 @@
 {
   "slug": "ppt-shinhan-dense-finance-blue",
-  "rendered_at": "2026-08-16T14:47:22Z",
+  "rendered_at": "2026-08-17T02:10:00Z",
   "source_hash": {
     "prompt.md": "sha256:dcd63913f4d74be4bc3589cc003d7d351b4f506276ac87043a34fcf99e84a273",
     "tokens.json": "sha256:f7a5fa40c11a985a5a73c53c1a681f6aa9aaf33a2922571cb702df478a2e2692"
   },
-  "spec_version": "v3-2026-08-16",
+  "spec_version": "v3.1-2026-08-16",
   "canvas": {
     "declared": "16:9",
     "actual_px": [2560, 1440],
@@ -26,9 +26,12 @@
   "font_fallbacks": [],
   "render_notes": [
     "블라인드 렌더: prompt.md·tokens.json만 입력으로 사용, 원본 pages_src/visual_spec/transform_contract는 열람하지 않음",
+    "1차 렌더 도중 curator가 prompt.md/tokens.json을 v3(v3-2026-08-16) → v3.1(v3.1-2026-08-16)로 갱신 — 렌더 신선도 점검에서 발견, v3.1 전문을 재대조해 전면 재작업 후 재렌더함(이 매니페스트는 v3.1 최종본 기준)",
     "Pretendard 로컬 OTF(Light/Regular/Medium/SemiBold/Bold) @font-face 임베딩, 두부(tofu) 0건",
-    "발견: 인라인 <svg><text>에 전역 font-variant-numeric:tabular-nums가 상속되면 이 Chromium 빌드에서 작은 크기의 한글 자모 결합이 깨짐(예: '말'→'밀'/'믈' 오독) — 모든 SVG 텍스트 라벨에 font-variant-numeric:normal 명시로 수정",
-    "워터폴/브리지 차트는 절대 0 기준 대신 floor-relative 스케일 적용(웨이브컷 모티프의 근거와 일치) — 큰 총계 대비 작은 증감분이 시각적으로 사라지는 문제 수정",
-    "여러 차트에서 범례·콜아웃 박스가 카드 경계를 벗어나거나 축 라벨과 겹치는 문제 발견 후 재배치"
+    "발견·수정: 인라인 <svg><text>에 전역 font-variant-numeric:tabular-nums가 상속되면 이 Chromium 빌드에서 작은 크기의 한글 자모 결합이 깨짐(예: '말'→'밀'/'믈' 오독) — 모든 SVG 텍스트 라벨에 font-variant-numeric:normal 명시로 수정",
+    "발견·수정: 워터폴/브리지 차트가 절대 0 기준으로 스케일링되어 큰 총계 대비 작은 증감분이 시각적으로 사라짐 — floor-relative 스케일로 교체(웨이브컷 모티프의 존재 이유와 일치)",
+    "발견·수정: 근접한 시작·끝 총계 값에서 웨이브컷과 바 내부 라벨이 겹치는 문제 — bottom_reserve로 라벨 배치 공간을 분리, 너무 얇으면 스펙이 명시한 예외대로 바 외부 다크 라벨로 폴백",
+    "v3.1 반영: 표 2단 스팬 헤더(절대값+비율 컬럼 묶음), 비율 지표 행의 해칭을 절대값 컬럼→비율(%) 컬럼으로 이동, 워터폴 라벨을 바 위 컬러 텍스트→바 내부 흰색으로 교체, 브리지 전 차트에 ■증가■감소■총계 범례 추가, 콜아웃을 대상에 물리 연결(꺾인선+화살촉), 체크박스에 체크 글리프, Target 화살표를 대각선→수직으로, 사인파 웨이브컷(Q/T 베지어)으로 지그재그 대체, 표지 부제 40pt→22pt, 02페이지 섹션 표제 제거 + KPI 우측정렬 + 수치 검산(03/04/07페이지와 교차 일치), 09페이지 계획 컬럼 솔리드 블루 채움",
+    "CET1 브리지 산술 오류 발견·수정: comps 합이 시작·끝 총계와 불일치했던 것을 재계산해 정확히 일치시킴(13.62+0.26-0.32=13.56)"
   ]
 }
