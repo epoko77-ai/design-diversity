@@ -1,0 +1,36 @@
+{
+  "slug": "ppt-samsungbio-navy-lavender-gradient",
+  "rendered_at": "2026-08-16T00:00:00Z",
+  "source_hash": {
+    "prompt.md": "sha256:420ab004a4ff5e5332434c9171157bee5bbeb86c9e56c629c8f78035140ca9b9",
+    "tokens.json": "sha256:4e964fb5daa3b4091d989aa19fc9c37945c052d056a0c4e9488d583acd4190fc"
+  },
+  "spec_version": "v3-2026-08-16",
+  "canvas": { "declared": "16:9", "actual_px": [2560, 1440], "ratio": 1.7778 },
+  "pages": [
+    { "id": "orbit-cover", "file": "pages/01-orbit-cover.png", "px": [2560, 1440] },
+    { "id": "dark-statement", "file": "pages/02-dark-statement.png", "px": [2560, 1440] },
+    { "id": "mirror-hub-quadrant", "file": "pages/03-mirror-hub-quadrant.png", "px": [2560, 1440] },
+    { "id": "sphere-divider", "file": "pages/04-sphere-divider.png", "px": [2560, 1440] },
+    { "id": "label-only-combo", "file": "pages/05-label-only-combo.png", "px": [2560, 1440] },
+    { "id": "brand-triple-bars", "file": "pages/06-brand-triple-bars.png", "px": [2560, 1440] },
+    { "id": "annotated-outlook", "file": "pages/07-annotated-outlook.png", "px": [2560, 1440] },
+    { "id": "map-photo-icons", "file": "pages/08-map-photo-icons.png", "px": [2560, 1440] },
+    { "id": "fade-arrow-gantt", "file": "pages/09-fade-arrow-gantt.png", "px": [2560, 1440] },
+    { "id": "periwinkle-table-ratio", "file": "pages/10-periwinkle-table-ratio.png", "px": [2560, 1440] }
+  ],
+  "font_fallbacks": [],
+  "render_source": "_workspace/premium_v4/render/ppt-samsungbio-navy-lavender-gradient.html",
+  "render_method": "single HTML file, 10 stacked 960x540 CSS-px page sections (box-sizing:border-box), Playwright chromium screenshot per-section at deviceScaleFactor 2.66667 (2560/960) for exact 2560x1440 PNG output per page. Charts/diagrams/orbit-arcs/hatch/particles rendered as inline SVG at spec-derived coordinates. word-break:keep-all and overflow-wrap:break-word not used anywhere (global ban honored).",
+  "blind_render": true,
+  "blind_render_note": "Rendered from prompt.md + tokens.json only, per sample-rendering skill's 블라인드 재생 원칙. _workspace/premium_v4/pages_src/, visual_spec/, transform_contract/, and other packs' render HTML were never opened. meta.yaml was not consulted for visual content, only page id/order/filename mapping was cross-checked against the naming the requester specified.",
+  "content_fixture": "가상 바이오 CDMO 기업 'Northwind Bio'의 2026년 1분기 실적발표 더미 콘텐츠. 실존 기업명·상표·시설 사진·평가기관 로고 미사용 — 사진 슬롯은 중립 추상 그라디언트 플레이스홀더, 워드마크는 'NORTHWIND BIO' 텍스트로 대체.",
+  "review_fixes_applied": [
+    "p03: 순환 화살표 우측 끝점이 '영업이익률 40.2%' 본문 텍스트와 겹쳐 화살촉 위치를 카드 상단 여백 구간(y≈250)으로 재조정",
+    "p05: 분기 패널 EBITDA 최종 포인트(26.1Q) 라벨이 누락되어 마커 아래쪽에 '590' 라벨 추가",
+    "p06: 3개 서브차트 모두 최신(당해) 막대 라벨이 음수 y좌표로 배치되어 SVG 상단에서 잘림 — 막대 높이 스케일을 축소해 전 라벨이 양수 y 안전 영역에 들어오도록 재계산",
+    "p08: '송도' 사이트 핀+라벨이 원형 사진 플레이스홀더 아래에 완전히 가려져 좌표를 지도 우측 여백으로 이동",
+    "p10: 두 비율 라인차트 최종 포인트 라벨('40.2%','44.9%')과 X축 마지막 라벨('26·1Q')이 SVG 우측/상단 경계에서 잘림 — viewBox 여백 확대 및 EBITDA 차트 포인트 y좌표 하향 조정"
+  ],
+  "validation": "python3 scripts/validate_pack.py ppt-samsungbio-navy-lavender-gradient"
+}

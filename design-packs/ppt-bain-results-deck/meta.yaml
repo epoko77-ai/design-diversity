@@ -13,7 +13,7 @@ axes:
   motion: none
 diagram_kit: 프로세스=거대 단계 번호 + 가는 화살표(박스 없음) / 타임라인=수평 축 + 무채색 마일스톤(결과 시점만 레드 + 거대 메트릭)
   / 비교=before/after 중심선 좌우 칼럼 + 레드 델타 삼각형 / 매트릭스=2×2 십자축 + 동일 크기 점 / 계층=중앙 정렬 폭 비례
-  적층 / KPI=보더 없는 카드 + 100~120pt 거대 수치 / 차트=무채 + 레드 한 점, 추이 라인·도넛(직접 라벨링·출처 각주)
+  적층 / KPI=보더 없는 130pt 영웅 메트릭 1점 + 28pt 보조 카드 그리드 / 차트=무채 + 레드 한 점, 추이 라인·도넛(직접 라벨링·출처 각주)
 pages:
 - id: cover
   label: 표지
@@ -45,5 +45,7 @@ sources:
   type: article
 license: 원자산은 각 출처 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. 브랜드 영감은 brand_inspiration로만
   참고하며 독점 폰트는 오픈 폰트로 대체한다.
-source_depth: full
+reference_mode: style_synthesis
+source_depth: partial
+spec_version: v3.1-2026-08-16
 status: pass

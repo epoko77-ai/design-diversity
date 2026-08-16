@@ -3,6 +3,7 @@ display_name: 문체부 K-컬처 라벤더
 track: ppt
 family: korea-gov-kculture-lavender
 category: premium
+spec_version: v3.1-2026-08-16
 summary: "한국 문화체육관광부 K-컬처 업무보고 톤. 옅은 라벤더 강조점과 한지·한복 갈색 라벨, 풀-블리드 라벤더 베일이 깔린 섹션 표지, ▶▶ 갈매기 화살표 불릿이 시그니처 — 문화·예술·관광 정책 발표, K-콘텐츠 비전, 문화 산업 보고에 어울립니다."
 axes:
   color: pastel-accent
@@ -22,7 +23,7 @@ pages:
   kind: agenda
   mirror_of:
     - p-07
-- id: section-divider
+- id: section
   label: 섹션 디바이더 (풀-블리드 K-컬처 사진 + 라벤더 베일)
   kind: section-divider
   mirror_of:

@@ -38,7 +38,22 @@ diversity-qa가 시각 대조하므로 모호어는 통과하지 못한다. CSS�
 | "카드 디자인" | "radius 0, 보더 1px solid text색, 그림자 없음, 호버 시 배경 반전" |
 | "강조 색" | "강조색 1개, CTA·링크에만, 면적 5% 이하" |
 
-## 팩 정체성을 과장하라
+## 레퍼런스 모드에서는 원본이 이 스킬보다 우선한다
+
+이 스킬의 값(콘텐츠 폭 1100px, 본문 16~18px, 전환 200ms 등)은 **원본이 없을 때의 일반 권고**다. `exact_document`·`official_system`·`historical_canon` 팩에서는 근거 인벤토리에서 관찰된 값이 우선한다. 예외는 접근성(WCAG AA)·권리(유료 폰트·상표)뿐이며, 벗어날 때는 `transform_contract`에 `adapt`로 기록한다.
+
+웹 레퍼런스는 PPT와 달리 **상태와 뷰포트가 있다.** 관찰 기록에 다음을 반드시 포함한다 — 이것이 없으면 정적 스크린샷만으로 모션·인터랙션을 판정하게 되고, 그 판정은 근거가 없다.
+
+```json
+{ "screen": "hero", "viewport": 1280, "state": "default",
+  "fold": "above", "observed": { "...": "..." } }
+```
+
+뷰포트는 최소 375 / 768 / 1280 세 폭, 상태는 `default` / `hover` / `focus`를 각각 기록한다. 캡처하지 못한 상태는 `unobserved`로 두고 팩에서 그 상태를 지시하지 않는다.
+
+## 팩 정체성을 과장하라 (style_synthesis 전용)
+
+**`reference_mode: style_synthesis`에서만** 복수 출처가 공통으로 지지하는 축을 수치화해 또렷하게 만든다. `exact_document`·`official_system`·`historical_canon`에서는 근거 인벤토리와 변환 계약을 넘는 과장·새 모티프를 금지한다 — 없던 것을 더하면 fidelity F3(근거 정밀도)에서 반려된다.
 
 다양성이 목적이다. 각 팩은 자기 스타일을 끝까지 민다:
 - 스위스 미니멀 — 헤어라인 보더, 무채색, 엄격한 그리드, 모션 거의 없음.

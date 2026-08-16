@@ -39,7 +39,7 @@ README·CONTRIBUTING에 명시할 경계: "각 팩은 공개 디자인 시스템
 
 - **스택:** Next.js 15 App Router + TypeScript. 데이터는 빌드 타임에 `catalog.json` + `design-packs/` 폴더에서 정적 생성(SSG). 런타임 DB 없음.
 - **핵심 동선 = 복사.** 방문자가 (1) 팩 그리드 갤러리를 훑고 (2) 트랙(PPT/웹)·스타일 축으로 필터하고 (3) 팩 상세에서 `prompt.md`를 **원클릭 복사**한다. 복사 버튼이 가장 눈에 띄어야 한다.
-- **팩 카드:** `preview.png` 썸네일 + display_name + 트랙 배지 + axes 태그. `status`가 `pass`가 아니면 `draft` 배지를 투명하게 노출.
+- **팩 카드:** `preview.png` 썸네일 + display_name + 트랙 배지 + axes 태그. production 카탈로그의 입력은 `publishable` 팩으로 **필터링**한다 — 비통과 팩에 배지를 달아 노출하지 않는다.
 - **팩 상세:** 큰 preview, prompt.md 전문(복사 버튼), tokens.json 토큰 시각화(색 스와치 등), meta.yaml 출처.
 - **사이트 자신이 좋은 디자인이어야** 설득력이 있다. 절제된 타이포·명확한 그리드·일관 색. `frontend-design` 스킬의 미감 원칙을 참고하되 카탈로그는 중립적 톤으로(특정 팩 스타일에 치우치지 않게).
 - 반응형(모바일~데스크탑), 다크모드는 선택.
@@ -52,6 +52,18 @@ README·CONTRIBUTING에 명시할 경계: "각 팩은 공개 디자인 시스템
 4. **production 배포는 사용자 명시 승인 후에만.** 승인 전까지 preview에 머문다.
 5. GitHub 공개는 사용자가 원격 레포를 지정·승인한 뒤 수행한다.
 
+## 발행 게이트 — `status`를 사람이 쓰지 않는다
+
+카탈로그에 나가는 `status`는 손으로 적는 문자열이 아니라 게이트 결과에서 **생성**된다.
+
+`publishable`의 정의와 모드별 필요 게이트는 **`design-pack-schema`의 상태식 절이 SSOT**다. 여기에 식을 복제하지 않는다 — 복제하면 한쪽만 고쳐져 갈라진다.
+
+- `status: pass`인 팩만 production 카탈로그에 포함한다.
+- `needs_review` · `reject` 팩은 **draft 배지로 내보내지 않는다.** 검증에 실패한 팩을 공개하는 것이 카탈로그 신뢰도를 갉아먹는다. 내부 검토 목록으로 분리한다.
+- 게이트 산출물(`fidelity_qa/` · `craft_qa/` · `render-manifest.json`)이 없으면 빌드를 **실패시킨다** — 조용히 통과시키지 않는다.
+
+> v2까지는 "2회 반려 후 escalate → draft 배지로 발행"이었다. 이 규칙은 폐기한다.
+
 ## 자체 QA 체크리스트
 
 배포 보고 전 직접 확인:
@@ -61,7 +73,7 @@ README·CONTRIBUTING에 명시할 경계: "각 팩은 공개 디자인 시스템
 - [ ] 팩 상세의 prompt.md 복사 버튼이 실제로 클립보드에 복사
 - [ ] 모바일 폭(375px)에서 레이아웃 깨짐 없음
 - [ ] `catalog.json`의 팩 수 = `design-packs/` 폴더 수
-- [ ] `draft`/`escalate`/`render_failed` 상태 팩이 배지로 정직하게 표시됨
+- [ ] production 데이터에 `needs_review`·`reject` 팩이 **포함되지 않음** (내부 검토 목록에만 존재)
 
 ## 재실행
 

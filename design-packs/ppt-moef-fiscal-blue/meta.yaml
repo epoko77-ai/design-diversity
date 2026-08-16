@@ -3,6 +3,7 @@ display_name: 기획재정부 시네마틱 브리핑
 track: ppt
 family: korea-gov-cinematic-briefing
 category: premium
+spec_version: v3.1-2026-08-16
 version: v3
 pack_id: moef-2026-briefing-v3
 summary: "한국 기획재정부 업무보고처럼 다크 네이비 표지·구분면과 오프화이트 본문이 교차하는 시네마틱 정부 브리핑 톤. 매 페이지마다 핵심 단어 1~3글자에 노란 형광펜을 그어 강조하고, 가로 화살표 리본·라인 차트·거대 원 다이어그램이 시그니처 — 정부 거시 정책 발표, 경제 전망, 예산 브리핑에 어울립니다."
@@ -61,7 +62,7 @@ pages:
   label: 목차 (p-02 mirror, 좌 큰 '목 차' + 우 4 부처 sky→purple gradient bullets)
   kind: agenda
   mirror: p-02
-- id: section-divider
+- id: section
   label: 섹션 표지 (p-03 mirror, Ⅰ. 2줄 센터 정렬 + 라디얼 스포트라이트)
   kind: section-divider
   mirror: p-03

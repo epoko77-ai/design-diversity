@@ -10,6 +10,44 @@ description: >-
 
 diversity-qa가 팩이 "실제로 baseline과 다른 결과를 내는가"를 판정할 때 따르는 방법.
 
+## 이 스킬의 경계 (먼저 읽는다)
+
+**이 스킬은 원문 충실도(fidelity)와 세련미(craft)를 판정하지 않는다.**
+
+- 원본 레퍼런스 대비 판정 → `fidelity-scoring`
+- 렌더 품질·정렬·대비·규격 → `craft-scoring`
+- 이 스킬 → **baseline 대비 차별성 + 팩 간 중복**만
+
+세 점수는 **합산하지 않는다.** 다양성이 높다고 충실도 미달을 상쇄할 수 없고, 그 반대도 아니다. 어느 게이트가 필요한지와 `status` 도출 규칙은 `design-pack-schema`의 상태식 절이 SSOT다 — 여기에 복제하지 않는다.
+
+여기서 쓰는 5축(color/type/layout/space/shape·motion)은 `meta.yaml`이 **표방한** 스타일과의 일치를 본다. 표방을 쓴 사람이 팩을 쓴 사람과 같으므로, 이 축만으로는 "원본을 닮았는가"를 판정할 수 없다.
+
+## 판정 어휘
+
+> `unreviewed` · `unverifiable` · `evidence_missing`은 `pass`로 변환하지 않는다.
+> 필수 이미지를 직접 보지 못했으면 `needs_review`다.
+
+정량 지표는 정성 판정을 **보조**하지 실행되지 않은 정성 판정을 **대체**하지 않는다. 시간·이미지 열람 한도 부족은 통과 사유가 아니다. 실제로 `_workspace/13_qa_premium.json`은 이 루브릭에 없는 축(`baseline_score`·`detail_pages_score`)을 쓰고, 일부 팩을 직접 보지 못했다고 명시하면서 20팩 전원을 통과시켰다. 그것은 검증이 아니다.
+
+## `reference_mode`에 따라 반려의 의미가 다르다
+
+이 조항이 없어서 실제로 사고가 났다. diversity-qa가 `exact_document` 팩(HD현대)을 반려하며 **"원본에 없는 색을 본문에 넣어라"**고 지시했고, 그것은 그 덱의 `must_preserve` 시그니처(그래픽=그린 / 데이터=네이비 역할 분리)와 정면 충돌했다. curator가 거부하고 에스컬레이션한 것이 옳았다.
+
+| mode | 낮은 diversity 점수의 의미 | 올바른 조치 |
+|---|---|---|
+| `style_synthesis` | 팩이 스타일을 덜 밀어붙였다 | **재집필** — 축을 더 또렷하게 |
+| `exact_document` · `official_system` · `historical_canon` | **원본 자체가 baseline과 비슷하다** | **후보 교체** 또는 카탈로그 차원 판단 |
+
+**근거 트랙 팩에 "원본에 없는 것을 더해 점수를 올려라"라고 지시하지 않는다.** 그것은 fidelity F3(근거 정밀도)에서 반려될 지시이며, 이 프로젝트가 v1~v3에서 겪은 실패("원본과 다르다")를 반대 방향으로 반복하는 것이다.
+
+근거 트랙 팩이 이 게이트에서 미달하면 diversity-qa는 재집필을 지시하지 말고 **pack-architect에 에스컬레이션**한다. 판단은 셋 중 하나다 — (a) 후보를 교체한다, (b) 카탈로그 차원에서 다른 팩과 충분히 구별되면 통과시킨다, (c) 팩을 유지하되 카탈로그에서 그 유사성을 명시한다.
+
+또한 근거 트랙에서는 **baseline 대비 거리보다 팩 간 거리가 더 중요하다.** 원본이 흔한 기업 IR 톤이면 baseline과 닮는 것이 정상이고, 그때 물어야 할 것은 "카탈로그 안의 다른 팩과 구별되는가"다.
+
+## 판정 어휘 — enum
+
+`pass` · `needs_review` · `reject` 셋만 쓴다. `fail`·`escalate`·`draft`는 쓰지 않는다.
+
 ## 핵심: 두 종류의 실패를 모두 잡는다
 
 1. **차별성 실패** — 팩 적용본이 baseline과 너무 비슷하다. 팩이 스타일을 충분히 밀어붙이지 못함.
@@ -61,4 +99,4 @@ baseline.png와 팩 preview.png를 **함께 읽고**, 각 축을 0~4점으로 �
 
 ## 에스컬레이션
 
-같은 팩이 2회 반려 후에도 미달이면 `pass`로 강제하지 않는다. `escalate`로 표시해 사람 판단에 맡긴다 — catalog-publisher가 사이트에 `draft` 배지로 노출한다.
+같은 팩이 2회 반려 후에도 미달이면 `pass`로 강제하지 않는다. 2회 후에도 게이트 미달이면 `reject`를 유지하고 production에서 제외한다. 렌더 증거를 만들지 못하면 `needs_review` + `reason_code: render_failed`로 기록하고 역시 제외한다. 비통과 팩은 내부 검토 목록에만 남긴다. 상태 enum은 `pass` · `needs_review` · `reject` 셋뿐이다 — v2의 `escalate`·`draft`는 폐기됐다.

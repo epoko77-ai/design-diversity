@@ -1,0 +1,155 @@
+slug: ppt-hdhyundai-green-facet-industrial
+display_name: HD현대 그린 파셋 인더스트리얼
+track: ppt
+family: hdhyundai-green-facet-industrial
+category: premium
+spec_version: v3.1-2026-08-16
+reference_mode: exact_document
+summary: >-
+  3단 명도 그린 파셋 폴리곤 커버와 산업 라인 아이콘 9종 스트립이 중공업 그룹의
+  아이덴티티를 선언하고, 본문은 네이비 헤더 대형 재무 매트릭스가 지배하는 IR 덱 스타일.
+  그린=그래픽 장치 / 네이비=데이터의 역할 분리 규율이 지문이다.
+axes:
+  color: green-navy-duotone
+  type: minimal-sans
+  layout: strict-grid
+  space: dense
+  motion: none
+
+reference:
+  canonical_url: "https://file.alphasquare.co.kr/media/pdfs/company-ir/20251103HD%ED%98%84%EB%8C%80_2025%EB%85%84_3%EB%B6%84%EA%B8%B0_%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81_%EB%B0%9C%ED%91%9C.pdf"
+  canonical_url_note: "실제 다운로드에 성공한 공개 미러 URL. 원 출처는 HD현대 IR(hd.com) 공시 자료 — 파일 동일본"
+  title: "HD현대 2025년 3분기 기업설명회 (2025-11-03)"
+  publisher: "HD현대"
+  retrieved_at: "2026-08-15"
+  sha256: "2a9e2d5ed3786c536a18982685fb2b3695b7affa43aa81bed1bd6b4db96cffdb"
+  media_type: application/pdf
+  page_count: 23
+  page_box: { width: 793.8, height: 447.84, unit: pt }
+  aspect_ratio: 1.7725
+  aspect_note: "원본 1.7725는 16:9(1.7778)보다 0.3% 좁음(PyPDF2 재저장본). 팩은 표준 16:9로 발행 — transform_contract에 adapt 처분"
+
+page_mirror_plan:
+  original_pages: 23
+  pack_pages: 10
+  compression: merged
+  fidelity_claim: "transformed-principle fidelity (23→10 병합 — 픽셀 미러 아님)"
+  map:
+    - { pack_page: 1, source_pages: [1], kind: cover,
+        rationale: "파셋 chevron + 아이콘 스트립 + 타이틀 블록 — 단독 재현" }
+    - { pack_page: 2, source_pages: [3, 2, 16], kind: wireframe-divider,
+        rationale: "Disclaimer/Contents/별첨 3장이 동일한 그린 헤어라인 와이어프레임 + 네이비 타이틀·언더라인 문법 — Contents형 1장으로 병합해도 문법 손실 없음" }
+    - { pack_page: 3, source_pages: [4], kind: summary-matrix,
+        rationale: "체크서클 불릿 + 요약 매트릭스(#939090 파생 열 헤더·#E5EBF7 하이라이트·빨간 괄호 음수) — 덱의 대표 표 문법" }
+    - { pack_page: 4, source_pages: [5], kind: chart-duo,
+        rationale: "파이 + 다계열 꺾은선 2컬럼 요약 차트, 해치 패널 문법" }
+    - { pack_page: 5, source_pages: [6], kind: contribution-bar,
+        rationale: "네이비 기여 바 + 그린 합계 바 + 음수 마이너스 부호 처리 문법" }
+    - { pack_page: 6, source_pages: [7], kind: company-matrix,
+        rationale: "2단 그룹 헤더 매트릭스 + 최신 분기 네이비 외곽선 강조 박스 — p17~21 별첨 표 문법도 이 표가 대표(구분·틴트·괄호 음수 동일 시스템)" }
+    - { pack_page: 7, source_pages: [8, 9, 10, 11, 12, 13], kind: subsidiary-template,
+        rationale: "6페이지가 동일 템플릿 — 대표 1장(스택바+OPM 라인+세로 라벨 2블록+QoQ/YoY 상주 컬럼)으로 병합. 세그먼트 수 가변·이중 바(p12)·적자 텍스트(p13) 변주는 prompt에 규칙으로 기술" }
+    - { pack_page: 8, source_pages: [14], kind: waterfall,
+        rationale: "워터폴 + 해치 고스트 컬럼 + 우측 주요내역 패널" }
+    - { pack_page: 9, source_pages: [15], kind: ratio-dashboard,
+        rationale: "미니 바+그린 라인 차트 2단 + 2색 그룹 헤더 표(연블루/연그린)" }
+    - { pack_page: 10, source_pages: [22, 23], kind: outlook-rows,
+        rationale: "라벨 박스 + 해치 텍스트 밴드 행 레이아웃 — 2장 동일 템플릿 병합" }
+  not_selected:
+    - { source_pages: [17, 18, 19, 20, 21],
+        reason: "별첨 재무제표 5장 — 좌 손익계산서+우 재무상태표 2표 병렬 템플릿의 회사별 반복. 표 문법(네이비 헤더·#E5EBF7 틴트·빨간 괄호 음수·흑자전환 텍스트 셀)이 pack 6과 동일 시스템이라 별도 페이지로 재현하지 않고 pack 6 변형 주석에 흡수" }
+
+signature_motifs:
+  - rank: 1
+    name: 3단 명도 그린 파셋 폴리곤(커버 solid) + 헤어라인 와이어프레임 변주(디바이더)
+    evidence_pages: [1, 2, 3, 16]
+    where: 커버 우측 60~99%W 채운 면(solid) 버전, Disclaimer/Contents/별첨 우측 1/4에 스트로크(outline) 버전. 본문 데이터 페이지에는 절대 등장하지 않음
+    uniqueness: >-
+      IR 덱에서 브랜드 그래픽을 solid↔wireframe 2모드로 운용하는 이중 문법.
+      채도 높은 3톤 그린(#35D32F/#00AE41/#00823D)의 다면 분할 —
+      타 기업 IR은 단색 도형이나 사진을 씀
+    must_preserve: true
+  - rank: 2
+    name: 네이비 #002554 재무 매트릭스 + #E5EBF7 하이라이트 열 + 빨간 괄호 음수
+    evidence_pages: [4, 7, 17, 18, 19, 20, 21]
+    where: 요약·회사별·별첨 재무표 전부. QoQ/YoY 파생 열 또는 최신 분기 그룹에만 하이라이트
+    uniqueness: >-
+      그린 브랜드 컬러를 표에는 한 방울도 쓰지 않고 네이비+연블루로만 구성 —
+      그래픽(그린)과 데이터(네이비)의 역할 분리가 이 덱의 결정적 규율
+    must_preserve: true
+  - rank: 3
+    name: 자회사 표준 템플릿 — 좌 스택바+OPM 라인 / 우 네이비·그린 세로 라벨 2블록 + QoQ/YoY 컬럼
+    evidence_pages: [8, 9, 10, 11, 12, 13]
+    where: 본문 6페이지 연속. 세로 라벨 '매 출'=네이비 #002554, '영업 이익'=그린 #4BAB6B 고정 부호화
+    uniqueness: >-
+      6페이지를 한 치 안 틀리고 반복하는 템플릿 규율 자체가 시그니처.
+      좌우를 수직 점선으로 분할하고 최우측에 QoQ/YoY 지표 열
+      (#DEEBF7 헤더 + #F2F2F2 컬럼)을 상주시킴
+    must_preserve: true
+  - rank: 4
+    name: 그린 라인 아이콘 9종 스트립
+    evidence_pages: [1]
+    where: 커버 하단 흰 밴드, 중심 간격 균일 ≈11.3%W
+    uniqueness: >-
+      사업 포트폴리오 9개를 얇은 스트로크(#44B25E, ≈1pt) 라인 아이콘으로 나열 —
+      그룹 지주회사의 '사업 지도'를 커버에서 선언
+    must_preserve: true
+  - rank: 5
+    name: 섹션 헤더 관습 — 번호 네이비 헤더 + 전폭 그레이 룰 + 백틱 연도 헤드라인 + 좌하 페이지번호/우하 로고 푸터
+    evidence_pages: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23]
+    where: 커버·디바이더 제외 전 페이지
+    uniqueness: "'`25년'식 백틱 아포스트로피 표기와 '(단위 : 억 원)' 우상단 고정이 문서 전체 리듬을 만듦"
+    must_preserve: true
+  - rank: 6
+    name: 해치/도트 텍스처 패널 (차트 배경·워터폴 고스트 컬럼·텍스트 밴드)
+    evidence_pages: [5, 6, 8, 9, 10, 11, 12, 13, 14, 15, 22, 23]
+    where: 차트 뒤 배경 패널, p14 워터폴 시작·종료 고스트 컬럼, p22/23 전망 텍스트 밴드
+    uniqueness: 플랫 화이트가 아니라 #EEEEEE/#DEDEDE 미세 텍스처로 콘텐츠 영역을 구획 — 인쇄물 질감
+    must_preserve: false
+  - rank: 7
+    name: 체크서클 불릿 요약
+    evidence_pages: [4]
+    where: 요약 페이지 상단 2건만
+    uniqueness: 네이비 원형 체크 아이콘 — 단 1페이지 등장이므로 보조 모티프
+    must_preserve: false
+
+transform_contract: _workspace/premium_v4/transform_contract/hdhyundai.json
+
+differentiation: >-
+  카탈로그에 그린 주색 PPT 팩이 없다. ppt-naver-integrated-report-award는
+  단일 비비드 그린 #03C75A가 지면 전체를 주도하는 라이트 웹톤 테크 브랜드 스타일이지만,
+  본 팩은 그린 3톤을 커버·디바이더의 그래픽 장치에만 격리하고 데이터 지면은 전부
+  네이비 #002554 + 연블루 #E5EBF7의 재무 IR 문법으로 구성한다 (근거: 원본 p4~15·17~21
+  전 데이터 페이지에서 표·본문 그린 0건, 유일 예외 p15 #E2F0D9 헤더). 파셋 다면 분할,
+  산업 라인 아이콘 스트립, QoQ/YoY 상주 컬럼, 워터폴 고스트 컬럼은 기존 100팩에 없는
+  장치이며, 중공업 그룹 아이덴티티(선박·플랜트·엔진 도메인의 라인 아이콘 문법)가
+  현대차의 사진 중심 덱·크래프톤의 다크 게이밍 덱과도 구별되는 축이다.
+
+pages:
+  - { id: cover, label: 파셋 커버, kind: cover }
+  - { id: wireframe-divider, label: 와이어프레임 디바이더, kind: wireframe-divider }
+  - { id: summary-matrix, label: 요약 실적 매트릭스, kind: summary-matrix }
+  - { id: chart-duo, label: 파이+꺾은선 듀오, kind: chart-duo }
+  - { id: contribution-bar, label: 기여 바, kind: contribution-bar }
+  - { id: company-matrix, label: 회사별 매트릭스, kind: company-matrix }
+  - { id: subsidiary-template, label: 자회사 템플릿, kind: subsidiary-template }
+  - { id: waterfall, label: 워터폴, kind: waterfall }
+  - { id: ratio-dashboard, label: 재무비율 대시보드, kind: ratio-dashboard }
+  - { id: outlook-rows, label: 전망 행 레이아웃, kind: outlook-rows }
+
+sources:
+  - { title: "HD현대 2025년 3분기 기업설명회 발표자료 — 공개 미러 (원 출처: HD현대 IR 공시)", url: "https://file.alphasquare.co.kr/media/pdfs/company-ir/20251103HD%ED%98%84%EB%8C%80_2025%EB%85%84_3%EB%B6%84%EA%B8%B0_%EA%B2%BD%EC%98%81%EC%8B%A4%EC%A0%81_%EB%B0%9C%ED%91%9C.pdf", type: official }
+
+license: >-
+  원 IR 자료는 HD현대 저작물(IR 공시 채널 공개본, 확보 경로는 공개 미러 — 파일 동일본,
+  sha256 기록). 본 팩이 배포하는 것은 시각 원리의 명세·디자인 토큰이며 원본 자산
+  (로고·CI 심벌·계열사 워드마크·라인 아이콘 원화·실적 수치·면책 문구)의 사본이 아님.
+  로고·계열사명은 재현 금지 — 역할·위치·크기만 기술. 파셋 폴리곤은 기하 원리만
+  추출하며 CI 심벌 실루엣 복제를 계약으로 금지.
+source_depth: full
+
+qa:
+  fidelity: { verdict: unreviewed }
+  craft: { verdict: unreviewed }
+  diversity: { verdict: unreviewed }
+status: needs_review

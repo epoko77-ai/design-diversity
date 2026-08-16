@@ -1,4 +1,6 @@
 slug: web-radical-subtraction-white
+spec_version: v3.1-2026-08-16
+reference_mode: style_synthesis
 display_name: 래디컬 섭트랙션 화이트
 track: web
 family: radical-subtraction
@@ -15,5 +17,5 @@ pages:
 sources:
   - { title: "awesome-claude-design — Tesla design system", url: "https://github.com/VoltAgent/awesome-claude-design", type: official }
 license: "원자산은 각 출처 라이선스를 따름(awesome-claude-design MIT). 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. Tesla는 디자인 결의 brand_inspiration 영감 출처로만 참조하며 로고·독점 폰트 명세를 포함하지 않는다 — 타이포는 공개 웹폰트(Inter, OFL)로 대체한다. 색값은 본 팩 자체 지정값."
-source_depth: full
+source_depth: partial
 status: pass

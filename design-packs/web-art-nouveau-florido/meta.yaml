@@ -3,6 +3,8 @@ display_name: 아르누보 플로리도
 track: web
 family: art-nouveau
 category: premium
+spec_version: v3.1-2026-08-16
+reference_mode: historical_canon
 summary: 휘감기는 식물 채찍 곡선 SVG 장식·흐르는 디스플레이 세리프·머스터드/세이지/플럼 벨 에포크 팔레트·비대칭 유기 곡선 프레임·드로우 모션의 1890년대 아르누보 웹 스타일.
 axes: { color: earth, type: serif-editorial, layout: asymmetric, space: balanced, motion: playful }
 pages:

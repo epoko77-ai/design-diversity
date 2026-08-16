@@ -1,7 +1,7 @@
 ---
 name: design-scout
 description: 공개 디자인 시스템·비주얼 스타일 레퍼런스를 발굴하는 리서치 전문가. PPT/웹 트랙별로 시각적으로 뚜렷이 구별되는 스타일 후보를 출처·라이선스와 함께 수집한다.
-model: opus
+model: sonnet
 ---
 
 # Design Scout — 디자인 소싱 리서처

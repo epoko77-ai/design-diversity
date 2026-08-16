@@ -1,0 +1,30 @@
+{
+  "slug": "ppt-krafton-dark-yellow-ir",
+  "rendered_at": "2026-08-15T16:03:06Z",
+  "source_hash": {
+    "prompt.md": "sha256:4bfbdfe5528c8a165d6efd3d3d7af830c071e03f750595b9705bbe9016cc75fd",
+    "tokens.json": "sha256:1b1037c75b1b85f1a71d597dc74b2e73797b7de700b6c40761d8f07ac5a124f5"
+  },
+  "spec_version": "v3-2026-08-16",
+  "canvas": { "declared": "16:9", "actual_px": [2560, 1440], "ratio": 1.7778 },
+  "pages": [
+    { "id": "cover", "file": "pages/01-cover.png", "px": [2560, 1440] },
+    { "id": "part-divider", "file": "pages/02-part-divider.png", "px": [2560, 1440] },
+    { "id": "statement-diagram", "file": "pages/03-statement-diagram.png", "px": [2560, 1440] },
+    { "id": "quadrant-map", "file": "pages/04-quadrant-map.png", "px": [2560, 1440] },
+    { "id": "column-cards", "file": "pages/05-column-cards.png", "px": [2560, 1440] },
+    { "id": "two-panel-direction", "file": "pages/06-two-panel-direction.png", "px": [2560, 1440] },
+    { "id": "dark-charts", "file": "pages/07-dark-charts.png", "px": [2560, 1440] },
+    { "id": "card-grid", "file": "pages/08-card-grid.png", "px": [2560, 1440] },
+    { "id": "kpi-highlights-light", "file": "pages/09-kpi-highlights-light.png", "px": [2560, 1440] },
+    { "id": "finance-table-charts", "file": "pages/10-finance-table-charts.png", "px": [2560, 1440] }
+  ],
+  "font_fallbacks": [
+    { "declared": "Big Shoulders Stencil", "used": "Big Shoulders Stencil Text (Google Fonts)", "note": "declared family not locally installed; used prompt.md's own designated fallback chain (Big Shoulders Stencil family via Google Fonts, ahead of Saira Stencil One/Allerta Stencil)" }
+  ],
+  "render_source": "_workspace/premium_v4/render/ppt-krafton-dark-yellow-ir.html",
+  "render_method": "single HTML file, 10 stacked 960x540 CSS-px sections, Playwright chromium screenshot per-section at deviceScaleFactor 2.66667 (2560/960) for exact 2560x1440 PNG output per page, box-sizing:border-box, word-break:keep-all",
+  "blind_render": true,
+  "blind_render_note": "Rendered from prompt.md + tokens.json only, per sample-rendering skill's 블라인드 재생 원칙. Reference images (_workspace/premium_v4/pages_src/), visual_spec, and transform_contract were not opened. meta.yaml pages[] array was consulted only for page id/order mapping.",
+  "content_fixture": "가상 게임/엔터테인먼트 회사 'Northwind Interactive' 더미 IR 콘텐츠. 실제 KRAFTON/PUBG 등 실존 상표·게임명 미사용."
+}

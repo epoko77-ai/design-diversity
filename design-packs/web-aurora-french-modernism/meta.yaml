@@ -3,6 +3,8 @@ display_name: 오로라 프렌치 모더니즘
 track: web
 family: aurora-modernism
 category: premium
+spec_version: v3.1-2026-08-16
+reference_mode: style_synthesis
 summary: 노랑→시안→핑크 오로라 메시 그라디언트 면이 섹션 배경을 채우고 버튼·카드는 zero-radius 직각·큰 지오메트릭 산세리프·스냅 모션의 프랑스 모더니즘 웹 스타일.
 axes: { color: gradient, type: heavy-display, layout: full-bleed, space: balanced, motion: snappy }
 pages:
@@ -15,5 +17,5 @@ pages:
 sources:
   - { title: "awesome-design-md — Renault DESIGN.md", url: "https://github.com/VoltAgent/awesome-design-md", type: official }
 license: "원자산은 각 출처 라이선스를 따름(awesome-design-md MIT). 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. Renault는 디자인 결의 brand_inspiration 영감 출처로만 참조하며 로고·독점 폰트(NouvelR) 명세를 포함하지 않는다 — 타이포는 공개 웹폰트(Clash Display Fontshare 무료·Inter OFL)로 대체한다. 색값은 본 팩 자체 지정값."
-source_depth: full
+source_depth: partial
 status: pass

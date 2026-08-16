@@ -1,5 +1,6 @@
 slug: ppt-naver-integrated-report-award
 display_name: 네이버 통합보고서 어워드
+spec_version: v3.1-2026-08-16
 track: ppt
 family: naver-communication-design
 category: premium
@@ -159,31 +160,31 @@ pages:
 - id: cover
   label: 표지 (s1 ← p1, L1 거대 영문 + 우측 그린 메쉬 페이드)
   kind: cover
-- id: contents
+- id: agenda
   label: CONTENTS (s2 ← p3, 5열 챕터 그리드 + 그린 챕터 헤더)
   kind: agenda
-- id: overview
+- id: section
   label: OVERVIEW (s3 ← p6, L7 세계지도 도트 + ESG 알파벳 + Mixed-size '13')
   kind: section
-- id: key_milestones
+- id: key-message
   label: KEY MILESTONES (s4 ← p8, L8 수평 타임라인 + 4구간 32pt 시기 + 그린 도트)
   kind: key-message
-- id: on_search_ai_intro
+- id: chart
   label: On-Search AI 풀블리드 (s5 ← p11, L4 그린 메쉬 + 흰 UI 미니어처)
   kind: chart
-- id: section_slate
+- id: diagram
   label: Business Report/Portfolio 섹션 슬레이트 (s6 ← p20 or p23, L2 96pt 거대 영문 + 그린 메쉬 페이드)
   kind: diagram
-- id: business_highlights
+- id: cards
   label: BUSINESS HIGHLIGHTS (s7 ← p21, L9 3패널 + 6색 다부문 도넛)
   kind: cards
-- id: segment_data_card_2x2
+- id: comparison
   label: SEARCH PLATFORM 데이터 카드 2x2 (s8 ← p24, L3 시그니처 — 거대 솔리드 원 + Mixed-size + 2x2 템플릿)
   kind: comparison
-- id: on_service_ai_diagram
+- id: narrative
   label: On-Service AI 4컬러 노드 네트워크 (s9 ← p10, L5 그린/퍼플/블루/시안 노드)
   kind: narrative
-- id: sustainable_commerce
+- id: closing
   label: Commerce 지속가능 (s10 ← p47, L10 사진 + 퍼플 해시태그 + 인용 카드뉴스 4컬럼)
   kind: closing
 sources:

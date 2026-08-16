@@ -3,6 +3,7 @@ display_name: 과기정통부 정통 정부 라이트
 track: ppt
 family: korea-gov-navy-ribbon
 category: premium
+spec_version: v3.1-2026-08-16
 version: v3
 based_on: v2 (+ 9p PNG 1:1 mirror 재정독, +p-10 closing 자연 확장)
 summary: "한국 정부 부처 업무보고의 정통 라이트 톤. 옅은 하늘색 배경에 진한 네이비 글씨, 페이지 하단에 네이비 띠로 핵심 키워드 노출, 중앙 부처를 둘러싼 위성 노드의 거버넌스 다이어그램이 클라이맥스 — 정부·공공 정책 보고, 부처 업무계획, 행정 발표에 어울립니다."
@@ -26,43 +27,43 @@ diagram_kit: "색띠 3컬럼 체크리스트(상단 캡슐 '국가 최대 위기
   모두 SVG 정밀 렌더, div 블록·3D·그림자·글로우·이모지 아이콘 금지. 사이언/청록 사용 금지(그라디언트는 03·10 우측 미니 + 표지 + 04 'AI' 박스 한정).
   v3 신규: #C5D3E2 연결선 색 / 05 좌→우 화살표 / 04 우측 카드 적층 정정 / 10-closing 분기 타임라인."
 pages:
-- id: 01-cover
+- id: cover
   label: 표지 — 옅은 블루 그라디언트 + 인디고 타이틀 + 우측 구체 글로우
   kind: cover
   mirrors: p-1
-- id: 02-agenda
+- id: agenda
   label: 회고 3컬럼 — 캡슐 + 색띠 헤더 + ✓ 4행 + 흰띠 요약
   kind: agenda
   mirrors: p-2
-- id: 03-section
+- id: section
   label: 3대 전략 알약 카드 — 블루→퍼플 병렬 3장 (순위 아님)
   kind: section
   mirrors: p-3
-- id: 04-key-message
+- id: key-message
   label: AI 3강 비대칭 다분할 — 좌 'AI'박스 + 우 카드 3적층 + 하 박스 안 3컬럼
   kind: key-message
   mirrors: p-4
-- id: 05-chart
+- id: chart
   label: AI 대전환 4+4 적층 + 우 보조 + 좌→우 화살표 (실제 차트 없음)
   kind: chart
   mirrors: p-5
-- id: 06-diagram
+- id: diagram
   label: K-문샷 좌 2×2 + 우 3컬럼 + 하 2카드 (출연연 개편)
   kind: diagram
   mirrors: p-6
-- id: 07-cards
+- id: cards
   label: 누리호 좌 2×2 + 우 2카드 + 우 끝 로켓 일러스트
   kind: cards
   mirrors: p-7
-- id: 08-comparison
+- id: comparison
   label: R&D 2×3 행헤더 매트릭스 + 자력 R&D 카드 내 2-막대 미니차트
   kind: comparison
   mirrors: p-8
-- id: 09-narrative
+- id: narrative
   label: 방사형 거버넌스 다이어그램 — 중앙 부처 + 8~12 위성 + 상하 보조 박스 (시그니처 클라이맥스)
   kind: narrative
   mirrors: p-9
-- id: 10-closing
+- id: closing
   label: 결의 슬로건 + 1Q→4Q 가로 타임라인 + 우 미니 3 알약 strip (v3 확장)
   kind: closing
   mirrors: (v3 확장)

@@ -1,4 +1,6 @@
 slug: web-monumental-hypercar-display
+spec_version: v3.1-2026-08-16
+reference_mode: style_synthesis
 display_name: 모뉴멘탈 하이퍼카 디스플레이
 track: web
 family: monumental-display
@@ -14,5 +16,5 @@ pages:
 sources:
   - { title: "awesome-design-md — Bugatti DESIGN.md", url: "https://github.com/VoltAgent/awesome-design-md", type: official }
 license: "원자산은 각 출처 라이선스를 따름(awesome-design-md MIT). 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. Bugatti는 디자인 결의 brand_inspiration 영감 출처로만 참조하며 로고·독점 폰트 명세를 포함하지 않는다 — 타이포는 공개 웹폰트(Anton·Inter, OFL)로 대체한다. EB 블루는 본 팩 자체 지정값."
-source_depth: full
+source_depth: partial
 status: pass

@@ -3,6 +3,8 @@ display_name: 데 스틸 네오플라스틱
 track: web
 family: de-stijl
 category: premium
+spec_version: v3.1-2026-08-16
+reference_mode: historical_canon
 summary: 굵은 순흑 수직·수평 선이 페이지를 비대칭 직사각형 면으로 분할하고 소수의 면만 삼원색으로 채우는 정적·모션 없는 1917년 신조형주의 웹 스타일.
 axes: { color: vivid-primary, type: heavy-display, layout: asymmetric, space: balanced, motion: none }
 pages:

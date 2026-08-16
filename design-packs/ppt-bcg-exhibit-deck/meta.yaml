@@ -48,5 +48,7 @@ sources:
   type: article
 license: 원자산은 각 출처 라이선스를 따름. 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. 브랜드 영감은 brand_inspiration로만
   참고하며 독점 폰트는 오픈 폰트로 대체한다.
-source_depth: full
+reference_mode: style_synthesis
+source_depth: partial
+spec_version: v3.1-2026-08-16
 status: pass

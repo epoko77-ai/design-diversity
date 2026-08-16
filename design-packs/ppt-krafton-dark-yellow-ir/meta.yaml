@@ -1,0 +1,134 @@
+slug: ppt-krafton-dark-yellow-ir
+display_name: 크래프톤 다크 옐로 IR
+track: ppt
+family: krafton-dark-yellow-ir
+category: premium
+spec_version: v3-2026-08-16
+reference_mode: exact_document
+summary: >-
+  콘크리트 질감의 근흑 배경 위 게이밍 옐로 단일 강조, 스텐실 히어로 타이포,
+  다크 전략 트랙과 순백 재무 트랙의 페이지 단위 테마 반전이 결합된 게임사 IR 덱 스타일.
+axes:
+  color: dark
+  type: heavy-display
+  layout: block-grid
+  space: dense
+  motion: none
+
+reference:
+  canonical_url: "https://kind.krx.co.kr/external/dst/irReference/17338/KRAFTON-2Q25_Investor_Presentation_September_KOR.pdf"
+  title: "KRAFTON Investor Relations (2025년 9월)"
+  publisher: "KRAFTON, Inc."
+  retrieved_at: "2026-08-15T23:07:00+09:00"
+  sha256: "d26c621cdbd24a4973ba122adbc3d6dd1d3b215a3fee92a9f1a78de7372c0899"
+  media_type: application/pdf
+  page_count: 24
+  page_box: { width: 960, height: 540, unit: pt }
+  aspect_ratio: 1.778
+
+page_mirror_plan:
+  original_pages: 24
+  pack_pages: 10
+  compression: merged
+  fidelity_claim: "transformed-principle fidelity (24→10 병합·선별 — 픽셀 미러 아님)"
+  map:
+    - { pack_page: 1, source_pages: [1, 12], kind: cover,
+        rationale: "동일 표지 템플릿의 타이틀 교체 변형 2장 — 다크 사진 무대+오버레이+백색 타이틀+좌하단 워드마크 문법을 1장으로" }
+    - { pack_page: 2, source_pages: [5, 8, 22], kind: part-divider,
+        rationale: "순흑 배경 + 스텐실 활성/고스트 목차 문법. 3장이 같은 템플릿의 상태 변형" }
+    - { pack_page: 3, source_pages: [4, 11], kind: statement-diagram,
+        rationale: "중앙 리드 문장 + 옐로 점선 트리 분기(강조 옐로박스 vs 비강조 회색박스). p4의 다이어그램과 p11의 옐로 혼색 결론 조판을 병합" }
+    - { pack_page: 4, source_pages: [6], kind: quadrant-map,
+        rationale: "옐로 십자축 4분면 + 링 아이콘 배지 + 점선 미공개 박스 — 이 덱 유일의 프레임워크 다이어그램, 단독 반영" }
+    - { pack_page: 5, source_pages: [7, 15], kind: column-cards,
+        rationale: "다열 카드(어두운 패널·옐로/필 헤더·스텐실 히어로 숫자·불릿) 문법이 두 페이지에서 동일" }
+    - { pack_page: 6, source_pages: [9], kind: two-panel-direction,
+        rationale: "셰브론 옐로 프레임 + #404040 헤더 바 2패널 + 회색 세계지도 + 하단 callout 바 — 고유 요소 다수라 단독 반영" }
+    - { pack_page: 7, source_pages: [10, 16], kind: dark-charts,
+        rationale: "다크 배경 차트 문법(도넛 옐로 1조각·막대 옐로 1개·블루그레이 램프·무축 직접 레이블)의 표본 2장 병합" }
+    - { pack_page: 8, source_pages: [17, 18, 14], kind: card-grid,
+        rationale: "2패널 리스트·2×2 투자 카드·로드맵 썸네일 그리드 — 필 헤더+카드 패널+옐로/점선 테두리 규약을 하나의 그리드 페이지로 병합" }
+    - { pack_page: 9, source_pages: [13], kind: kpi-highlights-light,
+        rationale: "화이트 트랙 진입 페이지. 스텐실 초대형 수치 + 옐로 세로 밴드 + 3행 KPI 카드 — 단독 반영" }
+    - { pack_page: 10, source_pages: [19, 20, 21, 24], kind: finance-table-charts,
+        rationale: "화이트 재무 문법(좌 KPI 텍스트·우 점선 당기 강조 표·하단 트레일링 미니 막대 3개) 4장이 동일 템플릿 — 1장으로 병합, 음수 괄호·파랑 전환은 변형으로 유지" }
+  not_selected:
+    - { source_page: 2, reason: "법적 고지 텍스트 페이지 — 디자인 정보 없음 (백지+단락)" }
+    - { source_page: 3, reason: "키아트 사진이 지배적. 처리 방식(사선 컷·감쇠 오버레이)은 motif 7로 기록, 사진 자체는 재현 불가 자산" }
+    - { source_page: 23, reason: "스크린샷 갤러리 — 옐로 테두리 그리드 규약은 pack_page 8에 흡수" }
+
+signature_motifs:
+  - rank: 1
+    name: 다크 콘크리트 질감 + 좌상단 옐로 세로 바 헤더 + 옐로 키워드 리드 문장
+    evidence_pages: [4, 6, 7, 9, 10, 11, 14, 15, 16, 17, 18, 23]
+    where: 본문(전략) 트랙 전 페이지. 화이트 재무 트랙·디바이더에는 없음
+    uniqueness: >-
+      질감 있는 근흑 배경(#0C0C0C~#1F1F1F 그런지) 위 #F2A900 바 + 리드 문장 옐로 혼색 —
+      일반 기업 IR의 플랫 다크와 구별되는 게임사적 텍스처
+    must_preserve: true
+  - rank: 2
+    name: 듀얼 트랙 구조 — 다크 전략 페이지 ↔ 순백 재무 페이지의 명시적 테마 전환
+    evidence_pages: [13, 19, 20, 21, 24]
+    where: 실적 파트(13, 19~21, 24)만 화이트. 같은 문서 안에서 배경이 흑↔백으로 완전히 뒤집힘
+    uniqueness: 대부분의 IR덱은 단일 테마. 이 덱은 '이야기=다크, 숫자=화이트'로 트랙을 시각 분리
+    must_preserve: true
+  - rank: 3
+    name: 당기 강조 문법 — 표의 점선 사각형 + 트레일링 5분기 미니 막대의 마지막 막대만 유채색
+    evidence_pages: [19, 20, 21, 24]
+    where: 화이트 재무 페이지의 표(당분기·당반기 열 점선 프레임)와 하단 미니 차트(과거 #D9D9D9, 당기 #FFC000 또는 #1E82FF)
+    uniqueness: 무축·무격자·직접 레이블 미니 차트 3연속 + 점선 당기 프레임의 조합이 이 덱의 재무 페이지 지문
+    must_preserve: true
+  - rank: 4
+    name: 스텐실 디스플레이 타이포 — PART 디바이더와 초대형 수치
+    evidence_pages: [1, 3, 5, 8, 12, 13, 15, 18]
+    where: 순흑 디바이더의 'PART N.'(활성 흰색/비활성 #1A1A1A 고스트), p13 '15,362' p15 '80명' p18 '5건' 같은 히어로 숫자, 표지·p3의 초대형 로고타입
+    uniqueness: 노치 있는 각진 스텐실체를 숫자에까지 쓰는 조판. 고스트 목차(활성/비활성 1.2:1 저대비)도 이 덱 고유
+    must_preserve: true
+  - rank: 5
+    name: 옐로 단일 강조 차트 문법 — 무축·직접 레이블·강조 1색
+    evidence_pages: [10, 16, 19, 20]
+    where: 도넛(강조 조각만 옐로)·가로/세로 막대(강조 막대만 옐로, 나머지 회색)·논문수 막대. 순서형 데이터만 예외적으로 블루그레이 램프(#333F50→#8497B0)
+    uniqueness: 축·격자 전무, 수치 직접 기입, 옐로 1점 강조 — 게이밍 브랜드 색을 데이터 강조에 그대로 씀
+    must_preserve: true
+  - rank: 6
+    name: 선 규약 — 옐로 실선=강조/확정, 점선=미공개/예정, 흰 스트로크 라운드 필=컬럼 라벨
+    evidence_pages: [6, 9, 14, 15, 17, 18, 23]
+    where: p6·p14 점선 박스(미공개·미확정), p14·p23 옐로 실선 테두리(강조 항목), p15·p17·p18 흰 스트로크 필 헤더, p9 셰브론(화살촉) 옐로 프레임
+    uniqueness: 테두리 스타일 하나로 확정/미정 상태를 코딩하는 규약이 문서 전체에서 일관
+    must_preserve: true
+  - rank: 7
+    name: 사선 컷 키아트 콜라주 + 회색 감쇠 오버레이
+    evidence_pages: [3]
+    where: 섹션 인트로 1곳. 키아트를 평행사변형으로 잘라 유격을 두고 배열, #454545 회색 패널로 여백 채움, 사진 전체를 회색조로 눌러 흰 타이포 대비 확보(실측 9.6:1)
+    uniqueness: 사진 자체가 아니라 '사선 컷 + 감쇠 오버레이 + 회색 패널 보간'이라는 처리 방식이 자산
+    must_preserve: false
+
+transform_contract: _workspace/premium_v4/transform_contract/krafton.json
+
+pages:
+  - { id: cover, label: 표지, kind: cover }
+  - { id: part-divider, label: 파트 디바이더, kind: part-divider }
+  - { id: statement-diagram, label: 스테이트먼트·트리 다이어그램, kind: statement-diagram }
+  - { id: quadrant-map, label: 4분면 프레임워크, kind: quadrant-map }
+  - { id: column-cards, label: 다열 카드, kind: column-cards }
+  - { id: two-panel-direction, label: 셰브론 2패널, kind: two-panel-direction }
+  - { id: dark-charts, label: 다크 차트, kind: dark-charts }
+  - { id: card-grid, label: 카드 그리드, kind: card-grid }
+  - { id: kpi-highlights-light, label: KPI 하이라이트 (화이트), kind: kpi-highlights-light }
+  - { id: finance-table-charts, label: 재무 표+미니 차트 (화이트), kind: finance-table-charts }
+
+sources:
+  - { title: "KRAFTON 2Q25 Investor Presentation (September, KOR) — KIND 공시", url: "https://kind.krx.co.kr/external/dst/irReference/17338/KRAFTON-2Q25_Investor_Presentation_September_KOR.pdf", type: official }
+
+license: >-
+  원 IR 자료는 KRAFTON, Inc. 저작물(한국거래소 KIND 공시 채널 공개본).
+  본 팩이 배포하는 것은 시각 원리의 명세·디자인 토큰이며 원본 자산
+  (로고타입·게임 키아트·스크린샷·전용 서체·사진)의 사본이 아님.
+  로고·게임명·키아트는 재현 금지 — 역할·위치·크기만 기술.
+source_depth: full
+
+qa:
+  fidelity: { verdict: unreviewed }
+  craft: { verdict: unreviewed }
+  diversity: { verdict: unreviewed }
+status: needs_review

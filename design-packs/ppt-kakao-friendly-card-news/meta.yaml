@@ -1,5 +1,6 @@
 slug: ppt-kakao-friendly-card-news
 display_name: 카카오 1Q26 보수 IR
+spec_version: v3.1-2026-08-16
 track: ppt
 family: kakao-conservative-earnings
 category: premium
@@ -33,39 +34,39 @@ pages:
   label: 표지 (kakao 옐로우 #FDD000 로고 + 캐릭터 하단 절반 #C1E9F3)
   kind: cover
   mirrors: p-01
-- id: revenue-composition
+- id: agenda
   label: 매출 구성 (좌 5분기 옐로우/회색 스택 + 우 옐로우 헤더 매출구성 표)
   kind: chart-table
   mirrors: p-03
-- id: segment-revenue
+- id: section
   label: 부문별 매출 (좌 플랫폼 + 우 콘텐츠 100% 스택, 색-카테고리 가변 할당)
   kind: chart
   mirrors: p-04
-- id: talkbiz
+- id: key-message
   label: 플랫폼 부문 | 톡비즈 (상 광고 옐로우 + 하 커머스 회색 + 우측 ▪ 메트릭)
   kind: chart
   mirrors: p-05
-- id: portal-others
+- id: chart
   label: 플랫폼 | 포털·기타 (다크그레이 + 라이트블루 + 엔터테인먼트 옐로우 인셋)
   kind: chart
   mirrors: p-06 + p-07 (일부 흡수)
-- id: summary-opex-tables
+- id: diagram
   label: 실적요약 / 영업비용 (좌·우 분할 표 2개, 둘 다 1Q26 빨강 사각 테두리)
   kind: table
   mirrors: p-09 + p-10
-- id: opincome-combo
+- id: cards
   label: 영업이익 / 당기순이익 (옐로우 스택 + AI 음수 회색+빨강 + OPM 점선 콤보)
   kind: chart
   mirrors: p-11
-- id: personnel-capex
+- id: comparison
   label: 인원 / CapEx (회색 인원 + 옐로우 CapEx 무형자산 + 매출액 대비 점선)
   kind: chart
   mirrors: p-12
-- id: mau-highlight
+- id: narrative
   label: 카카오톡 MAU (9개 막대 중 마지막 1개만 옐로우 — 단일 시그니처 클라이맥스)
   kind: chart
   mirrors: p-14
-- id: thanks
+- id: closing
   label: 감사합니다 (흰 캔버스 + 중앙 검정 본고딕 + 우하단 마스코트)
   kind: closing
   mirrors: p-15

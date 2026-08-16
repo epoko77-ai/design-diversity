@@ -1,0 +1,163 @@
+slug: ppt-samsungbio-navy-lavender-gradient
+display_name: 삼성바이오 네이비·라벤더 그라디언트 IR
+track: ppt
+family: samsungbio-navy-lavender-gradient
+category: premium
+spec_version: v3-2026-08-16
+reference_mode: exact_document
+summary: >-
+  딥네이비→페리윙클 라벤더 수평 그라디언트 밴드가 헤더·패널 2계층에서 반복되고,
+  궤도 원호·파티클·원형 마스크 사진의 커버, 해치+스피어 디바이더, 라벨-온리 차트,
+  페리윙클 이중조 테이블이 결합된 바이오 기업 IR 덱 스타일.
+axes:
+  color: gradient
+  type: minimal-sans
+  layout: strict-grid
+  space: dense
+  motion: none
+
+reference:
+  canonical_url: "https://samsungbiologics.com/upload/investors/61a7b9d576694f6c8a10151dfb7067f8.pdf"
+  title: "Samsung Biologics Earnings Release 2025 Q4"
+  publisher: "Samsung Biologics Co., Ltd."
+  retrieved_at: "2026-08-15"
+  sha256: "107a6bdbd8bb57e03f192c677ef2a9dc89323380bf7fd72602508fb4a95008a5"
+  media_type: application/pdf
+  page_count: 16
+  page_box: { width: 960, height: 540, unit: pt }
+  aspect_ratio: 1.778
+
+page_mirror_plan:
+  original_pages: 16
+  pack_pages: 10
+  compression: merged
+  fidelity_claim: "transformed-principle fidelity (16→10 병합 3건 — 픽셀 미러 아님)"
+  map:
+    - { pack_page: 1, source_pages: [1, 16], kind: cover,
+        rationale: "커버와 클로징이 동일 조판(원형 사진 중심·지름 실측 일치). 커버로 집필하고 클로징 변형(타이틀 교체·필 제거)을 병기" }
+    - { pack_page: 2, source_pages: [2], kind: statement,
+        rationale: "풀블리드 다크 그라디언트+수직 스트라이프 필드+시안 언더라인 — 이 덱 유일의 다크 텍스트 페이지 문법" }
+    - { pack_page: 3, source_pages: [3], kind: diagram,
+        rationale: "4분면 카드+중앙 허브+순환 화살표. 허브 기준 미러 그라디언트 방향 포함" }
+    - { pack_page: 4, source_pages: [4, 10, 12], kind: section_divider,
+        rationale: "디바이더 3장이 타이틀 문자열만 다르고 좌표·장식 동일 — 1장 병합에 문법 손실 없음" }
+    - { pack_page: 5, source_pages: [5], kind: chart,
+        rationale: "라벨-온리 콤보 차트(바+라인 2종+점선 성장 화살표)의 정본" }
+    - { pack_page: 6, source_pages: [6], kind: chart_multi,
+        rationale: "소형 다중 바 4개+브랜드 트리플 스택 바+그레이 칩 합계 — 차트 밀도 최고 페이지" }
+    - { pack_page: 7, source_pages: [7], kind: chart_annotated,
+        rationale: "화살표 스우시·타원 콜아웃·점선 아웃라인 전망 세그먼트 등 주석 어휘 집약" }
+    - { pack_page: 8, source_pages: [8], kind: feature_photo_icons,
+        rationale: "지도+원형 마스크 사진+아웃라인 카드+4컬럼 아이콘 캡슐 행" }
+    - { pack_page: 9, source_pages: [9], kind: gantt,
+        rationale: "타임라인 간트(페이드 화살표 바·점선 연장·셰브런 콜아웃) 고유 문법" }
+    - { pack_page: 10, source_pages: [13, 14, 15], kind: table_financial,
+        rationale: "13·15는 동일 테이블 문법의 변형, 14가 테이블+라벨-온리 라인 차트를 이미 한 페이지에 결합 — p-14형으로 3장의 문법을 전부 운반" }
+  not_selected: []
+
+signature_motifs:
+  - rank: 1
+    name: 딥네이비→페리윙클 라벤더 수평 그라디언트 밴드
+    evidence_pages: [3, 5, 6, 7, 8, 9, 11, 13, 14, 15]
+    where: >-
+      전 본문 페이지 헤더 밴드(#1D2672→#AB99F7, 좌→우, 높이 11.5%H) +
+      모든 콘텐츠 패널 타이틀 바(#263597→#978CE0). p-03 4분면 카드에서는 중앙 허브 기준 미러 방향
+    uniqueness: >-
+      단색 밴드가 아니라 항상 같은 방향·같은 색역의 그라디언트가 페이지·패널 2계층에서
+      반복 — 이 덱의 가장 지배적 식별자
+    must_preserve: true
+  - rank: 2
+    name: 커버 조판 — 라디얼 글로우 + 동심 궤도 원호 + 파티클 도트 웨이브 + 원형 마스크 사진
+    evidence_pages: [1, 16]
+    where: >-
+      커버·클로징. 원형 사진 중심(76%W,69%H)·지름 45%W·하단 크롭,
+      원호 2개가 각각 액센트 도트 1개(#599AFD, #AB88FF)를 관통, 파티클 대각 밴드 하단
+    uniqueness: IR 덱에서 사진을 사각 배치하지 않고 대형 원형 마스크+궤도 기하로 감싸는 조판은 이 덱 고유
+    must_preserve: true
+  - rank: 3
+    name: 딥네이비 풀블리드 디바이더 + 대각 대시 해치 필드 + 퍼플 그라디언트 스피어
+    evidence_pages: [4, 10, 12]
+    where: >-
+      섹션 디바이더 3장 전부 동일 좌표 문법: #0C1B53 플랫, 해치 x51~78%/y0~55%,
+      스피어 우하단(반경 18.5%W, 하이라이트 #9979F2)
+    uniqueness: 장식이 그라디언트 스피어+저대비 해치 둘뿐인 극도로 절제된 디바이더 — 3장 반복이 규격
+    must_preserve: true
+  - rank: 4
+    name: 라벨-온리 차트 문법 + 브랜드 블루 트리플 인코딩
+    evidence_pages: [5, 6, 7, 14]
+    where: >-
+      모든 차트: Y축·그리드·눈금 없음, 얇은 베이스라인만, 굵은 데이터 라벨이 축을 대체.
+      과거=라이트/최신=새추레이티드 규칙. 스택 인코딩은 브랜드 3색 #1428A0/#0077C8/#00B3E3,
+      성장 주석은 점선 인디고 화살표+볼드 %
+    uniqueness: >-
+      축 제거+라벨 대체는 컨설팅 덱에도 있지만, 브랜드 공식 3색을 규제기관(FDA/EMA/Others)
+      스택 인코딩까지 일관 적용하는 것이 이 덱의 개성
+    must_preserve: true
+  - rank: 5
+    name: 페리윙클 이중조 재무 테이블 문법
+    evidence_pages: [13, 14, 15]
+    where: >-
+      헤더: 전기 #A0A2F8 라이트 vs 당기 #1428A0 딥로열(백색 볼드) ·
+      당기 컬럼 전체 2px 네이비 아웃라인 박스 · 강조 행 #D9DAFF 풀로우 · 음수 괄호 표기
+    uniqueness: 시간축 강조를 색(라이트→다크)+아웃라인 박스 이중으로 거는 테이블 규격이 3장 반복
+    must_preserve: true
+  - rank: 6
+    name: 좌측 다크 해치 블록 헤더 + 우상단 시안 태그라인 슬롯
+    evidence_pages: [2, 3, 5, 6, 7, 8, 9, 11, 13, 14, 15]
+    where: >-
+      헤더 밴드 최좌측 0~3.3%W 다크 해치 텍스처 블록(#1C2766). 시안 #00B3E3 볼드 태그라인이
+      전 본문 페이지 우상단 고정 (백색 위 2.45:1 — 원본의 의도적 이탈)
+    uniqueness: 밴드 좌단 텍스처 블록과 시안 태그라인의 조합이 페이지 상단 서명 역할
+    must_preserve: true
+  - rank: 7
+    name: 라운드 캡슐·필 어휘
+    evidence_pages: [1, 8, 9, 14]
+    where: >-
+      커버 기간 아웃라인 필 · p-08 네이비 필 아이콘 라벨(좌측 원형 화살표 글리프) ·
+      p-09 라운드 라벨 셀·라운드 화살표 바 · p-14 필 레전드 칩
+    uniqueness: 라벨류가 일관되게 풀-라운드 캡슐로 처리되어 각진 요소(테이블·바)와 대비
+    must_preserve: false
+
+transform_contract: _workspace/premium_v4/transform_contract/samsungbio.json
+
+differentiation: >-
+  카탈로그의 그라디언트 계열 3팩과 축이 겹치지 않는다.
+  (1) ppt-skt-interactive-ai-pyramid: 순백 배경+단일 솔리드 #0023C3이 정체성
+  (tokens.json에 그라디언트 부재·chapter_color_variation none 명시), 시그니처는 피라미드
+  3D·탭 내비 — 본 팩은 그라디언트 자체(#1D2672→#AB99F7 수평 밴드)가 정체성이고 다크
+  페이지가 덱의 37.5%로 색 운용 원리가 정반대.
+  (2) ppt-vivid-gradient-future: 마젠타·블루·시안 4정점 메시 그라디언트가 배경 전체를
+  채우는 글래스모피즘 다크 덱(radius 20pt, 글로우 커넥터) — 본 팩은 그라디언트가 배경이
+  아니라 밴드·바 2계층 구조 요소에만 놓이고 본문 배경은 순백, hue도 네이비-라벤더 단일 축.
+  (3) ppt-vivid-gradient-infographic-deck: 바이올렛→코랄(#7C3AED→#FB6F5C) 135° 대각
+  그라디언트를 라운드 칩·필 모듈에 쓰는 라이트 인포그래픽 — 본 팩은 수평 0° 그라디언트,
+  직각 테이블·바 기반, 궤도 원호·스피어·페리윙클 테이블이라는 IR 고유 모티프 어휘로
+  무교집합. 근거: visual_spec/samsungbio.json의 vs_existing_catalog + 각 팩 tokens.json 대조.
+
+pages:
+  - { id: orbit-cover, label: 궤도 커버, kind: cover }
+  - { id: dark-statement, label: 다크 스테이트먼트, kind: statement }
+  - { id: mirror-hub-quadrant, label: 미러 그라디언트 4분면 허브, kind: diagram }
+  - { id: sphere-divider, label: 스피어 디바이더, kind: section_divider }
+  - { id: label-only-combo, label: 라벨-온리 콤보 차트, kind: chart }
+  - { id: brand-triple-bars, label: 브랜드 트리플 멀티 바, kind: chart_multi }
+  - { id: annotated-outlook, label: 주석 전망 차트, kind: chart_annotated }
+  - { id: map-photo-icons, label: 지도·원형 사진·아이콘 행, kind: feature_photo_icons }
+  - { id: fade-arrow-gantt, label: 페이드 화살표 간트, kind: gantt }
+  - { id: periwinkle-table-ratio, label: 페리윙클 테이블+비율 차트, kind: table_financial }
+
+sources:
+  - { title: "Samsung Biologics Earnings Release 2025 Q4 — 공식 IR 자료", url: "https://samsungbiologics.com/upload/investors/61a7b9d576694f6c8a10151dfb7067f8.pdf", type: official }
+
+license: >-
+  원 IR 자료는 Samsung Biologics Co., Ltd. 저작물(samsungbiologics.com 공식 IR 채널 공개본).
+  본 팩이 배포하는 것은 시각 원리의 명세·디자인 토큰이며 원본 자산(워드마크·시설 사진·
+  태그라인 문구·평가기관 로고·전용 서체)의 사본이 아님. 로고·사명·사진은 재현 금지 —
+  역할·위치·크기·처리 방식(원형 마스크 등)만 기술하며 사용자가 자기 콘텐츠로 채운다.
+source_depth: full
+
+qa:
+  fidelity: { verdict: unreviewed }
+  craft: { verdict: unreviewed }
+  diversity: { verdict: unreviewed }
+status: needs_review

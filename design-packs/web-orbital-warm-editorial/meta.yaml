@@ -3,6 +3,8 @@ display_name: 오비탈 웜 에디토리얼
 track: web
 family: orbital-warm
 category: premium
+spec_version: v3.1-2026-08-16
+reference_mode: style_synthesis
 summary: 따뜻한 크림 캔버스에 완전 라운드 알약 도형이 궤도처럼 겹쳐 모듈러 블록 그리드로 배치되고 세리프 헤딩·산세리프 본문 에디토리얼 위계·코랄/앰버 듀오·궤도 회전 playful 모션의 따뜻한 브랜드 웹 스타일.
 axes: { color: earth, type: mixed, layout: block-grid, space: airy, motion: playful }
 pages:
@@ -15,5 +17,5 @@ pages:
 sources:
   - { title: "awesome-claude-design — Mastercard design system", url: "https://github.com/VoltAgent/awesome-claude-design", type: official }
 license: "원자산은 각 출처 라이선스를 따름(awesome-claude-design MIT). 본 팩이 배포하는 것은 디자인 명세·토큰이며 원자산 사본이 아님. Mastercard는 디자인 결의 brand_inspiration 영감 출처로만 참조하며 로고·독점 폰트 명세를 포함하지 않는다 — 타이포는 공개 웹폰트(Fraunces·Inter, OFL)로 대체한다. 색값은 본 팩 자체 지정값."
-source_depth: full
+source_depth: partial
 status: pass

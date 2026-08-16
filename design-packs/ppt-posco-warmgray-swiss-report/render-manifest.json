@@ -1,0 +1,52 @@
+{
+  "slug": "ppt-posco-warmgray-swiss-report",
+  "rendered_at": "2026-08-16T05:13:55Z",
+  "renderer": "render-posco (blind reproduction from prompt.md + tokens.json only)",
+  "source_hash": {
+    "prompt.md": "sha256:72f575b61237f21317bf34b5b34be81f50dea60d859ca68823b90c50a4ea5c84",
+    "tokens.json": "sha256:37722961c1b8576335d797781a521d81c840cf86816c201b408af65cb5439d57"
+  },
+  "spec_version": "v3-2026-08-16",
+  "canvas": {
+    "declared": "16:9",
+    "declared_pt": "960x540pt",
+    "actual_px": [2560, 1440],
+    "ratio": 1.7778,
+    "device_scale_factor": 2.6667
+  },
+  "render_method": "960x540 CSS-px page (1pt = 1css-px, matches prompt.md's 960x540pt coordinate system 1:1) screenshotted via Playwright chromium with deviceScaleFactor=2560/960 for exact 2560x1440 PNG output per page.",
+  "fixture": "가상 소재·철강 지주사 'Northwind Materials' 2025년 연도 실적 발표 (더미 재무 수치, 실존 기업 없음)",
+  "pages": [
+    { "id": "cover", "file": "pages/01-cover.png", "px": [2560, 1440] },
+    { "id": "twin-panel-kpi-table", "file": "pages/02-twin-panel-kpi-table.png", "px": [2560, 1440] },
+    { "id": "label-bar-matrix", "file": "pages/03-label-bar-matrix.png", "px": [2560, 1440] },
+    { "id": "category-band-text", "file": "pages/04-category-band-text.png", "px": [2560, 1440] },
+    { "id": "chip-highlight-quadrant", "file": "pages/05-chip-highlight-quadrant.png", "px": [2560, 1440] },
+    { "id": "stacked-bar-composition", "file": "pages/06-stacked-bar-composition.png", "px": [2560, 1440] },
+    { "id": "magenta-waterfall", "file": "pages/07-magenta-waterfall.png", "px": [2560, 1440] },
+    { "id": "subsidiary-grid", "file": "pages/08-subsidiary-grid.png", "px": [2560, 1440] },
+    { "id": "subsidiary-detail", "file": "pages/09-subsidiary-detail.png", "px": [2560, 1440] },
+    { "id": "financial-statement", "file": "pages/10-financial-statement.png", "px": [2560, 1440] }
+  ],
+  "preview_png": { "file": "preview.png", "source": "copy of pages/01-cover.png" },
+  "font_fallbacks": [
+    "Pretendard: resolved locally (installed system font, not a fallback)",
+    "Montserrat: loaded via Google Fonts CDN (network available at render time), no fallback needed",
+    "Inter: loaded via Google Fonts CDN (network available at render time), no fallback needed",
+    "Noto Sans KR: loaded via Google Fonts CDN as declared secondary fallback, not engaged (Pretendard resolved)"
+  ],
+  "manual_qc": {
+    "method": "visual inspection of all 10 rendered pages at full resolution + targeted pixel crops",
+    "issues_found_and_fixed": [
+      "page 02: white in-bar revenue value labels (18,730/19,850/21,420) were positioned left of the bar start (x before rect x), rendering invisible against white background — repositioned to right-aligned inside the navy bar end",
+      "page 06: CAPEX total callout boxes used arbitrary negative top offsets not derived from actual bar-top geometry; the tallest (3,050) escaped the panel into the headline text above, whiting out the bottom (batchim) of '현황' making it misread as '혀화'; also collided with the top-right legend — recomputed callout y-positions from true bar-top coordinates and moved the legend to the panel's left side",
+      "page 07: left-panel '23/'24/'25 x-axis labels overlapped the '전년비 생산량/판매량' KPI caption row below the panel — compressed the mini bar chart vertically (shifted up 22px) to clear the caption row",
+      "page 08: white in-bar revenue value labels for the '노스윈드 글로벌트레이딩' negative panel overflowed past the bar's right edge onto the gray panel background (near-invisible) — repositioned to sit inside the bar"
+    ],
+    "residual_notes": [
+      "page 03: '158'/'55.8' line-chart value labels sit close together where the 부채비율/유동비율 lines cross near '25 — legible, not overlapping/clipped, left as-is",
+      "page 02: '2023'/'2024'/'2025' row labels sit close to the adjacent bar start but do not overlap on close inspection"
+    ]
+  },
+  "validator": "python3 scripts/validate_pack.py ppt-posco-warmgray-swiss-report"
+}

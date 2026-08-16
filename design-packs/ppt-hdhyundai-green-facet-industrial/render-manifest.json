@@ -1,0 +1,109 @@
+{
+  "slug": "ppt-hdhyundai-green-facet-industrial",
+  "rendered_at": "2026-08-16T04:03:32.636456Z",
+  "source_hash": {
+    "prompt.md": "sha256:c5e651340a5cfa9909d434a9a417b9fedbfd8dd60fd8f298524044a7c9b748b4",
+    "tokens.json": "sha256:9daecd21612859ec3f1755923e399d8f62c5ccd3581540f52687b1f3c0b08b80"
+  },
+  "spec_version": "v3-2026-08-16",
+  "canvas": {
+    "declared": "16:9",
+    "actual_px": [
+      2560,
+      1440
+    ],
+    "ratio": 1.7778
+  },
+  "pages": [
+    {
+      "id": "01-cover",
+      "file": "pages/01-cover.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "02-wireframe-divider",
+      "file": "pages/02-wireframe-divider.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "03-summary-matrix",
+      "file": "pages/03-summary-matrix.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "04-chart-duo",
+      "file": "pages/04-chart-duo.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "05-contribution-bar",
+      "file": "pages/05-contribution-bar.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "06-company-matrix",
+      "file": "pages/06-company-matrix.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "07-subsidiary-template",
+      "file": "pages/07-subsidiary-template.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "08-waterfall",
+      "file": "pages/08-waterfall.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "09-ratio-dashboard",
+      "file": "pages/09-ratio-dashboard.png",
+      "px": [
+        2560,
+        1440
+      ]
+    },
+    {
+      "id": "10-outlook-rows",
+      "file": "pages/10-outlook-rows.png",
+      "px": [
+        2560,
+        1440
+      ]
+    }
+  ],
+  "font_fallbacks": [],
+  "preview": {
+    "file": "preview.png",
+    "px": [
+      2560,
+      1440
+    ],
+    "source": "01-cover.png copy"
+  },
+  "console_errors": []
+}

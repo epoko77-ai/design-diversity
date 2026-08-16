@@ -1,0 +1,34 @@
+{
+  "slug": "ppt-shinhan-dense-finance-blue",
+  "rendered_at": "2026-08-16T14:47:22Z",
+  "source_hash": {
+    "prompt.md": "sha256:dcd63913f4d74be4bc3589cc003d7d351b4f506276ac87043a34fcf99e84a273",
+    "tokens.json": "sha256:f7a5fa40c11a985a5a73c53c1a681f6aa9aaf33a2922571cb702df478a2e2692"
+  },
+  "spec_version": "v3-2026-08-16",
+  "canvas": {
+    "declared": "16:9",
+    "actual_px": [2560, 1440],
+    "ratio": 1.7778
+  },
+  "pages": [
+    { "id": "cover", "file": "pages/01-cover.png", "px": [2560, 1440] },
+    { "id": "kpi-cards", "file": "pages/02-kpi-cards.png", "px": [2560, 1440] },
+    { "id": "table-bridge", "file": "pages/03-table-bridge.png", "px": [2560, 1440] },
+    { "id": "table-chart", "file": "pages/04-table-chart.png", "px": [2560, 1440] },
+    { "id": "diverging-stack", "file": "pages/05-diverging-stack.png", "px": [2560, 1440] },
+    { "id": "quality-bridge", "file": "pages/06-quality-bridge.png", "px": [2560, 1440] },
+    { "id": "digital-kpi", "file": "pages/07-digital-kpi.png", "px": [2560, 1440] },
+    { "id": "target-panels", "file": "pages/08-target-panels.png", "px": [2560, 1440] },
+    { "id": "plan-matrix", "file": "pages/09-plan-matrix.png", "px": [2560, 1440] },
+    { "id": "appendix-table", "file": "pages/10-appendix-table.png", "px": [2560, 1440] }
+  ],
+  "font_fallbacks": [],
+  "render_notes": [
+    "블라인드 렌더: prompt.md·tokens.json만 입력으로 사용, 원본 pages_src/visual_spec/transform_contract는 열람하지 않음",
+    "Pretendard 로컬 OTF(Light/Regular/Medium/SemiBold/Bold) @font-face 임베딩, 두부(tofu) 0건",
+    "발견: 인라인 <svg><text>에 전역 font-variant-numeric:tabular-nums가 상속되면 이 Chromium 빌드에서 작은 크기의 한글 자모 결합이 깨짐(예: '말'→'밀'/'믈' 오독) — 모든 SVG 텍스트 라벨에 font-variant-numeric:normal 명시로 수정",
+    "워터폴/브리지 차트는 절대 0 기준 대신 floor-relative 스케일 적용(웨이브컷 모티프의 근거와 일치) — 큰 총계 대비 작은 증감분이 시각적으로 사라지는 문제 수정",
+    "여러 차트에서 범례·콜아웃 박스가 카드 경계를 벗어나거나 축 라벨과 겹치는 문제 발견 후 재배치"
+  ]
+}

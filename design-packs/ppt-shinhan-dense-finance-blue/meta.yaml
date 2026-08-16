@@ -1,0 +1,155 @@
+slug: ppt-shinhan-dense-finance-blue
+display_name: 신한 덴스 파이낸스 블루
+track: ppt
+family: shinhan-dense-finance-blue
+category: premium
+spec_version: v3.1-2026-08-16
+reference_mode: exact_document
+summary: >-
+  울트라마린 #0046FF 3톤 단색 규율, 6탭 상주 내비게이션, 현재기 컬럼 밴드 재무표,
+  Δ 음수 표기, 웨이브컷 총계 바, 무축 직접 레이블 차트가 결합된 초고밀도 민간 금융 IR 덱 스타일.
+axes:
+  color: vivid-primary
+  type: minimal-sans
+  layout: strict-grid
+  space: dense
+  motion: none
+
+differentiation: >-
+  카탈로그의 정부 부처 청색 덱 5종과 같은 '블루 계열'이지만 문법이 다르다.
+  부처 덱은 메시지·다이어그램 중심(대형 슬로건 타이포, 정책 다이어그램, 페이지당 표 0~1개)인 반면,
+  이 팩은 민간 금융 IR의 데이터 언어다 — 근거: ① 31페이지 중 표 페이지 21장·부록 11컬럼 표군(원본 p10, 19~29),
+  ② 웹사이트형 6탭 상주 내비게이션(전 내지, motif 5 — 부처 덱에 부재), ③ 현재기 컬럼 #EDF7FE 밴딩과
+  Δ 프리픽스 음수라는 증감 표기 문법(motif 2·3 — 부처 덱은 빨강/파랑 의미색 사용),
+  ④ 축·격자를 소거하고 값 전량을 레이블로 박는 브리지·인셋·콜아웃 차트 문법(motif 7),
+  ⑤ 9~10pt대 표 본문의 열람형 고밀도 조판(발표형 대형 타이포의 정반대).
+
+reference:
+  canonical_url: "https://www.shinhangroup.com/main/downloadAttach?attachNo=f2b28001d4ff43c695e7a731a2110737&seq=1"
+  title: "신한금융그룹 경영실적 현황 3Q 2025"
+  publisher: "신한금융지주회사"
+  retrieved_at: "2026-08-15T00:00:00+09:00"
+  sha256: "ef506487c3ae12b845ddd7850861f50d6d777234592931a179ac0a0c91452e80"
+  media_type: application/pdf
+  page_count: 31
+  page_box: { width: 960, height: 540, unit: pt }
+  aspect_ratio: 1.778
+
+page_mirror_plan:
+  original_pages: 31
+  pack_pages: 10
+  compression: selected
+  fidelity_claim: "transformed-principle fidelity (31→10 선별 — 픽셀 미러 아님)"
+  map:
+    - { pack_page: 1, source_pages: [1], kind: cover,
+        rationale: "표지 문법 그대로: 백지 + 블루 대형 타이틀 + 그레이 볼드 부제(타이틀의 약 55% 크기) + 코너 마크 3종(전부 중립 치환)" }
+    - { pack_page: 2, source_pages: [2], kind: kpi-cards,
+        rationale: "블루 KPI 카드 3매 + 카테고리 요약 패널 — 덱의 하이라이트 문법" }
+    - { pack_page: 3, source_pages: [3], kind: table-bridge,
+        rationale: "재무표 + 브리지 2매 + 웨이브컷 + 주석 박스가 한 장에 공존하는 대표 페이지" }
+    - { pack_page: 4, source_pages: [5], kind: table-chart,
+        rationale: "손익표 + 그룹드 바 + 멀티라인 + 점선 인셋 + 콜아웃 — 원본 5~8군 공통 문법의 대표" }
+    - { pack_page: 5, source_pages: [7], kind: diverging-stack,
+        rationale: "베이스라인 아래 음수 세그먼트 스택 바 + 비중 라인 — 이 군에서만 나오는 차트 문법" }
+    - { pack_page: 6, source_pages: [9], kind: quality-bridge,
+        rationale: "8분기 연체율 표 + 커버리지 콤보 + 브리지 2세트(증감 색 역전 사례 포함)" }
+    - { pack_page: 7, source_pages: [12], kind: digital-kpi,
+        rationale: "앱 지표 카드·탭 라벨·대형 블루 수치 — 유일한 프로덕트 성과 페이지" }
+    - { pack_page: 8, source_pages: [14], kind: target-panels,
+        rationale: "3카드 병렬 + Target 해칭 바 + 콜아웃 체인 + 웨이브컷 — p13의 해칭 미래 바 문법도 이 장이 대변" }
+    - { pack_page: 9, source_pages: [17], kind: plan-matrix,
+        rationale: "필 라벨 + 3열 비교 카드 + 체크리스트/번호 배지 — 덱 유일의 비차트 특수 레이아웃" }
+    - { pack_page: 10, source_pages: [21], kind: appendix-table,
+        rationale: "11컬럼 3블록 풀폭 표 — 원본 19~29 부록 표군 문법의 최대 밀도 대표" }
+  not_selected:
+    - { source_pages: [4, 6, 8], reason: "p3·5·7과 동일한 좌 표 + 우 카드 문법의 변형 — 선택 페이지가 문법을 커버" }
+    - { source_pages: [10], reason: "풀폭 10분기 표 — 부록 표 문법은 p21이 더 높은 밀도로 대변" }
+    - { source_pages: [11], reason: "스택 바 + 비중 라인 문법이 p7·9와 중복" }
+    - { source_pages: [13], reason: "3컬럼 블루 헤더 바 페이지 — 해칭 목표 바·점선 미래 박스는 p14가 부분 대변. 블루 솔리드 컬럼 헤더 바는 미수록 손실로 기록" }
+    - { source_pages: [15], reason: "PBR 그라데이션 게이지는 1회성 요소 — 정책 카드 문법은 p17이 대변. 게이지 미수록 손실로 기록" }
+    - { source_pages: [16], reason: "캐스케이드 바는 인상적이나 웨이브컷·콜아웃 체인은 p3·14가 대변. 캐스케이드 바 미수록 손실로 기록" }
+    - { source_pages: [18, 30, 31], reason: "간지·공지 — 디자인 밀도 낮음. 간지 문법(풀폭 그레이 룰 + 대형 그레이 타이틀)은 prompt '다이어그램·컴포넌트'에 기록" }
+    - { source_pages: [19, 20, 22, 23, 24, 25, 26, 27, 28, 29], reason: "부록 표 변형군 — p21이 대표. p27의 2계층 스팬 헤더(연체율 5분기)는 미수록 손실로 기록" }
+
+signature_motifs:
+  - rank: 1
+    name: 울트라마린 #0046FF 3톤 단색 시스템
+    evidence_pages: [1, 2, 3, 5, 7, 12, 13, 17, 21]
+    where: 표지 타이틀·내비·표 헤더·KPI 카드·바 차트·섹션 표제·로고 블록까지 전 요소가 #0046FF / #4BAFF5 / #AFABAB 3톤. 시안 #00B0F0은 콜아웃·Target 한정
+    uniqueness: >-
+      국내 금융 IR 중에서도 의미색(빨강/초록)을 완전히 버리고 브랜드 블루 하나로
+      위계 전체를 세운 극단적 단색 규율
+    must_preserve: true
+  - rank: 2
+    name: Δ 음수 표기 규율
+    evidence_pages: [2, 3, 5, 7, 8, 9, 16, 21, 22, 25]
+    where: 표 숫자·차트 레이블·본문 불릿의 모든 감소값. Δ216.5, Δ23.7%, Δ6bp. 빨강·괄호·마이너스 기호 불사용
+    uniqueness: 음수를 색이 아니라 그리스 문자 프리픽스로 처리 — 단색 시스템을 지키는 핵심 장치
+    must_preserve: true
+  - rank: 3
+    name: 블루 솔리드 헤더 + 현재기 컬럼 밴드 재무표
+    evidence_pages: [3, 4, 5, 6, 8, 9, 10, 19, 21, 26, 27]
+    where: >-
+      모든 재무표: #0046FF 헤더(흰 텍스트, 첫 셀 단위 표기), 현재기 컬럼 #EDF7FE 밴드+볼드,
+      그룹 행 풀행 밴드, 점선 행 구분, 우측 정렬 숫자, 빈 셀 대각선 해칭
+    uniqueness: 컬럼 하나를 밴딩해 '지금 분기'로 시선을 고정하는 표 문법이 덱 전체에서 한 치도 흔들리지 않음
+    must_preserve: true
+  - rank: 4
+    name: 웨이브컷 막대 (하단 물결 축 생략)
+    evidence_pages: [3, 9, 14, 16]
+    where: 값 대비 스케일이 큰 총계 바의 하단부를 흰 물결선 2줄로 끊어 절단 표시. 브리지 양끝 총계 바(p3·9), CET1 RWA 바(p14), 유통주식수 바(p16)
+    uniqueness: 축을 아예 그리지 않는 대신 바 몸통에 절단 기호를 새기는 방식 — 이 덱의 가장 시각적인 지문. 물결은 바 하단부에 위치(상단 아님)
+    must_preserve: true
+  - rank: 5
+    name: 상주형 6탭 내비게이션 + 우상단 로고 블록
+    evidence_pages: [2, 3, 5, 12, 14, 19, 29]
+    where: >-
+      본문 전 페이지 상단. 활성 탭 = #0046FF 텍스트만(밑줄 없음 — 픽셀 스캔 확인), 비활성 #5A5A5A.
+      우상단 블루 라운드 사각 로고가 상단 모서리 맞닿음. 간지·공지(18, 30, 31)는 탭 대신 풀폭 그레이 룰
+    uniqueness: 덱 전체를 웹사이트처럼 항행하게 만드는 상주 내비 — 발표덱보다 열람형 IR 문서의 문법
+    must_preserve: true
+  - rank: 6
+    name: 좌 블루 바 + 카테고리 프리픽스 + 원문자 번호 섹션 표제
+    evidence_pages: [3, 5, 9, 13, 17, 21, 30]
+    where: "본문 전 페이지: 소형 카테고리 프리픽스 + ①~⑩ 원문자 + 블루 볼드 타이틀, 좌측 세로 블루 바"
+    uniqueness: 내비 탭과 표제 프리픽스가 같은 분류 체계를 이중으로 새겨 현재 위치를 항상 고지
+    must_preserve: true
+  - rank: 7
+    name: 그레이 카드 무축 차트 문법 (브리지·점선 인셋·블루 콜아웃)
+    evidence_pages: [3, 4, 5, 7, 9, 11, 14, 15]
+    where: >-
+      우측 컬럼 #F9F9F9 카드: 그레이 타이틀 + '(단위)' 우상단, 축·그리드 0, 값 전량 직접 레이블,
+      증가/감소/총계 브리지(p3 증가=라이트블루·감소=그레이, p9는 역전), 최근 분기 점선 테두리 인셋,
+      +N%/ΔN% 블루 테두리 콜아웃 박스 + 꺾인 연결 화살표
+    uniqueness: 차트가 '그림'이 아니라 표의 연장 — 모든 수치가 레이블로 존재하고 축은 소거된 데이터 밀도 우선 문법
+    must_preserve: true
+
+transform_contract: _workspace/premium_v4/transform_contract/shinhan.json
+
+pages:
+  - { id: cover, label: 표지, kind: cover }
+  - { id: kpi-cards, label: KPI 하이라이트, kind: kpi-cards }
+  - { id: table-bridge, label: 재무표 + 브리지, kind: table-bridge }
+  - { id: table-chart, label: 손익표 + 차트, kind: table-chart }
+  - { id: diverging-stack, label: 음수 세그먼트 스택, kind: diverging-stack }
+  - { id: quality-bridge, label: 건전성 표 + 브리지, kind: quality-bridge }
+  - { id: digital-kpi, label: 프로덕트 지표, kind: digital-kpi }
+  - { id: target-panels, label: 3패널 목표 지표, kind: target-panels }
+  - { id: plan-matrix, label: 계획 매트릭스, kind: plan-matrix }
+  - { id: appendix-table, label: 부록 풀폭 표, kind: appendix-table }
+
+sources:
+  - { title: "신한금융그룹 경영실적 현황 3Q 2025 — 신한금융그룹 공식 IR 자료실", url: "https://www.shinhangroup.com/main/downloadAttach?attachNo=f2b28001d4ff43c695e7a731a2110737&seq=1", type: official }
+
+license: >-
+  원 IR 자료는 신한금융지주회사 저작물(공식 웹사이트 공개본).
+  본 팩이 배포하는 것은 시각 원리의 명세·디자인 토큰이며 원본 자산
+  (신한 심볼·워드마크·손글씨 슬로건·금융 앱 아이콘·OneShinhan 전용 서체·실제 재무 데이터)의 사본이 아님.
+  로고·CI·서비스명은 재현 금지 — 역할·위치·크기만 기술.
+source_depth: full
+
+qa:
+  fidelity: { verdict: unreviewed }
+  craft: { verdict: unreviewed }
+  diversity: { verdict: unreviewed }
+status: needs_review

@@ -1,5 +1,6 @@
 slug: ppt-unikorea-peace-coexistence
 display_name: 통일부 한반도 평화공존
+spec_version: v3.1-2026-08-16
 track: ppt
 family: korea-gov-peace-coexistence
 category: premium
@@ -20,11 +21,11 @@ diagram_kit: "프로세스 = 3~4 단계 흰 카드 노드 + 좌측 #105FD2 컬�
 pages:
   - { id: cover, label: "표지 — 한반도 발광 지도 + 캘리그래피", kind: cover }
   - { id: agenda, label: "목차 — 4-column 흰 카드 + Roman numeral 원", kind: agenda }
-  - { id: section-divider, label: "섹션 인트로 — breadcrumb + 6 카드 그리드 또는 풀-쿼트", kind: section-divider }
+  - { id: section, label: "섹션 인트로 — breadcrumb + 6 카드 그리드 또는 풀-쿼트", kind: section-divider }
   - { id: key-message, label: "핵심 메시지 — 듀얼 비교 + 캘리그래피 박스", kind: body }
   - { id: chart, label: "노드 그리드 인포그래픽 — 파스텔 크림/시안 노드", kind: chart }
   - { id: diagram, label: "3카드 + 블루 리본 — 대응 전략", kind: diagram }
-  - { id: body, label: "3카드 그리드 — 반복 양식 (cards)", kind: body }
+  - { id: cards, label: "3카드 그리드 — 반복 양식", kind: body }
   - { id: comparison, label: "듀얼 비교 풀버전 — 블루 vs 레드 태그", kind: comparison }
   - { id: narrative, label: "인덱스 카드 + 인물 사진 — 01~04 깊은 네이비 원", kind: body }
   - { id: closing, label: "종결 — 표지와 동일 (북엔드, 골드)", kind: closing }
